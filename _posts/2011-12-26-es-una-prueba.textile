@@ -1,0 +1,15 @@
+---
+style: una_col_con_imagen
+category: proyectos
+tags: [mobiliario]
+title: El taburete eñe
+subtitle: un mueble para el nude
+image: farm8.staticflickr.com/7029/6537173667_fb67e1c206
+
+layout: post
+background_image:
+background_color: 
+published: yes
+---
+
+Este sería el texto para el taburete eñe

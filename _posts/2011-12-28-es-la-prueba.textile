@@ -1,6 +1,15 @@
 ---
-layout: portfolio_entry
-title: Esta es la tercera prueba
+style: una_col_solo_imagen
+category: peliculas
+tags: [documental]
+title: Curitiba
+subtitle: the city of curitiba
+image: farm8.staticflickr.com/7029/6537173667_fb67e1c206
+
+layout: post
+background_image:
+background_color:
+published: yes
 ---
 
-Este es el texto de la tercera entrada entrada
+Una descripción de esta pelicula

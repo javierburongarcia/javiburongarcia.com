@@ -1,8 +1,18 @@
 ---
 layout: default
-title: Inicio
+title: Página personal de Javier Burón García
 ---
+<section>
+<ul>
 {% for post in site.posts %}
-	<h3>{{ post.title }}</h3>
-	{{ post.content }}
+	<li class="{{ post.style }}">
+		<a href="{{ post.url }}">
+			<span class="miniatura"><img src="http://{{ post.image }}_t.jpg"></span>
+			<span class="titulo">{{ post.title }}</span>
+			<span class="subtitulo">{{ post.subtitle }}</span>
+			<span class="fecha">{{ post.date | date_to_string }}</span>
+		</a>
+	</li>
 {% endfor %}
+</ul>
+</section>

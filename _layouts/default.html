@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset=utf-8 />
-		<title>{{ page.title }}</title>
-	</head>
-	<body>
-		<header>
-			<h1>Esta es la cabecera</h1>
-		</header>
-		<nav>
-			<h1>Esta es la navegación</h1>
-		</nav>
-			{{ content }}
-		<footer>
-			<p>Este es el pie de página</p>
-		</footer>	
-	</body>
+<head>
+	<title>{{ page.title }}</title>
+{% include _scripts.html %}
+</head>
+<body>
+{% include _header.html %}
+{% include _navigation.html %}
+{{ content }}
+{% include _footer.html %}
+</body>
 </html>
