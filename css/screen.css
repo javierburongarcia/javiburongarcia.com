@@ -1,0 +1,583 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 68, ../sass/screen.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+/* line 71, ../sass/screen.scss */
+a:hover .titulo {
+  color: navy;
+  text-decoration: underline;
+}
+
+/* line 76, ../sass/screen.scss */
+body {
+  font: normal 14px/20px Helvetica, Arial;
+}
+
+/* line 79, ../sass/screen.scss */
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: black;
+  z-index: 20;
+}
+/* line 85, ../sass/screen.scss */
+header #cabecera {
+  width: 1152px;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 90, ../sass/screen.scss */
+header #cabecera #botones {
+  display: table;
+}
+/* line 92, ../sass/screen.scss */
+header #cabecera #botones h1 {
+  height: 60px;
+  width: 22%;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 40;
+}
+/* line 98, ../sass/screen.scss */
+header #cabecera #botones h1 a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+}
+/* line 102, ../sass/screen.scss */
+header #cabecera #botones section.tweet {
+  height: 60px;
+  width: 55%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 107, ../sass/screen.scss */
+header #cabecera #botones section.tweet p {
+  color: white;
+  font-size: 14px;
+  font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+/* line 111, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons {
+  position: relative;
+  height: 60px;
+  width: 20%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 117, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .twitterButton {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: table-cell;
+  height: 60px;
+  vertical-align: middle;
+}
+/* line 124, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .facebookButton {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: table-cell;
+  height: 60px;
+  vertical-align: middle;
+}
+/* line 131, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+}
+
+/* line 139, ../sass/screen.scss */
+.cuerpo {
+  width: 1152px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+}
+
+/* line 145, ../sass/screen.scss */
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  clear: both;
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-family: DroidSans,Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+/* line 152, ../sass/screen.scss */
+.cuerpo ul {
+  width: 1152px;
+}
+
+/* line 155, ../sass/screen.scss */
+.cuerpo li {
+  height: 300px;
+  float: left;
+  position: relative;
+}
+/* line 159, ../sass/screen.scss */
+.cuerpo li.una-col:last-child a {
+  width: 193px;
+  border-right: 1px dotted silver;
+}
+/* line 163, ../sass/screen.scss */
+.cuerpo li.dos-col:last-child a {
+  width: 385px;
+  border-right: 1px dotted silver;
+}
+/* line 167, ../sass/screen.scss */
+.cuerpo li a {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 15px;
+  height: 300px;
+  border-left: 1px dotted silver;
+  border-bottom: 1px dotted silver;
+}
+/* line 176, ../sass/screen.scss */
+.cuerpo li a.cierrefila {
+  border-right: 1px dotted silver;
+}
+/* line 179, ../sass/screen.scss */
+.cuerpo li a.fila1 {
+  border-top: 1px dotted silver;
+}
+/* line 182, ../sass/screen.scss */
+.cuerpo li a .miniatura {
+  margin: 0px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 188, ../sass/screen.scss */
+.cuerpo li a .miniatura img {
+  display: inline;
+}
+/* line 192, ../sass/screen.scss */
+.cuerpo li a .texto {
+  box-sizing: border-box;
+}
+/* line 194, ../sass/screen.scss */
+.cuerpo li a .texto .subtitulo {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+/* line 198, ../sass/screen.scss */
+.cuerpo li a .fecha {
+  box-sizing: border-box;
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-family: DroidSans,Helvetica,Arial,sans-serif;
+  text-align: right;
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
+}
+
+/*Estilos de anchos de columna*/
+/*Estilos de ocultar*/
+/*Estilos de imagenes*/
+/*Estilos de texto*/
+/*Layouts*/
+/* line 388, ../sass/screen.scss */
+li.texto.una-col {
+  width: 192px;
+}
+/* line 214, ../sass/screen.scss */
+li.texto.una-col a {
+  width: 192px;
+}
+/* line 313, ../sass/screen.scss */
+li.texto.una-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 10px;
+}
+
+/* line 394, ../sass/screen.scss */
+li.video.una-col,
+li.articulo.una-col, li.proyecto.una-col {
+  width: 192px;
+}
+/* line 214, ../sass/screen.scss */
+li.video.una-col a,
+li.articulo.una-col a, li.proyecto.una-col a {
+  width: 192px;
+}
+/* line 249, ../sass/screen.scss */
+li.video.una-col .miniatura,
+li.articulo.una-col .miniatura, li.proyecto.una-col .miniatura {
+  margin-bottom: 10px;
+  width: 160px;
+  height: 94px;
+}
+/* line 253, ../sass/screen.scss */
+li.video.una-col .miniatura img,
+li.articulo.una-col .miniatura img, li.proyecto.una-col .miniatura img {
+  width: 160px;
+}
+/* line 306, ../sass/screen.scss */
+li.video.una-col .texto .titulo,
+li.articulo.una-col .texto .titulo, li.proyecto.una-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+
+/* line 403, ../sass/screen.scss */
+li.articulo.dos-col,
+li.proyecto.dos-col,
+li.link.dos-col,
+li.pelicula.dos-col, li.libro.dos-col, li.documento.dos-col {
+  width: 384px;
+}
+/* line 220, ../sass/screen.scss */
+li.articulo.dos-col a,
+li.proyecto.dos-col a,
+li.link.dos-col a,
+li.pelicula.dos-col a, li.libro.dos-col a, li.documento.dos-col a {
+  width: 384px;
+}
+/* line 293, ../sass/screen.scss */
+li.articulo.dos-col .miniatura,
+li.proyecto.dos-col .miniatura,
+li.link.dos-col .miniatura,
+li.pelicula.dos-col .miniatura, li.libro.dos-col .miniatura, li.documento.dos-col .miniatura {
+  margin-right: 15px;
+  width: 177px;
+  height: 270px;
+}
+/* line 319, ../sass/screen.scss */
+li.articulo.dos-col .texto,
+li.proyecto.dos-col .texto,
+li.link.dos-col .texto,
+li.pelicula.dos-col .texto, li.libro.dos-col .texto, li.documento.dos-col .texto {
+  position: absolute;
+  top: 15px;
+  left: 207px;
+}
+/* line 323, ../sass/screen.scss */
+li.articulo.dos-col .texto .titulo,
+li.proyecto.dos-col .texto .titulo,
+li.link.dos-col .texto .titulo,
+li.pelicula.dos-col .texto .titulo, li.libro.dos-col .texto .titulo, li.documento.dos-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 10px;
+}
+
+/* line 409, ../sass/screen.scss */
+li.link.una-col {
+  width: 192px;
+}
+/* line 214, ../sass/screen.scss */
+li.link.una-col a {
+  width: 192px;
+}
+/* line 279, ../sass/screen.scss */
+li.link.una-col .miniatura {
+  float: left;
+  margin-bottom: 10px;
+  width: 160px;
+  height: 205px;
+}
+/* line 330, ../sass/screen.scss */
+li.link.una-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+/* line 333, ../sass/screen.scss */
+li.link.una-col .texto .subtitulo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 1.2em;
+}
+
+/* line 416, ../sass/screen.scss */
+li.foto.dos-col,
+li.presentacion.dos-col {
+  width: 384px;
+}
+/* line 220, ../sass/screen.scss */
+li.foto.dos-col a,
+li.presentacion.dos-col a {
+  width: 384px;
+}
+/* line 269, ../sass/screen.scss */
+li.foto.dos-col .miniatura,
+li.presentacion.dos-col .miniatura {
+  margin-bottom: 10px;
+  width: 352px;
+  height: 270px;
+}
+/* line 273, ../sass/screen.scss */
+li.foto.dos-col .miniatura img,
+li.presentacion.dos-col .miniatura img {
+  height: 270px;
+}
+/* line 355, ../sass/screen.scss */
+li.foto.dos-col .texto,
+li.presentacion.dos-col .texto {
+  text-align: right;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  width: 160px;
+  height: 65px;
+  left: 15px;
+  border: 1px solid silver;
+  bottom: 13px;
+  padding: 5px;
+}
+/* line 365, ../sass/screen.scss */
+li.foto.dos-col .texto .titulo,
+li.presentacion.dos-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+/* line 368, ../sass/screen.scss */
+li.foto.dos-col .texto .subtitulo,
+li.presentacion.dos-col .texto .subtitulo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 1.2em;
+}
+/* line 378, ../sass/screen.scss */
+li.foto.dos-col .texto,
+li.presentacion.dos-col .texto {
+  width: 352px;
+}
+/* line 239, ../sass/screen.scss */
+li.foto.dos-col a .fecha,
+li.presentacion.dos-col a .fecha {
+  display: none;
+}
+
+/* line 423, ../sass/screen.scss */
+li.video.dos-col {
+  width: 384px;
+}
+/* line 220, ../sass/screen.scss */
+li.video.dos-col a {
+  width: 384px;
+}
+/* line 259, ../sass/screen.scss */
+li.video.dos-col .miniatura {
+  margin-bottom: 10px;
+  width: 352px;
+  height: 205px;
+}
+/* line 263, ../sass/screen.scss */
+li.video.dos-col .miniatura img {
+  width: 352px;
+}
+/* line 343, ../sass/screen.scss */
+li.video.dos-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+/* line 346, ../sass/screen.scss */
+li.video.dos-col .texto .subtitulo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 1.2em;
+}
+
+/* line 429, ../sass/screen.scss */
+li.pelicula.una-col, li.libro.una-col, li.documento.una-col {
+  width: 192px;
+}
+/* line 214, ../sass/screen.scss */
+li.pelicula.una-col a, li.libro.una-col a, li.documento.una-col a {
+  width: 192px;
+}
+/* line 279, ../sass/screen.scss */
+li.pelicula.una-col .miniatura, li.libro.una-col .miniatura, li.documento.una-col .miniatura {
+  float: left;
+  margin-bottom: 10px;
+  width: 160px;
+  height: 205px;
+}
+/* line 330, ../sass/screen.scss */
+li.pelicula.una-col .texto .titulo, li.libro.una-col .texto .titulo, li.documento.una-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+/* line 333, ../sass/screen.scss */
+li.pelicula.una-col .texto .subtitulo, li.libro.una-col .texto .subtitulo, li.documento.una-col .texto .subtitulo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 1.2em;
+}
+/* line 231, ../sass/screen.scss */
+li.pelicula.una-col a .texto .subtitulo, li.libro.una-col a .texto .subtitulo, li.documento.una-col a .texto .subtitulo {
+  display: none;
+}
+
+/* line 437, ../sass/screen.scss */
+li.presentacion.una-col,
+li.foto.una-col {
+  width: 192px;
+}
+/* line 214, ../sass/screen.scss */
+li.presentacion.una-col a,
+li.foto.una-col a {
+  width: 192px;
+}
+/* line 287, ../sass/screen.scss */
+li.presentacion.una-col .miniatura,
+li.foto.una-col .miniatura {
+  width: 160px;
+  height: 270px;
+}
+/* line 355, ../sass/screen.scss */
+li.presentacion.una-col .texto,
+li.foto.una-col .texto {
+  text-align: right;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  width: 160px;
+  height: 65px;
+  left: 15px;
+  border: 1px solid silver;
+  bottom: 13px;
+  padding: 5px;
+}
+/* line 365, ../sass/screen.scss */
+li.presentacion.una-col .texto .titulo,
+li.foto.una-col .texto .titulo {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: DroidSerif,Helvetica,Arial,sans-serif;
+  padding-bottom: 5px;
+}
+/* line 368, ../sass/screen.scss */
+li.presentacion.una-col .texto .subtitulo,
+li.foto.una-col .texto .subtitulo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2em;
+  max-height: 1.2em;
+}
+/* line 231, ../sass/screen.scss */
+li.presentacion.una-col a .texto .subtitulo,
+li.foto.una-col a .texto .subtitulo {
+  display: none;
+}
+/* line 239, ../sass/screen.scss */
+li.presentacion.una-col a .fecha,
+li.foto.una-col a .fecha {
+  display: none;
+}

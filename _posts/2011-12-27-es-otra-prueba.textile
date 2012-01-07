@@ -1,8 +1,8 @@
 ---
-style: una_col_solo_imagen
-category: libros
+style: una-col
+category: articulo
 tags: [mobiliario]
-title: The typographic style
+title: The typographic style of things
 subtitle: La referencia de la tipografía
 image: farm8.staticflickr.com/7029/6537173667_fb67e1c206
 

@@ -1,10 +1,10 @@
 ---
-style: una_col_solo_imagen
-category: peliculas
+style: una-col
+category: texto
 tags: [documental]
 title: Curitiba
-subtitle: the city of curitiba
-image: farm8.staticflickr.com/7029/6537173667_fb67e1c206
+subtitle: the city of curitiba the city of curitiba the city of curitiba the city of curitiba the city of curitiba the city of curitiba the city of curitiba
+image:
 
 layout: post
 background_image:

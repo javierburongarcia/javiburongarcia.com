@@ -2,14 +2,49 @@
 layout: default
 title: Página personal de Javier Burón García
 ---
-<section>
+<section class="cuerpo">
 <ul>
+{% comment %}
+Solucion para ir rellenando cada fila al completo, utilizamos tres variables:
+contador, temp, an_integer, como liquid no puede hacer operaciones aritmeticas
+utilizamos el metodo .size para contar en una cadena de caracteres y capture para sumar http://forums.shopify.com/categories/1/posts/31824 lo he duplicado para utilizar filas y columnas
+{% endcomment %}
+{% assign contador_columna = '' %}
+{% assign contador_fila = '' %}
+{% assign contador_columna = temp1 %}
+{% assign contador_fila = temp2 %}
+{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
+{% capture temp2 %}{{ contador_fila }}*{% endcapture %}
 {% for post in site.posts %}
-	<li class="{{ post.style }}">
-		<a href="{{ post.url }}">
-			<span class="miniatura"><img src="http://{{ post.image }}_t.jpg"></span>
-			<span class="titulo">{{ post.title }}</span>
-			<span class="subtitulo">{{ post.subtitle }}</span>
+	{% assign contador_columna = temp1 %}
+	{% assign an_integer1 = contador_columna.size %}
+	{% assign contador_fila = temp2 %}
+	{% assign an_integer2 = contador_fila.size %}
+	{% case post.style  %}
+	{% when "una-col"  %}
+		{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
+	{% when "dos-col"  %}
+		{% capture temp1 %}{{ contador_columna }}**{% endcapture %}
+	{% endcase  %}
+	{% if an_integer1 > 5 %}
+		<li class="{{ post.category }} una-col">
+		{% assign contador_columna = '' %}
+		{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
+		{% assign an_integer1 = contador_columna.size %}
+		{% capture temp2 %}{{ contador_fila }}*{% endcapture %}
+		{% assign an_integer2 = contador_fila.size %}
+			<a href="{{ post.url }}" class="fila{{ an_integer2 }} cierrefila">
+	{% else %}
+		<li class="{{ post.category }} {{ post.style }}">
+			<a href="{{ post.url }}" class="fila{{ an_integer2 }}">
+	{% endif %}
+			{% if post.image" %}
+			<div class="miniatura"><img src="http://{{ post.image }}.jpg"></div>
+			{% endif %}
+			<div class="texto">
+				<span class="titulo">{{ post.title }}</span>
+				<span class="subtitulo">{{ post.subtitle }}</span>
+			</div>
 			<span class="fecha">{{ post.date | date_to_string }}</span>
 		</a>
 	</li>

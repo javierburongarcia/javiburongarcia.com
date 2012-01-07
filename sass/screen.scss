@@ -1,0 +1,443 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$frame_width: 15px;
+$borde_stroke: 1px;
+$una_col_width: 192px;
+$dos_col_width: 384px;
+$una_col_width_menos_frame: $una_col_width - ($frame_width * 2) - ($borde_stroke * 2);
+$dos_col_width_menos_frame: $dos_col_width - ($frame_width * 2) - ($borde_stroke * 2);
+$miniatura_short: 94px;
+$miniatura_tall: 205px;
+$fullheight: 300px;
+$fullheight_menos_frame: $fullheight - ($frame_width * 2) - ($borde_stroke * 2);
+$padding_overlay: 5px;
+
+$borde: $borde_stroke dotted silver;
+$borde2: $borde_stroke solid silver;
+$fondo_overlay: rgba(255,255,255,0.95);
+
+@mixin header-font {
+	display: block;
+	color: white;
+	font-size: 20px;
+	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+}
+@mixin header-tweet {
+	color: white;
+	font-size: 14px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+@mixin header-button {
+	display: block;
+	color: white;
+	font-size: 20px;
+	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+}
+@mixin header1-font {
+	display: block;
+	color: black;
+	font-size: 20px;
+	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+	padding-bottom: 10px;
+}
+@mixin header2-font {
+	display: block;
+	color: black;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+	padding-bottom: 5px;
+}
+@mixin body-font {
+	display: block;
+	color: #888;
+	font-size: 12px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+@mixin small-font {
+	display: block;
+	color: #888;
+	font-size: 10px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+a {
+	color: black;
+	text-decoration: none;
+	&:hover .titulo{
+		color: navy;
+		text-decoration:underline;
+	};
+}
+body{
+	font: normal 14px/20px Helvetica,Arial
+}
+header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: black;
+	z-index: 20;
+	#cabecera{
+		width: 192px * 6;
+		color:white;
+		margin-right: auto;
+		margin-left: auto;
+		#botones{
+			display: table;
+			h1{
+				height: 60px;
+				width: 22%;
+				display: table-cell;
+				vertical-align: middle;
+				z-index:  40;
+				a{
+					@include header-font;
+				}
+			}
+			section.tweet{
+				height: 60px;
+				width: 55%;
+				display: table-cell;
+				vertical-align: middle;
+				p{
+					@include header-tweet;
+				}
+			}
+			section.socialButtons{
+				position:relative;
+				height: 60px;
+				width: 20%;
+				display: table-cell;
+				vertical-align: middle;
+				.twitterButton{
+					padding-left: 15px;
+					padding-right: 15px;
+					display: table-cell;
+					height: 60px;
+					vertical-align: middle;
+				}
+				.facebookButton{
+					padding-left: 15px;
+					padding-right: 15px;
+					display: table-cell;
+					height: 60px;
+					vertical-align: middle;	
+				}
+				a{
+					@include header-font;
+				}
+			}
+		}
+	}
+}
+
+.cuerpo{
+	width: 192px * 6;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 100px;
+}
+footer{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	clear: both;
+	@include small-font;
+	text-align: center;
+}
+.cuerpo ul{
+	width: 192px * 6;
+}
+.cuerpo li{
+	height: $fullheight;
+	float: left;
+	position: relative;
+	&.una-col:last-child a{
+		width: $una_col_width + $borde_stroke;
+		border-right: $borde;
+	}
+	&.dos-col:last-child a{
+		width: $dos_col_width + $borde_stroke;
+		border-right: $borde;
+	}
+	 a{
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+		float: left;
+		padding: $frame_width;
+		height: $fullheight;
+		border-left: $borde;
+		border-bottom: $borde;
+		&.cierrefila{
+			border-right: $borde;
+		}
+		&.fila1{
+			border-top: $borde;
+		}
+		.miniatura{
+			margin: 0px;
+			overflow: hidden;
+			display: block;
+			text-align: center;
+			vertical-align: middle;
+			img {
+			  display: inline;
+			}
+		}
+		.texto{
+			box-sizing: border-box;
+			.subtitulo{
+				@include body-font;
+			}
+		}
+		.fecha{
+			box-sizing: border-box;
+			@include small-font;
+			text-align: right;
+			position: absolute;
+			right: $frame_width;
+			bottom: 6px;
+		}
+	}
+}
+
+
+/*Estilos de anchos de columna*/
+
+@mixin una-col{
+	width: $una_col_width;
+	a{
+		width: $una_col_width;
+	}
+}
+@mixin dos-col{
+	width: $dos_col_width;
+	a{
+		width: $dos_col_width;
+	}
+}
+
+
+/*Estilos de ocultar*/
+
+@mixin oculta-subtitulo{
+	a{
+		.texto{
+			.subtitulo{
+				display: none;
+			}
+		}
+	}
+}
+@mixin oculta-fecha{
+	a{
+		.fecha{
+			display: none;
+		}
+	}
+}
+
+/*Estilos de imagenes*/
+//Aqui se definen todos los estilos de imagenes disponibles
+
+@mixin imagen-horizontal-small{
+	.miniatura{
+		margin-bottom: 10px;
+		width: $una_col_width_menos_frame;
+		height: $miniatura_short;
+		img{
+			width: $una_col_width_menos_frame;
+		}
+	}
+}
+@mixin imagen-horizontal{
+	.miniatura{
+		margin-bottom: 10px;
+		width: $dos_col_width_menos_frame;
+		height: $miniatura_tall;
+		img{
+			width: $dos_col_width_menos_frame;
+		}
+	}
+}
+@mixin imagen-horizontal-full{
+	.miniatura{
+		margin-bottom: 10px;
+		width: $dos_col_width_menos_frame;
+		height: $fullheight_menos_frame + ($borde_stroke * 2);
+		img{
+			height: $fullheight_menos_frame + ($borde_stroke * 2);
+		}
+	}
+}
+@mixin imagen-vertical{
+	.miniatura{
+		float:left;
+		margin-bottom: 10px;
+		width: $una_col_width_menos_frame;
+		height: $miniatura_tall;
+	}
+}
+@mixin imagen-vertical-full-narrow{
+	.miniatura{
+		width: $una_col_width_menos_frame;
+		height: $fullheight_menos_frame + ($borde_stroke * 2);
+	}
+}
+@mixin imagen-vertical-full{
+	.miniatura{
+		margin-right: $frame_width;
+		width: $una_col_width - $frame_width;
+		height: $fullheight_menos_frame + ($borde_stroke * 2);
+	}
+}
+
+
+/*Estilos de texto*/
+//Aqui se definen todos los estilos de texto disponibles
+
+@mixin texto-una-col{
+	.texto{
+		.titulo{
+			@include header2-font;
+		}
+	}
+}
+@mixin texto-una-col-sinfoto{
+	.texto{
+		.titulo{
+			@include header1-font;
+		}
+	}
+}
+@mixin texto-dos-col{
+	.texto{
+		position: absolute;
+		top:$frame_width;
+		left: $una_col_width + $frame_width;
+		.titulo{
+			@include header1-font;
+		}
+	}
+}
+@mixin texto-caption-una-col{
+	.texto{
+		.titulo{
+			@include header2-font;
+		}
+		.subtitulo{
+			text-overflow: ellipsis;
+			overflow:hidden; 
+			line-height: 1.2em; 
+			max-height: 1.2em;
+		}
+	}
+}
+@mixin texto-caption-dos-col{
+	.texto{
+		.titulo{
+			@include header2-font;
+		}
+		.subtitulo{
+			text-overflow: ellipsis;
+			overflow:hidden; 
+			line-height: 1.2em; 
+			max-height: 1.2em;
+		}
+	}
+}
+@mixin texto-overlay-una-col{
+	.texto{
+		text-align: right;
+		background: $fondo_overlay;
+		position: absolute;
+		width: $una_col_width_menos_frame;
+		height: $fullheight - $miniatura_tall - 2*$frame_width;
+		left: $frame_width;
+		border: $borde2;
+		bottom: $frame_width - 2*$borde_stroke;
+		padding: $padding_overlay;
+		.titulo{
+			@include header2-font;
+		}
+		.subtitulo{
+			text-overflow: ellipsis;
+			overflow:hidden; 
+			line-height: 1.2em; 
+			max-height: 1.2em;
+		}
+	}
+}
+@mixin texto-overlay-dos-col{
+	@include texto-overlay-una-col;
+	.texto{
+		width: $dos_col_width_menos_frame;
+	}
+}
+
+
+/*Layouts*/
+//Aqui se definen los layouts para todos los tipos de post, intentar que todo este hecho utilizando includes
+
+//Layout la1
+li.texto.una-col{
+	@include una-col;
+	@include texto-una-col-sinfoto;
+}
+//Layout la2
+li.video.una-col,
+li.articulo.una-col, li.proyecto.una-col{	
+	@include una-col;
+	@include imagen-horizontal-small;
+	@include texto-una-col;
+}
+//Layout la3
+li.articulo.dos-col,
+li.proyecto.dos-col,
+li.link.dos-col,
+li.pelicula.dos-col, li.libro.dos-col, li.documento.dos-col{
+	@include dos-col;
+	@include imagen-vertical-full;
+	@include texto-dos-col;
+}
+//Layout la4A
+li.link.una-col{
+	@include una-col;
+	@include imagen-vertical;
+	@include texto-caption-una-col;
+}
+//Layout la4B
+li.foto.dos-col,
+li.presentacion.dos-col{
+	@include dos-col;
+	@include imagen-horizontal-full;
+	@include texto-overlay-dos-col;
+	@include oculta-fecha;
+}
+//Layout la4C
+li.video.dos-col{
+	@include dos-col;
+	@include imagen-horizontal;
+	@include texto-caption-dos-col;
+}
+//Layout la5A
+li.pelicula.una-col, li.libro.una-col, li.documento.una-col{
+	@include una-col;
+	@include imagen-vertical;
+	@include texto-caption-una-col;
+	@include oculta-subtitulo;
+}
+//Layout la5B
+li.presentacion.una-col,
+li.foto.una-col{
+	@include una-col;
+	@include imagen-vertical-full-narrow;
+	@include texto-overlay-una-col;
+	@include oculta-subtitulo;
+	@include oculta-fecha;
+}

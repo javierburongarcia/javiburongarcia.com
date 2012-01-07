@@ -1,0 +1,15 @@
+---
+style: una-col
+category: video
+tags: [documental]
+title: Curitiba
+subtitle: the city of curitiba
+image: farm8.staticflickr.com/7029/6537173667_fb67e1c206
+
+layout: post
+background_image:
+background_color:
+published: yes
+---
+
+Una descripción de esta pelicula

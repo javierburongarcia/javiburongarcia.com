@@ -1,6 +1,6 @@
 ---
-style: una_col_con_imagen
-category: proyectos
+style: dos-col
+category: articulo
 tags: [mobiliario]
 title: El taburete eñe
 subtitle: un mueble para el nude
