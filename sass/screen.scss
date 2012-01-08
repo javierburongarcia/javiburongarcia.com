@@ -91,7 +91,7 @@ header{
 			display: table;
 			h1{
 				height: 60px;
-				width: 22%;
+				width: 18%;
 				display: table-cell;
 				vertical-align: middle;
 				z-index:  40;
@@ -100,8 +100,12 @@ header{
 				}
 			}
 			section.tweet{
+				background: url(../images/dialog_mark.png) no-repeat 0 0;
+				padding-left: 35px;
+				padding-right: 35px;
+				border-right: solid 1px white;
 				height: 60px;
-				width: 55%;
+				width: 60%;
 				display: table-cell;
 				vertical-align: middle;
 				p{
@@ -109,27 +113,35 @@ header{
 				}
 			}
 			section.socialButtons{
-				position:relative;
 				height: 60px;
 				width: 20%;
 				display: table-cell;
 				vertical-align: middle;
-				.twitterButton{
-					padding-left: 15px;
-					padding-right: 15px;
-					display: table-cell;
-					height: 60px;
-					vertical-align: middle;
+				.facebook a{
+					background: url(../images/FacebookIconNormal.png) no-repeat;
+					background-position:center 12px;
 				}
-				.facebookButton{
-					padding-left: 15px;
-					padding-right: 15px;
-					display: table-cell;
-					height: 60px;
-					vertical-align: middle;	
+				.twitter a{
+					background: url(../images/TwitterIconNormal.png) no-repeat;
+					background-position:center 12px;
 				}
 				a{
-					@include header-font;
+					box-sizing: border-box;
+					float:right;
+					width:70px;
+					padding-top: 35px;
+					padding-left: 10px;
+					padding-right: 10px;
+					display: table-cell;
+					height: 60px;
+					text-align: center;
+					vertical-align: middle;
+					color: rgba(255,255,255,0.75);
+					font-size: 11px;
+					font-family: DroidSans,Helvetica,Arial,sans-serif;
+					&:hover{
+						color: rgba(255,255,255,1);
+					};
 				}
 			}
 		}
