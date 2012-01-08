@@ -118,11 +118,11 @@ header{
 				display: table-cell;
 				vertical-align: middle;
 				.facebook a{
-					background: url(../images/FacebookIconNormal.png) no-repeat;
+					background: url(../images/FacebookIcon.png) no-repeat;
 					background-position:center 12px;
 				}
 				.twitter a{
-					background: url(../images/TwitterIconNormal.png) no-repeat;
+					background: url(../images/TwitterIcon.png) no-repeat;
 					background-position:center 12px;
 				}
 				a{
@@ -139,8 +139,10 @@ header{
 					color: rgba(255,255,255,0.75);
 					font-size: 11px;
 					font-family: DroidSans,Helvetica,Arial,sans-serif;
+					
 					&:hover{
 						color: rgba(255,255,255,1);
+						background-position:center -36px;
 					};
 				}
 			}
