@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<div class="image-fullscreen" style="background:{{ page.background_color }} 50% 50% no-repeat; background-image:url(/images/blog/{{ page.background_image }})"></div>
+<div class="image-fullscreen" style="background: #{{ page.background_color }} 50% 50% no-repeat; background-image:url(/images/blog/{{ page.background_image }})"></div>
 <div class="cuerpoPost">
-	<section class="hyphenate text" lang="es">
-		<h1 class="content">{{page.title}}</h1>
-		<h2 class="content">{{page.subtitle}}</h2>
+	<section>
+		<h1 class="tituloPost">{{page.title}}</h1>
+		<h2 class="subtituloPost">{{page.subtitle}}</h2>
+		<div class="bodyPost hyphenate text" lang="es">
 		{{ content }}
+		</div>
 	</section>
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

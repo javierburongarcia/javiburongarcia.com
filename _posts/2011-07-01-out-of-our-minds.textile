@@ -1,0 +1,15 @@
+---
+style: una-col
+category: libro
+tags: [educación]
+title: Out of our minds
+subtitle: por Ken Robinson
+image: farm8.staticflickr.com/7025/6666720115_caacf61e6b
+
+layout: post
+background_image:
+background_color:
+published: yes
+---
+
+Una descripción de este libro

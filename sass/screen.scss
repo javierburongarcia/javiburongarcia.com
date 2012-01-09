@@ -12,7 +12,7 @@ $dos_col_width: 384px;
 $una_col_width_menos_frame: $una_col_width - ($frame_width * 2) - ($borde_stroke * 2);
 $dos_col_width_menos_frame: $dos_col_width - ($frame_width * 2) - ($borde_stroke * 2);
 $miniatura_short: 94px;
-$miniatura_tall: 205px;
+$miniatura_tall: 190px;
 $fullheight: 300px;
 $fullheight_menos_frame: $fullheight - ($frame_width * 2) - ($borde_stroke * 2);
 $padding_overlay: 5px;
@@ -58,6 +58,21 @@ $fondo_overlay: rgba(255,255,255,0.95);
 	color: #888;
 	font-size: 12px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+@mixin subtitle-post-font {
+	display: block;
+	color: #888;
+	font-size: 15px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+	padding-bottom: 40px;
+}
+@mixin body-post-font {
+	display: block;
+	color: black;
+	font-size: 14px;
+	line-height: 19px;
+	font-family: Helvetica,Arial,sans-serif;
+	padding-bottom: 20px;
 }
 @mixin small-font {
 	display: block;
@@ -207,6 +222,7 @@ footer{
 			box-sizing: border-box;
 			.subtitulo{
 				@include body-font;
+				display: block;
 			}
 		}
 		.fecha{
@@ -239,7 +255,17 @@ footer{
 		position: relative;
 		z-index: 100;
 	}
+	.tituloPost{
+		@include header1-font;
+	}
+	.subtituloPost{
+		@include subtitle-post-font;
+	}
+	.bodyPost p{
+		@include body-post-font;
+	}
 }
+
 /*Estilos de anchos de columna*/
 
 @mixin una-col{
@@ -314,6 +340,9 @@ footer{
 		margin-bottom: 10px;
 		width: $una_col_width_menos_frame;
 		height: $miniatura_tall;
+		img{
+			height: $miniatura_tall;
+		}
 	}
 }
 @mixin imagen-vertical-full-narrow{
@@ -327,6 +356,9 @@ footer{
 		margin-right: $frame_width;
 		width: $una_col_width - $frame_width;
 		height: $fullheight_menos_frame + ($borde_stroke * 2);
+		img{
+			height: $fullheight_menos_frame + ($borde_stroke * 2);
+		}
 	}
 }
 
@@ -463,7 +495,6 @@ li.pelicula.una-col, li.libro.una-col, li.documento.una-col{
 	@include una-col;
 	@include imagen-vertical;
 	@include texto-caption-una-col;
-	@include oculta-subtitulo;
 }
 //Layout la5B
 li.presentacion.una-col,

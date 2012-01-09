@@ -1,0 +1,21 @@
+---
+style: dos-col
+category: articulo
+tags: [documental]
+title: colaborativa.eu behind the scenes
+subtitle: Acabamos de inaugar la nueva versión de colaborativa.eu! En ella os presentamos nuestros trabajos, la red personas y empresas con las que colaboramos y las investigaciones teóricas y tecnológicas que nutren nuestros proyectos.
+image: farm8.staticflickr.com/7028/6667973507_ce702623f5
+
+layout: post
+background_image:
+background_color: white
+published: yes
+---
+
+Al diseñar la web nos hemos centrado aquellas características que consideramos fundamentales de un buen espacio público sea físico o digital: navegación clara que permita orientarse con facilidad, accesibilidad universal que no discrimine a los usuarios de navegadores antiguos o minoritarios y la cantidad justa de representatividad para dotarla de carácter pero sin imperar sobre los contenidos que siempre deben ser los verdaderos protagonistas.
+
+En el apartado técnico la web ha sido un reto apasionante: como en muchos de nuestros proyectos hemos hecho especial hincapié en una comunicación clara y ordenada de los contenidos, un ciudado trabajo tipográfico y, por supuesto, un uso extensivo de los estandares webs que la hace compatible tanto en navegadores obsoletos como en smartphones de última generación. Además hemos utilizado Drupal en lugar de Wordpress, el cual ha sido mi gestor de contenidos favorito desde el nacimiento de Archfarm en el 2005. El salto a Drupal nos ha permitido construir una web mucho más flexible, modular y dinámica, así como añadir este fantástico gestor de contenidos a nuestra caja de herramientas para la producción de potentes aplicaciones web en el futuro.
+
+Para aquellos que no conozcáis Drupal y estéis interesados en la publicación de contenidos y/o gestión de comunidades online os recomiendo encarecidamente que leáis más sobre esta fantástica herramienta. La curva de aprendizaje es mucho más empinada que Wordpress pero su robustez, abstracción en la estructura de datos y diseño modular la convierten en la herramienta perfecta para todo tipo de proyectos web.
+
+Si estáis considerando el salto a Drupal y aún tenéis dudas me encantará intentar resolver vuestras preguntas. ¡Esperamos con ilusión vuestros comentarios sobre colaborativa.eu!

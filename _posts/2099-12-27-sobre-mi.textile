@@ -1,0 +1,15 @@
+---
+style: una-col
+category: texto
+tags: [biografía]
+title: Sobre mí
+subtitle: en menos de 140 caracteres… Interested in cities, cofounder at @colaborativaeu, lecturing at School of Architecture, University of Limerick
+image: 0
+
+layout: post
+background_image:
+background_color: 
+published: yes
+---
+
+Una descripción de este libro

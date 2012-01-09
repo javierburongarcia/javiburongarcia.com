@@ -53,14 +53,21 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 				<a href="{{ post.url }}" class="fila{{ an_integer2 }}">
 		{% endif %}
 	{% endif %}
-			{% if post.image" %}
+			{% if post.category == 'texto' %}
+			{% else %}
 			<div class="miniatura"><img src="http://{{ post.image }}.jpg"></div>
 			{% endif %}
+			{% if post.overlay %}
+			{% else %}
 			<div class="texto">
 				<span class="titulo">{{ post.title }}</span>
 				<span class="subtitulo">{{ post.subtitle }}</span>
 			</div>
+			{% endif %}
+			{% if post.category == 'texto' %}
+			{% else %}
 			<span class="fecha">{{ post.date | date_to_string }}</span>
+			{% endif %}
 		</a>
 	</li>
 {% endfor %}

@@ -1,0 +1,14 @@
+---
+style: una-col
+category: foto
+tags: [texturas]
+title: Verde
+subtitle:
+image: farm8.staticflickr.com/7162/6668070923_7128051a3b
+overlay: 0
+
+layout: post
+background_image: verdeBackground.jpg
+background_color: 8ab268
+published: yes
+---

@@ -1,0 +1,15 @@
+---
+style: dos-col
+category: video
+tags: [economía]
+title: Arquía/Becas 2011 video
+subtitle: on Vimeo 2:27
+image: farm8.staticflickr.com/7158/6667849787_21be59b88b
+
+layout: post
+background_image:
+background_color: black
+published: yes
+---
+
+<iframe src="http://player.vimeo.com/video/31342492?title=0&amp;byline=0&amp;portrait=0" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

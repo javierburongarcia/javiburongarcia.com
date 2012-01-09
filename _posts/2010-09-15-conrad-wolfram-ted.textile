@@ -1,0 +1,15 @@
+---
+style: dos-col
+category: video
+tags: [educación, ted talks]
+title: Conrad Wolfram on TEDGlobal 2010
+subtitle: Teaching kids real math with computers
+image: farm8.staticflickr.com/7012/6667942571_f5335eb5c9
+
+layout: post
+background_image:
+background_color: black
+published: yes
+---
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/60OVlfAUPJg?rel=0" frameborder="0" allowfullscreen></iframe>
