@@ -1,0 +1,24 @@
+---
+style: dos-col
+category: proyecto
+tags: [documental]
+title: Plataforma para Micro-Intervenciones Artísticas
+subtitle: Propuesta para el concurso de Paisaje Vertical Urbano convocado por Surgenia
+image: farm8.staticflickr.com/7143/6661893243_e808c427b5_m
+
+layout: post
+background_image: fachadasSurgeniaBackground.jpg
+background_color: white
+published: yes
+---
+
+En lugar de plantear una intervención individual en las medianeras se propuso utilizar el presupuesto de ejecución en reparar el pésimo estado de la tapia que rodea el solar. La inclusión de sencillos catalejos fijos en esta tapia transforma todo el entorno en una plataforma colectiva de micro-arte urbano.
+
+Debido a la estrechez y la fuerte pendiente de la calle Ambrosio Morales, ambas medianeras siempre se vislumbran parcialmente y se encuentran en buen estado. Mucho más predominante es el mal estado de la tapia que guarda el solar afectando negativamente a toda la calle. Tan sólo la medianera de la trasera del solar necesita reparaciones.
+Nuestra propuesta resume premisas que consideramos fundamentales a la hora de actuar en la ciudad
+de Córdoba a día de hoy: sencillez, bajo coste, que no sea intrusiva, con alto impacto emocional y que haga partícipe al viandante.
+
+Creemos que sanear la tapia mejoraría sustancialmente el aspecto de toda la calle. Encastrando unos sencillos catalejos sin partes móviles y orientados a distintos puntos de la fachada redefiniríamos la escala de las intervenciones, permitiendo un menor coste y por tanto haciendo viable la renovación cíclica de las
+intervenciones, esto aseguraría el mantenimiento continuado de las medianeras.
+
+En definitiva, en lugar de una intervención única, excesiva y estática proponemos una plataforma para micro-intervenciones que cambiaría a lo largo del año adaptándose a los eventos culturales de Córdoba. La curiosidad por descubrir las actuaciones crea una complicidad con el viandante muy alejada del continuo bombardeo pasivo que sufrimos en nuestras ciudades.

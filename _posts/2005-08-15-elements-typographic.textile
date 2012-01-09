@@ -1,0 +1,15 @@
+---
+style: una-col
+category: libro
+tags: [tipografía, diseño gráfico, referencia]
+title: The elements of typographic style
+subtitle: por Robert Bringhurst
+image: farm8.staticflickr.com/7167/6665796309_7022bbec94
+
+layout: post
+background_image: 
+background_color: white
+published: yes
+---
+
+Falta descripción del libro
