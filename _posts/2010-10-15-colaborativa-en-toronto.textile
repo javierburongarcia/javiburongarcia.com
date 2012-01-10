@@ -6,10 +6,15 @@ title: Colaborativa en Toronto
 subtitle: Resumen en video de nuestro viaje a Toronto para investigar sobre espacios colectivos de trabajo
 image: farm8.staticflickr.com/7005/6667404723_cfc825afe8
 
-layout: post
+layout: video
 background_image:
-background_color: black
+background_color:
 published: yes
+embed_link: <iframe width="850" height="480" src="http://www.youtube.com/embed/yeQspJ3fMIw?hd=1" frameborder="0" allowfullscreen></iframe>
 ---
 
-<iframe width="1164" height="720" src="https://www.youtube.com/embed/yeQspJ3fMIw?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+En septiembre de 2010 tuvimos la oportunidad de viajar a Toronto gracias a una beca del programa iNeXe para conocer in situ algunas de las iniciativas de referencia para nosotros en materia de coworking, innovación social y empresarial y fomento de la actividad creativo-cultural.
+
+Además de la cantidad de información que pudismo recopilar durante las visitas, fue muy revelador poder hablar con personas como Margie Zeidler, de Urbanspace, o Eli Malinsky, implicadas directamente en la gestión de sitios tan fantásticos como el artístico 401 Richmond o el renovador Center for Social Innovation. Hablando con ellos pudimos constatar la extraordinaria capacidad de dinamización que este tipo de iniciativas provoca en las personas y en sus ámbitos urbanos.
+
+Las organizaciones que visitamos eran muy diferentes entre sí, tanto en origen como por tamaño. Algunas nacieron de la iniciativa pública o con un una amplia participación de lo público, como el consorcio MaRS, dedicado a la investigación médica y el emprendimiento tecnológico. Otras nacieron exclusivamente de la iniciativa privada, con gran esfuerzo y dedicación por parte de sus promotores, como el caso de Camaraderie. Cada una de ellas se dirige a perfiles distintos de emprendedores. Conocer esta diversidad de iniciativas y su complementareidad ha sido de las experiencias más reveladoras del viaje.

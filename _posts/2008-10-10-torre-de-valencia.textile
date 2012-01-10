@@ -8,6 +8,6 @@ image: farm8.staticflickr.com/7146/6672408635_a152480895
 
 layout: post
 background_image: torredeValenciaBackground.jpg
-background_color: a7acb7
+background_color: rgb(167,172,183)
 published: yes
 ---

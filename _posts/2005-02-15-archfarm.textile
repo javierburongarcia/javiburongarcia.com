@@ -8,7 +8,7 @@ image: farm8.staticflickr.com/7156/6672244315_a08906f26b
 
 layout: post
 background_image: archfarmBackground.jpg
-background_color: f2f2f2
+background_color: rgb(242,242,242)
 published: yes
 ---
 

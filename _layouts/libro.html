@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }})"></div>
-<article class="cuerpoPost post">
+<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }}) 50% 50% no-repeat"></div>
+<article class="cuerpoPost libro">
 	<div class="leftColumn">
 		<hgroup>
 			<h1 class="tituloPost">{{page.title}}</h1>
@@ -14,4 +14,8 @@ layout: default
 		{{ content }}
 		</div>
 	</div>
-</div>
+	<figure class="cover">
+		<img src="http://{{ page.image }}.jpg">
+		<figcaption>{{ page.image_caption }}</figcaption>
+	</figure>
+</article>

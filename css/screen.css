@@ -83,7 +83,7 @@ body {
   font: normal 14px/20px Helvetica, Arial;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 header {
   width: 100%;
   height: 60px;
@@ -91,18 +91,18 @@ header {
   background-color: black;
   z-index: 20;
 }
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 header #cabecera {
   width: 1152px;
   color: white;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 106, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 header #cabecera #botones {
   display: table;
 }
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 header #cabecera #botones h1 {
   height: 60px;
   width: 200px;
@@ -110,14 +110,14 @@ header #cabecera #botones h1 {
   vertical-align: middle;
   z-index: 40;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 header #cabecera #botones h1 a {
   display: block;
   color: white;
   font-size: 20px;
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 header #cabecera #botones section.tweet {
   background: url(../images/dialog_mark.png) no-repeat 0 0;
   padding-left: 35px;
@@ -128,30 +128,30 @@ header #cabecera #botones section.tweet {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 header #cabecera #botones section.tweet p {
   color: white;
   font-size: 14px;
   font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons {
   height: 60px;
   width: 18%;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons .facebook a {
   background: url(../images/FacebookIcon.png) no-repeat;
   background-position: center 12px;
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons .twitter a {
   background: url(../images/TwitterIcon.png) no-repeat;
   background-position: center 12px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons a {
   box-sizing: border-box;
   float: right;
@@ -167,13 +167,13 @@ header #cabecera #botones section.socialButtons a {
   font-size: 11px;
   font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons a:hover {
   color: white;
   background-position: center -36px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .cuerpo {
   width: 1152px;
   margin-right: auto;
@@ -181,7 +181,7 @@ header #cabecera #botones section.socialButtons a:hover {
   padding-top: 100px;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 footer {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -193,28 +193,28 @@ footer {
   text-align: center;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .cuerpo ul {
   width: 1152px;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .cuerpo li {
   height: 300px;
   float: left;
   position: relative;
 }
-/* line 188, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .cuerpo li.una-col:last-child a {
   width: 193px;
   border-right: 1px dotted silver;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .cuerpo li.dos-col:last-child a {
   width: 385px;
   border-right: 1px dotted silver;
 }
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .cuerpo li a {
   box-sizing: border-box;
   position: relative;
@@ -225,15 +225,15 @@ footer {
   border-left: 1px dotted silver;
   border-bottom: 1px dotted silver;
 }
-/* line 205, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .cuerpo li a.cierrefila {
   border-right: 1px dotted silver;
 }
-/* line 208, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .cuerpo li a.fila1 {
   border-top: 1px dotted silver;
 }
-/* line 211, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .cuerpo li a .miniatura {
   margin: 0px;
   overflow: hidden;
@@ -241,15 +241,15 @@ footer {
   text-align: center;
   vertical-align: middle;
 }
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .cuerpo li a .miniatura img {
   display: inline;
 }
-/* line 221, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .cuerpo li a .texto {
   box-sizing: border-box;
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .cuerpo li a .texto .subtitulo {
   display: block;
   color: #888;
@@ -257,7 +257,7 @@ footer {
   font-family: DroidSans,Helvetica,Arial,sans-serif;
   display: block;
 }
-/* line 228, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .cuerpo li a .fecha {
   box-sizing: border-box;
   display: block;
@@ -271,31 +271,36 @@ footer {
 }
 
 /*Estilos de fondo imagen*/
-/* line 239, ../sass/screen.scss */
-.image-fullscreen {
+/* line 240, ../sass/screen.scss */
+.colorbackground-fullscreen {
   position: fixed;
   left: 0px;
   top: 0px;
   right: 0px;
   bottom: 0px;
   height: 1000px;
-  z-index: 0;
+  z-index: -300;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
+.image-fullscreen {
+  background: 50% 50% no-repeat;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1000px;
+  z-index: -200;
+}
+
+/* line 259, ../sass/screen.scss */
 .cuerpoPost {
   padding-top: 100px;
   width: 1152px;
   margin: 0px auto;
 }
-/* line 252, ../sass/screen.scss */
-.cuerpoPost section {
-  width: 450px;
-  margin: 0px auto 0px 0px;
-  position: relative;
-  z-index: 100;
-}
-/* line 258, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .cuerpoPost .tituloPost {
   display: block;
   color: black;
@@ -303,7 +308,7 @@ footer {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
-/* line 261, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .cuerpoPost .subtituloPost {
   display: block;
   color: #888;
@@ -311,7 +316,7 @@ footer {
   font-family: DroidSans,Helvetica,Arial,sans-serif;
   padding-bottom: 40px;
 }
-/* line 264, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .cuerpoPost .bodyPost p {
   display: block;
   color: black;
@@ -320,21 +325,81 @@ footer {
   font-family: Helvetica,Arial,sans-serif;
   padding-bottom: 20px;
 }
+/* line 273, ../sass/screen.scss */
+.cuerpoPost.video iframe, .cuerpoPost.video object {
+  margin-right: auto;
+  margin-left: auto;
+  display: table-cell;
+}
+/* line 278, ../sass/screen.scss */
+.cuerpoPost.video .bottomDescription {
+  color: white;
+  width: 850px;
+  padding-top: 50px;
+  margin: auto;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+/* line 292, ../sass/screen.scss */
+.cuerpoPost.libro .leftColumn {
+  box-sizing: border-box;
+  padding-right: 30px;
+  width: 576px;
+  float: left;
+  z-index: 100;
+}
+/* line 299, ../sass/screen.scss */
+.cuerpoPost.libro .cover {
+  padding-top: 30px;
+  display: table;
+  width: 576px;
+  float: right;
+}
+/* line 304, ../sass/screen.scss */
+.cuerpoPost.libro .cover img {
+  margin-right: auto;
+  margin-left: auto;
+  display: table-cell;
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+}
+/* line 312, ../sass/screen.scss */
+.cuerpoPost.libro .cover figcaption {
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+/* line 320, ../sass/screen.scss */
+.cuerpoPost.post .leftColumn {
+  box-sizing: border-box;
+  padding-right: 30px;
+  width: 576px;
+  float: left;
+  z-index: 100;
+}
 
 /*Estilos de anchos de columna*/
 /*Estilos de ocultar*/
 /*Estilos de imagenes*/
 /*Estilos de texto*/
 /*Layouts*/
-/* line 453, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 li.texto.una-col {
   width: 192px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 li.texto.una-col a {
   width: 192px;
 }
-/* line 378, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 li.texto.una-col .texto .titulo {
   display: block;
   color: black;
@@ -343,29 +408,29 @@ li.texto.una-col .texto .titulo {
   padding-bottom: 10px;
 }
 
-/* line 459, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 li.video.una-col,
 li.articulo.una-col, li.proyecto.una-col {
   width: 192px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 li.video.una-col a,
 li.articulo.una-col a, li.proyecto.una-col a {
   width: 192px;
 }
-/* line 308, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 li.video.una-col .miniatura,
 li.articulo.una-col .miniatura, li.proyecto.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   height: 94px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 li.video.una-col .miniatura img,
 li.articulo.una-col .miniatura img, li.proyecto.una-col .miniatura img {
   width: 160px;
 }
-/* line 371, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 li.video.una-col .texto .titulo,
 li.articulo.una-col .texto .titulo, li.proyecto.una-col .texto .titulo {
   display: block;
@@ -376,21 +441,21 @@ li.articulo.una-col .texto .titulo, li.proyecto.una-col .texto .titulo {
   padding-bottom: 5px;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 li.articulo.dos-col,
 li.proyecto.dos-col,
 li.link.dos-col,
 li.pelicula.dos-col, li.libro.dos-col, li.documento.dos-col {
   width: 384px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 li.articulo.dos-col a,
 li.proyecto.dos-col a,
 li.link.dos-col a,
 li.pelicula.dos-col a, li.libro.dos-col a, li.documento.dos-col a {
   width: 384px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 li.articulo.dos-col .miniatura,
 li.proyecto.dos-col .miniatura,
 li.link.dos-col .miniatura,
@@ -399,14 +464,14 @@ li.pelicula.dos-col .miniatura, li.libro.dos-col .miniatura, li.documento.dos-co
   width: 177px;
   height: 270px;
 }
-/* line 359, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 li.articulo.dos-col .miniatura img,
 li.proyecto.dos-col .miniatura img,
 li.link.dos-col .miniatura img,
 li.pelicula.dos-col .miniatura img, li.libro.dos-col .miniatura img, li.documento.dos-col .miniatura img {
   height: 270px;
 }
-/* line 384, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 li.articulo.dos-col .texto,
 li.proyecto.dos-col .texto,
 li.link.dos-col .texto,
@@ -415,7 +480,7 @@ li.pelicula.dos-col .texto, li.libro.dos-col .texto, li.documento.dos-col .texto
   top: 15px;
   left: 207px;
 }
-/* line 388, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 li.articulo.dos-col .texto .titulo,
 li.proyecto.dos-col .texto .titulo,
 li.link.dos-col .texto .titulo,
@@ -427,26 +492,26 @@ li.pelicula.dos-col .texto .titulo, li.libro.dos-col .texto .titulo, li.document
   padding-bottom: 10px;
 }
 
-/* line 474, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 li.link.una-col {
   width: 192px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 li.link.una-col a {
   width: 192px;
 }
-/* line 338, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 li.link.una-col .miniatura {
   float: left;
   margin-bottom: 10px;
   width: 160px;
   height: 190px;
 }
-/* line 343, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 li.link.una-col .miniatura img {
   height: 190px;
 }
-/* line 395, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 li.link.una-col .texto .titulo {
   display: block;
   color: black;
@@ -455,7 +520,7 @@ li.link.una-col .texto .titulo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 398, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 li.link.una-col .texto .subtitulo {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -463,29 +528,29 @@ li.link.una-col .texto .subtitulo {
   max-height: 1.2em;
 }
 
-/* line 481, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 li.foto.dos-col,
 li.presentacion.dos-col {
   width: 384px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 li.foto.dos-col a,
 li.presentacion.dos-col a {
   width: 384px;
 }
-/* line 328, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 li.foto.dos-col .miniatura,
 li.presentacion.dos-col .miniatura {
   margin-bottom: 10px;
   width: 352px;
   height: 270px;
 }
-/* line 332, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 li.foto.dos-col .miniatura img,
 li.presentacion.dos-col .miniatura img {
   height: 270px;
 }
-/* line 420, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 li.foto.dos-col .texto,
 li.presentacion.dos-col .texto {
   text-align: right;
@@ -498,7 +563,7 @@ li.presentacion.dos-col .texto {
   bottom: 13px;
   padding: 5px;
 }
-/* line 430, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 li.foto.dos-col .texto .titulo,
 li.presentacion.dos-col .texto .titulo {
   display: block;
@@ -508,44 +573,36 @@ li.presentacion.dos-col .texto .titulo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 433, ../sass/screen.scss */
-li.foto.dos-col .texto .subtitulo,
-li.presentacion.dos-col .texto .subtitulo {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 1.2em;
-  max-height: 1.2em;
-}
-/* line 443, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 li.foto.dos-col .texto,
 li.presentacion.dos-col .texto {
   width: 352px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 li.foto.dos-col a .fecha,
 li.presentacion.dos-col a .fecha {
   display: none;
 }
 
-/* line 488, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 li.video.dos-col {
   width: 384px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 li.video.dos-col a {
   width: 384px;
 }
-/* line 318, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 li.video.dos-col .miniatura {
   margin-bottom: 10px;
   width: 352px;
   height: 190px;
 }
-/* line 322, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 li.video.dos-col .miniatura img {
   width: 352px;
 }
-/* line 408, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 li.video.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -554,34 +611,44 @@ li.video.dos-col .texto .titulo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 411, ../sass/screen.scss */
-li.video.dos-col .texto .subtitulo {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 1.2em;
-  max-height: 1.2em;
+/* line 546, ../sass/screen.scss */
+li.video.dos-col .miniatura .icono_miniatura {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -95px;
+  margin-left: -50px;
+  z-index: 10;
+  width: 352px;
+  height: 268px;
+  background: url(../images/video_icon.png) no-repeat;
+}
+/* line 556, ../sass/screen.scss */
+li.video.dos-col .miniatura .icono_miniatura:hover {
+  background: url(../images/video_icon.png) no-repeat;
+  background-position: 0 -200px;
 }
 
-/* line 494, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 li.pelicula.una-col, li.libro.una-col, li.documento.una-col {
   width: 192px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 li.pelicula.una-col a, li.libro.una-col a, li.documento.una-col a {
   width: 192px;
 }
-/* line 338, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 li.pelicula.una-col .miniatura, li.libro.una-col .miniatura, li.documento.una-col .miniatura {
   float: left;
   margin-bottom: 10px;
   width: 160px;
   height: 190px;
 }
-/* line 343, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 li.pelicula.una-col .miniatura img, li.libro.una-col .miniatura img, li.documento.una-col .miniatura img {
   height: 190px;
 }
-/* line 395, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 li.pelicula.una-col .texto .titulo, li.libro.una-col .texto .titulo, li.documento.una-col .texto .titulo {
   display: block;
   color: black;
@@ -590,7 +657,7 @@ li.pelicula.una-col .texto .titulo, li.libro.una-col .texto .titulo, li.document
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 398, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 li.pelicula.una-col .texto .subtitulo, li.libro.una-col .texto .subtitulo, li.documento.una-col .texto .subtitulo {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -598,23 +665,23 @@ li.pelicula.una-col .texto .subtitulo, li.libro.una-col .texto .subtitulo, li.do
   max-height: 1.2em;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 li.presentacion.una-col,
 li.foto.una-col {
   width: 192px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 li.presentacion.una-col a,
 li.foto.una-col a {
   width: 192px;
 }
-/* line 349, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 li.presentacion.una-col .miniatura,
 li.foto.una-col .miniatura {
   width: 160px;
   height: 270px;
 }
-/* line 420, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 li.presentacion.una-col .texto,
 li.foto.una-col .texto {
   text-align: right;
@@ -627,7 +694,7 @@ li.foto.una-col .texto {
   bottom: 13px;
   padding: 5px;
 }
-/* line 430, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 li.presentacion.una-col .texto .titulo,
 li.foto.una-col .texto .titulo {
   display: block;
@@ -637,20 +704,12 @@ li.foto.una-col .texto .titulo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 433, ../sass/screen.scss */
-li.presentacion.una-col .texto .subtitulo,
-li.foto.una-col .texto .subtitulo {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 1.2em;
-  max-height: 1.2em;
-}
-/* line 290, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 li.presentacion.una-col a .texto .subtitulo,
 li.foto.una-col a .texto .subtitulo {
   display: none;
 }
-/* line 298, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 li.presentacion.una-col a .fecha,
 li.foto.una-col a .fecha {
   display: none;

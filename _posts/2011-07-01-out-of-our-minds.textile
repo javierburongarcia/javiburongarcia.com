@@ -5,8 +5,9 @@ tags: [educación]
 title: Out of our minds
 subtitle: por Ken Robinson
 image: farm8.staticflickr.com/7025/6666720115_caacf61e6b
+image_caption: 2001 · 288 páginas por Capstone_
 
-layout: post
+layout: libro
 background_image:
 background_color:
 published: yes

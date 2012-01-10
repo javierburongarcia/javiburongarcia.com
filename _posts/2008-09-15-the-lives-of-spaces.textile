@@ -8,6 +8,6 @@ image: farm8.staticflickr.com/7007/6672294507_509054e605
 
 layout: post
 background_image: biennaleBackground.jpg
-background_color: 000
+background_color: black
 published: yes
 ---

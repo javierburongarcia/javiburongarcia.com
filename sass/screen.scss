@@ -91,6 +91,7 @@ a {
 body{
 	font: normal 14px/20px Helvetica,Arial
 }
+
 //Cabecera estilo
 header{
 	width: 100%;
@@ -236,25 +237,29 @@ footer{
 	}
 }
 /*Estilos de fondo imagen*/
-.image-fullscreen {
+.colorbackground-fullscreen {
 	position:fixed;
 	left:0px;
 	top:0px;
 	right:0px;
 	bottom:0px;
 	height:1000px;
-	z-index: 0;
+	z-index: -300;
+}
+.image-fullscreen {
+	background: 50% 50% no-repeat;
+	position:fixed;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	height:1000px;
+	z-index: -200;
 }
 .cuerpoPost {
 	padding-top: 100px;
 	width: 192px * 6;
 	margin: 0px auto;
- 	section{
-		width: 450px;
-		margin: 0px auto 0px 0px;
-		position: relative;
-		z-index: 100;
-	}
 	.tituloPost{
 		@include header1-font;
 	}
@@ -263,6 +268,62 @@ footer{
 	}
 	.bodyPost p{
 		@include body-post-font;
+	}
+	&.video{
+		iframe, object{
+			margin-right: auto;
+			margin-left: auto;
+			display: table-cell;
+		}
+		.bottomDescription{
+			color:white;
+			width: 850px;
+			padding-top: 50px;
+			margin:auto;
+			-moz-column-count: 2;
+			-moz-column-gap: 20px;
+			-webkit-column-count: 2;
+			-webkit-column-gap: 20px;
+			column-count: 2;
+			column-gap: 20px;
+		}
+	}
+	&.libro{
+		.leftColumn{
+			box-sizing: border-box;
+			padding-right:30px;
+			width: 192px * 3;
+			float:left;
+			z-index: 100;
+		}
+		.cover{
+			padding-top: 30px;
+			display: table;
+			width: 192px * 3;
+			float:right;
+			img{
+				margin-right: auto;
+				margin-left: auto;
+				display: table-cell;
+				-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+				-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+			}
+			figcaption{
+				text-align: center;
+				padding-top: 10px;
+				@include small-font;
+			}
+		}
+	}
+	&.post{
+		.leftColumn{
+			box-sizing: border-box;
+			padding-right:30px;
+			width: 192px * 3;
+			float:left;
+			z-index: 100;
+		}
 	}
 }
 
@@ -409,10 +470,6 @@ footer{
 			@include header2-font;
 		}
 		.subtitulo{
-			text-overflow: ellipsis;
-			overflow:hidden; 
-			line-height: 1.2em; 
-			max-height: 1.2em;
 		}
 	}
 }
@@ -431,10 +488,6 @@ footer{
 			@include header2-font;
 		}
 		.subtitulo{
-			text-overflow: ellipsis;
-			overflow:hidden; 
-			line-height: 1.2em; 
-			max-height: 1.2em;
 		}
 	}
 }
@@ -489,6 +542,24 @@ li.video.dos-col{
 	@include dos-col;
 	@include imagen-horizontal;
 	@include texto-caption-dos-col;
+	.miniatura {
+		.icono_miniatura{
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-top: - $miniatura_tall/2;
+			margin-left: -50px;
+			z-index:10;
+			width: $dos_col_width_menos_frame;
+			height: $fullheight_menos_frame;
+			background: url(../images/video_icon.png) no-repeat;
+			&:hover{
+				background: url(../images/video_icon.png) no-repeat;
+				background-position: 0 -200px;
+			}
+		}
+	}
+
 }
 //Layout la5A
 li.pelicula.una-col, li.libro.una-col, li.documento.una-col{

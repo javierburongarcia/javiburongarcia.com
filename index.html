@@ -32,6 +32,7 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 	{% assign an_integer1 = contador_columna.size %}
 	{% assign an_integer2 = contador_fila.size %}
 	{% if an_integer1 == 6 %}
+			{% assign acortado = 0 %}
 			<li class="{{ post.category }} {{ post.style }}">
 				{% assign contador_columna = '' %}
 				{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
@@ -41,6 +42,7 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 				<a href="{{ post.url }}" class="fila{{ an_integer2 }} cierrefila">
 		{% else %}
 		{% if an_integer1 > 5 %}
+			{% assign acortado = 1 %}
 			<li class="{{ post.category }} una-col">
 				{% assign contador_columna = '' %}
 				{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
@@ -49,19 +51,35 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 				{% assign an_integer2 = contador_fila.size %}
 				<a href="{{ post.url }}" class="fila{{ an_integer2 }} cierrefila">
 		{% else %}
+			{% assign acortado = 0 %}
 			<li class="{{ post.category }} {{ post.style }}">
 				<a href="{{ post.url }}" class="fila{{ an_integer2 }}">
 		{% endif %}
 	{% endif %}
 			{% if post.category == 'texto' %}
 			{% else %}
-			<div class="miniatura"><img src="http://{{ post.image }}.jpg"></div>
+			<div class="miniatura">
+				<div class="icono_miniatura"></div>
+				<img src="http://{{ post.image }}.jpg">
+			</div>
 			{% endif %}
 			{% if post.overlay %}
 			{% else %}
 			<div class="texto">
 				<span class="titulo">{{ post.title }}</span>
-				<span class="subtitulo">{{ post.subtitle }}</span>
+				{% if post.style == "una-col" or acortado == 1 %}
+					{% if post.category == "pelicula" or post.category == "libro" or post.category == "link" %}
+					<span class="subtitulo">{{ post.subtitle | truncate: 120 }}</span>
+					{% else  %}
+					<span class="subtitulo">{{ post.subtitle | truncate: 80 }}</span>
+					{% endif  %}
+				{% else  %}
+					{% if post.category == "video" or post.category == "presentacion" or post.category == "foto" %}
+					<span class="subtitulo">{{ post.subtitle | truncate: 100 }}</span>
+					{% else  %}
+					<span class="subtitulo">{{ post.subtitle | truncate: 240 }}</span>
+					{% endif  %}
+				{% endif  %}
 			</div>
 			{% endif %}
 			{% if post.category == 'texto' %}

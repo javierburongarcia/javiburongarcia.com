@@ -7,10 +7,8 @@ subtitle:
 image: farm8.staticflickr.com/7155/6667525727_82f694726c
 overlay: 0
 
-layout: post
-background_image:
-background_color: black
+layout: foto
+background_image: icelandBackground.jpg
+background_color: rgb(0,0,0)
 published: yes
 ---
-
-<a href="http://www.flickr.com/photos/49838422@N03/6667525727/" title="iceland by Javier Burón, on Flickr"><img src="http://farm8.staticflickr.com/7155/6667525727_82f694726c_b.jpg" width="1024" height="527" alt="iceland"></a>
