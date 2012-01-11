@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 
+$frame_width_fino: 8px;
 $frame_width: 15px;
 $borde_stroke: 1px;
 $una_col_width: 192px;
@@ -20,6 +21,7 @@ $padding_overlay: 5px;
 $borde: $borde_stroke solid rgb(220,220,220);
 $borde2: $borde_stroke solid silver;
 $fondo_overlay: rgba(255,255,255,0.95);
+$fondo_overlay2: rgba(255,255,255,0.90);
 
 @mixin header-font {
 	display: block;
@@ -91,14 +93,34 @@ a {
 body{
 	font: normal 14px/20px Helvetica,Arial
 }
-
+//Loader estilo
+#loader_background{
+	display:none;
+	font: normal 16px/20px Helvetica,Arial;
+	color:black;
+	background: rgba(230,230,230,0.5);
+	position:fixed;
+	width:100%;
+	height:100%;
+	text-align: center;
+	z-index:300;
+	#loader_image{
+		position: absolute;
+		top:50%;
+		left:50%;
+		background: url(../images/loader_image.gif) no-repeat;
+		width:32px;
+		height:32px;
+		opacity: 0.75;
+	}
+}
 //Cabecera estilo
 header{
 	width: 100%;
 	height: 60px;
 	position: fixed;
 	background-color: black;
-	z-index: 20;
+	z-index: 400;
 	#cabecera{
 		width: 192px * 6;
 		color:white;
@@ -174,96 +196,87 @@ footer{
 	text-align: center;
 }
 // Estilos en vista principal
-.cuerpo{
+#cuerpo {
 	width: 192px * 6;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 100px;
-}
-.cuerpo ul{
-	width: 192px * 6;
-}
-.cuerpo li{
-	height: $fullheight;
-	float: left;
-	position: relative;
-	&.una-col:last-child a{
-		width: $una_col_width + $borde_stroke;
-		border-right: $borde;
-	}
-	&.dos-col:last-child a{
-		width: $dos_col_width + $borde_stroke;
-		border-right: $borde;
-	}
-	 a{
-		box-sizing: border-box;
-		position: relative;
-		overflow: hidden;
-		float: left;
-		padding: $frame_width;
-		height: $fullheight;
-		border-left: $borde;
-		border-bottom: $borde;
-		&.cierrefila{
-			border-right: $borde;
-		}
-		&.fila1{
-			border-top: $borde;
-		}
-		.miniatura{
-			box-sizing: border-box;
-			margin: 0px;
-			overflow: hidden;
-			display: block;
-			text-align: center;
-			vertical-align: middle;
-			img {
-			  display: inline;
+	ul{
+		width: 192px * 6;
+		li{
+			height: $fullheight;
+			float: left;
+			position: relative;
+			&.una-col:last-child a{
+				width: $una_col_width + $borde_stroke;
+				border-right: $borde;
 			}
-		}
-		.texto{
-			box-sizing: border-box;
-			height:$fullheight_menos_frame;
-			.subtitulo{
-				@include body-font;
-				display: block;
+			&.dos-col:last-child a{
+				width: $dos_col_width + $borde_stroke;
+				border-right: $borde;
 			}
-		}
-		.fecha{
-			box-sizing: border-box;
-			@include small-font;
-			text-align: right;
-			position: absolute;
-			right: $frame_width + 15px;
-			bottom: 6px;
-		}
-		.icono{
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			right: 8px;
-			bottom: 8px;
-			background: url(../images/iconos.png) no-repeat;
-			&.proyecto{
-				background-position: 0 0px;
-			}
-			&.libro{
-				background-position: 0 -20px;
-			}
-			&.foto{
-				background-position: 0 -40px;
-			}
-			&.video{
-				background-position: 0 -60px;
-			}
-			&.texto, &.articulo {
-				background-position: 0 -80px;
-			}
-			&.pelicula{
-				background-position: 0 -100px;
-			}
-			&.link{
-				background-position: 0 -120px;
+			a{
+				box-sizing: border-box;
+				position: relative;
+				overflow: hidden;
+				float: left;
+				padding: $frame_width;
+				height: $fullheight;
+				border-left: $borde;
+				border-bottom: $borde;
+				&.cierrefila{
+					border-right: $borde;
+				}
+				&.fila1{
+					border-top: $borde;
+				}
+				.miniatura{
+					box-sizing: border-box;
+					overflow: hidden;
+				}
+				.texto{
+					box-sizing: border-box;
+					.subtitulo{
+						@include body-font;
+					}
+				}
+				.fecha{
+					box-sizing: border-box;
+					@include small-font;
+					text-align: right;
+					position: absolute;
+					right: $frame_width + 15px;
+					bottom: 6px;
+				}
+				.icono{
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					right: 8px;
+					bottom: 8px;
+					background: url(../images/iconos.png) no-repeat;
+					&.proyecto{
+						background-position: 0 0px;
+					}
+					&.libro{
+						background-position: 0 -20px;
+					}
+					&.foto{
+						background-position: 0 -40px;
+					}
+					&.video{
+						background-position: 0 -60px;
+					}
+					&.texto, &.articulo {
+						background-position: 0 -80px;
+					}
+					&.pelicula{
+						background-position: 0 -100px;
+					}
+					&.link{
+						background-position: 0 -120px;
+					}
+				}
 			}
 		}
 	}
@@ -288,10 +301,8 @@ footer{
 	height:1000px;
 	z-index: -200;
 }
-.cuerpoPost {
-	padding-top: 100px;
-	width: 192px * 6;
-	margin: 0px auto;
+
+#cuerpo {
 	.tituloPost{
 		@include header1-font;
 	}
@@ -369,7 +380,7 @@ footer{
 @mixin una-col-proyecto{
 	@include una-col;
 	a{
-		padding: 0px;
+		padding: $frame_width_fino;
 	}
 }
 @mixin dos-col{
@@ -381,24 +392,7 @@ footer{
 @mixin dos-col-proyecto{
 	@include dos-col;
 	a{
-		padding: 0px;
-	}
-}
-/*Estilos de ocultar*/
-@mixin oculta-subtitulo{
-	a{
-		.texto{
-			.subtitulo{
-				display: none;
-			}
-		}
-	}
-}
-@mixin oculta-fecha{
-	a{
-		.fecha{
-			display: none;
-		}
+		padding: $frame_width_fino;
 	}
 }
 
@@ -415,6 +409,32 @@ footer{
 		}
 	}
 }
+@mixin imagen-horizontal-small-video{
+	.miniatura{
+		margin-bottom: 10px;
+		width: $una_col_width_menos_frame;
+		height: $miniatura_short;
+		img{
+			width: $una_col_width_menos_frame;
+		}
+		.icono_miniatura{
+			position:absolute;
+			margin-top: $frame_width;
+			margin-left: $frame_width;
+			z-index:10;
+			width: $una_col_width_menos_frame;
+			height: $miniatura_short;
+			background: url(../images/video_icon_small.png) no-repeat;
+			background-position-x: $una_col_width/2 - 50px;
+			background-position-y: $miniatura_short/2 - 25px;
+			&:hover{
+				background: url(../images/video_icon_small.png) no-repeat;
+					background-position-x: $una_col_width/2 - 50px;
+					background-position-y: $miniatura_short/2 - 25px - 150px;
+			}
+		}
+	}
+}
 @mixin imagen-horizontal{
 	.miniatura{
 		margin-bottom: 10px;
@@ -425,16 +445,7 @@ footer{
 		}
 	}
 }
-@mixin imagen-una-col-proyecto{
-	.miniatura{
-		margin: $frame_width;
-		width: $una_col_width_menos_frame;
-		height: $fullheight_menos_frame;
-		img{
-			height: $fullheight_menos_frame;
-		}
-	}
-}
+
 @mixin imagen-horizontal-video{
 	.miniatura {
 		margin-bottom: 10px;
@@ -475,8 +486,31 @@ footer{
 		margin-bottom: 10px;
 		width: $una_col_width_menos_frame;
 		height: $miniatura_tall;
+		display: table;
 		img{
-			height: $fullheight;
+			vertical-align: middle;
+			display: table-cell;
+			width: $una_col_width_menos_frame;
+		}
+	}
+}
+@mixin imagen-vertical-link{
+	.miniatura{
+		margin-bottom: 10px;
+		width: $una_col_width_menos_frame;
+		max-height: $miniatura_tall;
+		display: table;
+		img{
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			border-radius: 4px;
+			-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+			-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+			box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+			vertical-align: middle;
+			display: table-cell;
+			width: $una_col_width_menos_frame - 8px;
+			margin: 4px;
 		}
 	}
 }
@@ -519,7 +553,8 @@ footer{
 		width: $una_col_width - $frame_width;
 		height: $fullheight_menos_frame + ($borde_stroke * 2);
 		img{
-			height: $fullheight_menos_frame + ($borde_stroke * 2);
+			margin-top:5px;
+			height: $fullheight_menos_frame + ($borde_stroke * 2) - 10px;
 			margin-right: auto;
 			margin-left: auto;
 			display: table-cell;
@@ -529,23 +564,38 @@ footer{
 		}
 	}
 }
+@mixin imagen-una-col-proyecto{
+	.miniatura{
+		width: $una_col_width - ($frame_width_fino * 2) - ($borde_stroke * 2);
+		height: $fullheight - ($frame_width_fino * 2) - ($borde_stroke * 2);
+		img{
+			 height:$fullheight - ($frame_width_fino * 2) - ($borde_stroke * 2);
+		}
+	}
+}
 @mixin imagen-dos-col-proyecto{
 	.miniatura{
-		margin: $frame_width;
-		width: $dos_col_width_menos_frame;
-		height: $fullheight_menos_frame;
+		width: $dos_col_width - ($frame_width_fino * 2) - ($borde_stroke * 2);
+		height: $fullheight - ($frame_width_fino * 2) - ($borde_stroke * 2);
 		img{
-			width: $dos_col_width;
+			 height:$fullheight - ($frame_width_fino * 2) - ($borde_stroke * 2);
 		}
 	}
 }
 
-
 /*Estilos de texto*/
 //Aqui se definen todos los estilos de texto disponibles
 
+@mixin texto-una-col-sinfoto{
+	.texto{
+		.titulo{
+			@include header1-font;
+		}
+	}
+}
 @mixin texto-una-col{
 	.texto{
+		padding-top: 10px;
 		.titulo{
 			@include header2-font;
 		}
@@ -554,45 +604,24 @@ footer{
 @mixin texto-una-col-proyecto{
 	.texto{
 		position:absolute;
+		bottom:0px;
+		left:0px;
 		padding-top: $padding_overlay * 2;
 		padding-left: $frame_width;
 		padding-right: $frame_width;
-		bottom:0px;
-		left:0px;
-		background: rgba(255,255,255,0.90);
-		height: $fullheight - $miniatura_short - 2*$frame_width;
+		background: $fondo_overlay2;
+		height: $fullheight - $miniatura_short;
 		width:$una_col_width;
 		.titulo{
 			@include header2-font;
 		}
 	}
 }
-@mixin texto-una-col-sinfoto{
-	.texto{
-		.titulo{
-			@include header1-font;
-		}
-	}
-}
 @mixin texto-dos-col{
 	.texto{
-		padding-right:$frame_width;
 		position: absolute;
-		top:$frame_width;
-		left: $una_col_width + $frame_width;
-		.titulo{
-			@include header1-font;
-		}
-	}
-}
-@mixin texto-dos-col-proyecto{
-	.texto{
-		position: absolute;
-		background: rgba(255,255,255,0.90);
-		padding-top: $frame_width;
-		padding-right:$frame_width;
-		padding-left: $frame_width;
-		padding-bottom: $frame_width;
+		background: $fondo_overlay2;
+		padding: $frame_width;
 		height: $fullheight;
 		width:$una_col_width;
 		bottom:0px;
@@ -605,19 +634,17 @@ footer{
 
 @mixin texto-caption-una-col{
 	.texto{
+		padding-top: 10px;
 		.titulo{
 			@include header2-font;
-		}
-		.subtitulo{
 		}
 	}
 }
 @mixin texto-caption-dos-col{
 	.texto{
+		padding-top: 10px;
 		.titulo{
 			@include header2-font;
-		}
-		.subtitulo{
 		}
 	}
 }
@@ -648,82 +675,84 @@ footer{
 
 /*Layouts*/
 //Aqui se definen los layouts para todos los tipos de post, intentar que todo este hecho utilizando includes
+#cuerpo{ 
+	ul{
+		//Layout la1
+		li.texto.una-col{
+			@include una-col;
+			@include texto-una-col-sinfoto;
+		}
+		//Layout la2
+		li.articulo.una-col{	
+			@include una-col;
+			@include imagen-horizontal-small;
+			@include texto-una-col;
+		}
+		li.video.una-col {
+			@include una-col;
+			@include imagen-horizontal-small-video;
+			@include texto-una-col;
+		}
+		li.proyecto.una-col {
+			@include imagen-una-col-proyecto;
+			@include texto-una-col-proyecto;
+			@include una-col-proyecto;
+		}
+	//Layout la3
+		li.articulo.dos-col,
+		li.link.dos-col,
+		li.pelicula.dos-col, li.documento.dos-col{
+			@include dos-col;
+			@include imagen-vertical-full;
+			@include texto-dos-col;
+		}
+		li.libro.dos-col {
+			@include dos-col;
+			@include imagen-vertical-full-libro;
+			@include texto-dos-col;
+		}
+		li.proyecto.dos-col{
+			@include dos-col-proyecto;
+			@include imagen-dos-col-proyecto;
+			@include texto-dos-col;
+		}
+		//Layout la4A
+		li.link.una-col{
+			@include una-col;
+			@include imagen-vertical-link;
+			@include texto-caption-una-col;
+		}
+		//Layout la4B
+		li.foto.dos-col,
+		li.presentacion.dos-col{
+			@include dos-col;
+			@include imagen-horizontal-full;
+			@include texto-overlay-dos-col;
+		}
+		//Layout la4C
+		li.video.dos-col{
+			@include dos-col;
+			@include imagen-horizontal-video;
+			@include texto-caption-dos-col;
+		}
+		//Layout la5A
+		li.pelicula.una-col, li.documento.una-col{
+			@include una-col;
+			@include imagen-vertical;
+			@include texto-caption-una-col;
+		}
+		li.libro.una-col{
+			@include una-col;
+			@include imagen-vertical-libro;
+			@include texto-caption-una-col;
 
-//Layout la1
-li.texto.una-col{
-	@include una-col;
-	@include texto-una-col-sinfoto;
-}
-//Layout la2
-li.video.una-col,
-li.articulo.una-col{	
-	@include una-col;
-	@include imagen-horizontal-small;
-	@include texto-una-col;
-}
-li.proyecto.una-col {
-	@include imagen-una-col-proyecto;
-	@include texto-una-col-proyecto;
-	@include una-col-proyecto;
-}
-//Layout la3
-li.articulo.dos-col,
-li.link.dos-col,
-li.pelicula.dos-col, li.documento.dos-col{
-	@include dos-col;
-	@include imagen-vertical-full;
-	@include texto-dos-col;
-}
-li.libro.dos-col {
-	@include dos-col;
-	@include imagen-vertical-full-libro;
-	@include texto-dos-col;
-}
-li.proyecto.dos-col{
-	@include dos-col-proyecto;
-	@include imagen-dos-col-proyecto;
-	@include texto-dos-col-proyecto;
-}
-//Layout la4A
-li.link.una-col{
-	@include una-col;
-	@include imagen-vertical;
-	@include texto-caption-una-col;
-}
-//Layout la4B
-li.foto.dos-col,
-li.presentacion.dos-col{
-	@include dos-col;
-	@include imagen-horizontal-full;
-	@include texto-overlay-dos-col;
-	@include oculta-fecha;
-}
-//Layout la4C
-li.video.dos-col{
-	@include dos-col;
-	@include imagen-horizontal-video;
-	@include texto-caption-dos-col;
-
-
-}
-//Layout la5A
-li.pelicula.una-col, li.documento.una-col{
-	@include una-col;
-	@include imagen-vertical;
-	@include texto-caption-una-col;
-}
-li.libro.una-col{
-	@include una-col;
-	@include imagen-vertical-libro;
-	@include texto-caption-una-col;
-
-}
-//Layout la5B
-li.presentacion.una-col,
-li.foto.una-col{
-	@include una-col;
-	@include imagen-vertical-full-narrow;
-	@include texto-overlay-una-col;
-	@include oculta-subtitulo;
-	@include oculta-fecha;
+		}
+		//Layout la5B
+		li.presentacion.una-col,
+		li.foto.una-col{
+			@include una-col;
+			@include imagen-vertical-full-narrow;
+			@include texto-overlay-una-col;
+		}
+	}
 }

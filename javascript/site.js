@@ -6,3 +6,22 @@ $(document).ready(function() {
 		$("#ultimo_tweet").html(tweet[0].text); // get the first tweet in the response and place it inside the div
 	});
 });
+/*
+$(function() {
+	var $container = $('#cuerpo');
+	$('#cuerpo a').click(function() {
+		$('#loader_background').fadeIn();
+		var url = $(this).attr('href');
+		$.get(url, function (data) {
+			$("#loader_background").fadeOut(function() {
+				// without this the DOM will contain multiple elements
+				// with the same ID, which is bad.
+				$(this).remove();
+				//$container.load('url #cuerpo');
+				$container.hide().html(data).fadeIn();
+			});
+		});
+		return false;
+	});
+});
+*/

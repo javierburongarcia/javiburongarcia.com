@@ -1,10 +1,10 @@
 ---
-style: una-col
+style: dos-col
 category: proyecto
 tags: [diseño expositivo]
 title: Arquia Becas 2011
 subtitle: Diseño expositivo para la convocatoria Arquia/Becas 2011 de la fundación Caja de Arquitectos. Junto a Magda Sánchez
-image: farm8.staticflickr.com/7019/6666778697_db0d421d7f
+image: farm8.staticflickr.com/7146/6679822097_2db0b9e741
 
 layout: post
 background_image: exposicionArquiaBackground.jpg

@@ -4,7 +4,7 @@ category: proyecto
 tags: [arquitectura, arte, tecnología]
 title: Concurso antena torre de Valencia
 subtitle: Primer premio. Junto a Magda Sánchez
-image: farm8.staticflickr.com/7014/6678040897_bb2ba1357c
+image: farm8.staticflickr.com/7146/6679822959_96160eb9fb
 
 layout: post
 background_image: torredeValenciaBackground.jpg

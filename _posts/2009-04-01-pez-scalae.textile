@@ -4,7 +4,7 @@ category: proyecto
 tags: [arte digital, processing]
 title: Pez do-it-yourself
 subtitle: El acuario Scalae es una colección de dibujos de peces hechos por arquitectos españoles de todas las generaciones. Junto a Magda Sánchez
-image: farm8.staticflickr.com/7004/6667298217_416d37b041
+image: farm8.staticflickr.com/7147/6679816925_fd01ed3a4f
 
 layout: post
 background_image: pezScalaeBackground.jpg
