@@ -69,7 +69,7 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 				{% if post.style == "una-col" or acortado == 1 %}
 					{% case post.category  %}
 					{%  when "pelicula" or "libro" or "link" %}
-					<span class="subtitulo">{{ post.subtitle | truncate: 80 }}</span>
+					<span class="subtitulo">{{ post.subtitle | truncate: 40 }}</span>
 					{%  when "proyecto" or "articulo" %}
 					<span class="subtitulo">{{ post.subtitle | truncate: 120 }}</span>
 					{%  when "texto" %}

@@ -17,7 +17,7 @@ $fullheight: 300px;
 $fullheight_menos_frame: $fullheight - ($frame_width * 2) - ($borde_stroke * 2);
 $padding_overlay: 5px;
 
-$borde: $borde_stroke dotted silver;
+$borde: $borde_stroke solid rgb(220,220,220);
 $borde2: $borde_stroke solid silver;
 $fondo_overlay: rgba(255,255,255,0.95);
 
@@ -211,6 +211,7 @@ footer{
 			border-top: $borde;
 		}
 		.miniatura{
+			box-sizing: border-box;
 			margin: 0px;
 			overflow: hidden;
 			display: block;
@@ -260,6 +261,9 @@ footer{
 			}
 			&.pelicula{
 				background-position: 0 -100px;
+			}
+			&.link{
+				background-position: 0 -120px;
 			}
 		}
 	}
@@ -362,10 +366,22 @@ footer{
 		width: $una_col_width;
 	}
 }
+@mixin una-col-proyecto{
+	@include una-col;
+	a{
+		padding: 0px;
+	}
+}
 @mixin dos-col{
 	width: $dos_col_width;
 	a{
 		width: $dos_col_width;
+	}
+}
+@mixin dos-col-proyecto{
+	@include dos-col;
+	a{
+		padding: 0px;
 	}
 }
 /*Estilos de ocultar*/
@@ -409,6 +425,16 @@ footer{
 		}
 	}
 }
+@mixin imagen-una-col-proyecto{
+	.miniatura{
+		margin: $frame_width;
+		width: $una_col_width_menos_frame;
+		height: $fullheight_menos_frame;
+		img{
+			height: $fullheight_menos_frame;
+		}
+	}
+}
 @mixin imagen-horizontal-video{
 	.miniatura {
 		margin-bottom: 10px;
@@ -446,12 +472,11 @@ footer{
 }
 @mixin imagen-vertical{
 	.miniatura{
-		float:left;
 		margin-bottom: 10px;
 		width: $una_col_width_menos_frame;
 		height: $miniatura_tall;
 		img{
-			height: $miniatura_tall;
+			height: $fullheight;
 		}
 	}
 }
@@ -504,6 +529,16 @@ footer{
 		}
 	}
 }
+@mixin imagen-dos-col-proyecto{
+	.miniatura{
+		margin: $frame_width;
+		width: $dos_col_width_menos_frame;
+		height: $fullheight_menos_frame;
+		img{
+			width: $dos_col_width;
+		}
+	}
+}
 
 
 /*Estilos de texto*/
@@ -511,6 +546,22 @@ footer{
 
 @mixin texto-una-col{
 	.texto{
+		.titulo{
+			@include header2-font;
+		}
+	}
+}
+@mixin texto-una-col-proyecto{
+	.texto{
+		position:absolute;
+		padding-top: $padding_overlay * 2;
+		padding-left: $frame_width;
+		padding-right: $frame_width;
+		bottom:0px;
+		left:0px;
+		background: rgba(255,255,255,0.90);
+		height: $fullheight - $miniatura_short - 2*$frame_width;
+		width:$una_col_width;
 		.titulo{
 			@include header2-font;
 		}
@@ -534,16 +585,30 @@ footer{
 		}
 	}
 }
+@mixin texto-dos-col-proyecto{
+	.texto{
+		position: absolute;
+		background: rgba(255,255,255,0.90);
+		padding-top: $frame_width;
+		padding-right:$frame_width;
+		padding-left: $frame_width;
+		padding-bottom: $frame_width;
+		height: $fullheight;
+		width:$una_col_width;
+		bottom:0px;
+		left: $una_col_width;
+		.titulo{
+			@include header1-font;
+		}
+	}
+}
+
 @mixin texto-caption-una-col{
 	.texto{
 		.titulo{
 			@include header2-font;
 		}
 		.subtitulo{
-			text-overflow: ellipsis;
-			overflow:hidden; 
-			line-height: 1.2em; 
-			max-height: 1.2em;
 		}
 	}
 }
@@ -591,14 +656,18 @@ li.texto.una-col{
 }
 //Layout la2
 li.video.una-col,
-li.articulo.una-col, li.proyecto.una-col{	
+li.articulo.una-col{	
 	@include una-col;
 	@include imagen-horizontal-small;
 	@include texto-una-col;
 }
+li.proyecto.una-col {
+	@include imagen-una-col-proyecto;
+	@include texto-una-col-proyecto;
+	@include una-col-proyecto;
+}
 //Layout la3
 li.articulo.dos-col,
-li.proyecto.dos-col,
 li.link.dos-col,
 li.pelicula.dos-col, li.documento.dos-col{
 	@include dos-col;
@@ -609,6 +678,11 @@ li.libro.dos-col {
 	@include dos-col;
 	@include imagen-vertical-full-libro;
 	@include texto-dos-col;
+}
+li.proyecto.dos-col{
+	@include dos-col-proyecto;
+	@include imagen-dos-col-proyecto;
+	@include texto-dos-col-proyecto;
 }
 //Layout la4A
 li.link.una-col{
