@@ -1,0 +1,9 @@
+<nav>
+{% if page.previous %} 
+	<a id="izquierda" rel="prev" href="{{ page.next.url }}">&larr;</a>
+{% endif %}
+	<a id="arriba" rel="home" href="/">&uarr;</a>
+{% if page.next %} 
+	<a id="derecha" rel="next" href="{{ page.previous.url }}">&rarr;</a>
+{% endif %}
+</nav>
