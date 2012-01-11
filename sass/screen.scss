@@ -61,26 +61,31 @@ $fondo_overlay2: rgba(255,255,255,0.90);
 	font-size: 12px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
-@mixin subtitle-post-font {
-	display: block;
-	color: #888;
-	font-size: 15px;
-	font-family: DroidSans,Helvetica,Arial,sans-serif;
-	padding-bottom: 40px;
-}
-@mixin body-post-font {
-	display: block;
-	color: black;
-	font-size: 14px;
-	line-height: 19px;
-	font-family: Helvetica,Arial,sans-serif;
-	padding-bottom: 20px;
-}
 @mixin small-font {
 	display: block;
 	color: #888;
 	font-size: 10px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
+}
+@mixin title-post-font {
+	display: block;
+	font-size: 20px;
+	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+	padding-bottom: 30px;
+}
+@mixin subtitle-post-font {
+	display: block;
+	opacity: 0.65;
+	font-size: 16px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+	padding-bottom: 40px;
+}
+@mixin body-post-font {
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Helvetica,Arial,sans-serif;
+	padding-bottom: 20px;
 }
 a {
 	color: black;
@@ -303,8 +308,9 @@ footer{
 }
 
 #cuerpo {
+	padding-top: 120px;
 	.tituloPost{
-		@include header1-font;
+		@include title-post-font;
 	}
 	.subtituloPost{
 		@include subtitle-post-font;
@@ -361,6 +367,7 @@ footer{
 	}
 	&.post{
 		.leftColumn{
+			min-height:700px;
 			box-sizing: border-box;
 			padding-right:30px;
 			width: 192px * 2.5;

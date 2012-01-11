@@ -7,7 +7,13 @@ subtitle: Ireland's participation at the 11th International Architecture Exhibit
 image: farm8.staticflickr.com/7145/6679646415_f43ac638bb_b
 
 layout: post
-background_image: biennaleBackground.jpg
+background_image: [biennaleBackground.jpg]
 background_color: black
+color: white
 published: yes
 ---
+Nueve artefactos colocados en las distintas salas de la planta principal del Pallazo Guistinian Lolin en el Gran Ca- nal daban forma a la representación irlandesa en la pasada bienal de Venecia con el nombre de "The Lives of Spaces".
+
+Estos objetos alojaban en su interior distintas secuencias cinemáticas en relación con la experiencia espacial de cada uno de los nueve proyectos seleccionados.
+
+Los arquitectos seleccionados fueron Hassett-Ducatez, Simon Walker & Patrick Lynch, McCullough-Mulvin, Gerry Cahill Architects, Grafton Architects, dePaor architects, TAKA, O’Donnell + Tuomey y el fotógrafo Dara McGrath.

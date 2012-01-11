@@ -3,9 +3,13 @@ layout: default
 ---
 
 <div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }})"></div>
+{% for image in page.background_image %}
+<div class="image-fullscreen" style="background-image:url(/images/blog/{{ image }})"></div>
+{% else %}
+     There is nothing in the collection.
+{% endfor %}
 <article id="cuerpo" class="post">
-	<div class="leftColumn">
+	<div class="leftColumn" style="color: {{ page.color }}">
 		<hgroup>
 			<h1 class="tituloPost">{{page.title}}</h1>
 			<h2 class="subtituloPost">{{page.subtitle}}</h2>
