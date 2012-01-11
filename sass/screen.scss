@@ -166,18 +166,19 @@ header{
 		}
 	}
 }
-.cuerpo{
-	width: 192px * 6;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 100px;
-}
 footer{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	clear: both;
 	@include small-font;
 	text-align: center;
+}
+// Estilos en vista principal
+.cuerpo{
+	width: 192px * 6;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 100px;
 }
 .cuerpo ul{
 	width: 192px * 6;
@@ -221,6 +222,7 @@ footer{
 		}
 		.texto{
 			box-sizing: border-box;
+			height:$fullheight_menos_frame;
 			.subtitulo{
 				@include body-font;
 				display: block;
@@ -231,12 +233,38 @@ footer{
 			@include small-font;
 			text-align: right;
 			position: absolute;
-			right: $frame_width;
+			right: $frame_width + 15px;
 			bottom: 6px;
+		}
+		.icono{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			right: 8px;
+			bottom: 8px;
+			background: url(../images/iconos.png) no-repeat;
+			&.proyecto{
+				background-position: 0 0px;
+			}
+			&.libro{
+				background-position: 0 -20px;
+			}
+			&.foto{
+				background-position: 0 -40px;
+			}
+			&.video{
+				background-position: 0 -60px;
+			}
+			&.texto, &.articulo {
+				background-position: 0 -80px;
+			}
+			&.pelicula{
+				background-position: 0 -100px;
+			}
 		}
 	}
 }
-/*Estilos de fondo imagen*/
+/*Estilos de vistas individuales*/
 .colorbackground-fullscreen {
 	position:fixed;
 	left:0px;
@@ -320,7 +348,7 @@ footer{
 		.leftColumn{
 			box-sizing: border-box;
 			padding-right:30px;
-			width: 192px * 3;
+			width: 192px * 2.5;
 			float:left;
 			z-index: 100;
 		}
@@ -328,7 +356,6 @@ footer{
 }
 
 /*Estilos de anchos de columna*/
-
 @mixin una-col{
 	width: $una_col_width;
 	a{
@@ -341,10 +368,7 @@ footer{
 		width: $dos_col_width;
 	}
 }
-
-
 /*Estilos de ocultar*/
-
 @mixin oculta-subtitulo{
 	a{
 		.texto{
@@ -385,6 +409,31 @@ footer{
 		}
 	}
 }
+@mixin imagen-horizontal-video{
+	.miniatura {
+		margin-bottom: 10px;
+		width: $dos_col_width_menos_frame;
+		height: $miniatura_tall;
+		img{
+			width: $dos_col_width_menos_frame;
+		}
+		.icono_miniatura{
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-top: - $miniatura_tall/2 + $frame_width/2;
+			margin-left: -50px;
+			z-index:10;
+			width: $dos_col_width_menos_frame;
+			height: $fullheight_menos_frame;
+			background: url(../images/video_icon.png) no-repeat;
+			&:hover{
+				background: url(../images/video_icon.png) no-repeat;
+				background-position: 0 -300px;
+			}
+		}
+	}
+}
 @mixin imagen-horizontal-full{
 	.miniatura{
 		margin-bottom: 10px;
@@ -406,6 +455,23 @@ footer{
 		}
 	}
 }
+@mixin imagen-vertical-libro{
+	.miniatura{
+		float:left;
+		margin-bottom: 10px;
+		width: $una_col_width_menos_frame;
+		height: $miniatura_tall;
+		img{
+			height: $miniatura_tall - 5px;
+			margin-right: auto;
+			margin-left: auto;
+			display: table-cell;
+			-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+		}
+	}
+}
 @mixin imagen-vertical-full-narrow{
 	.miniatura{
 		width: $una_col_width_menos_frame;
@@ -419,6 +485,22 @@ footer{
 		height: $fullheight_menos_frame + ($borde_stroke * 2);
 		img{
 			height: $fullheight_menos_frame + ($borde_stroke * 2);
+		}
+	}
+}
+@mixin imagen-vertical-full-libro{
+	.miniatura{
+		margin-right: $frame_width;
+		width: $una_col_width - $frame_width;
+		height: $fullheight_menos_frame + ($borde_stroke * 2);
+		img{
+			height: $fullheight_menos_frame + ($borde_stroke * 2);
+			margin-right: auto;
+			margin-left: auto;
+			display: table-cell;
+			-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 		}
 	}
 }
@@ -443,6 +525,7 @@ footer{
 }
 @mixin texto-dos-col{
 	.texto{
+		padding-right:$frame_width;
 		position: absolute;
 		top:$frame_width;
 		left: $una_col_width + $frame_width;
@@ -498,7 +581,6 @@ footer{
 	}
 }
 
-
 /*Layouts*/
 //Aqui se definen los layouts para todos los tipos de post, intentar que todo este hecho utilizando includes
 
@@ -518,9 +600,14 @@ li.articulo.una-col, li.proyecto.una-col{
 li.articulo.dos-col,
 li.proyecto.dos-col,
 li.link.dos-col,
-li.pelicula.dos-col, li.libro.dos-col, li.documento.dos-col{
+li.pelicula.dos-col, li.documento.dos-col{
 	@include dos-col;
 	@include imagen-vertical-full;
+	@include texto-dos-col;
+}
+li.libro.dos-col {
+	@include dos-col;
+	@include imagen-vertical-full-libro;
 	@include texto-dos-col;
 }
 //Layout la4A
@@ -540,32 +627,22 @@ li.presentacion.dos-col{
 //Layout la4C
 li.video.dos-col{
 	@include dos-col;
-	@include imagen-horizontal;
+	@include imagen-horizontal-video;
 	@include texto-caption-dos-col;
-	.miniatura {
-		.icono_miniatura{
-			position:absolute;
-			left:50%;
-			top:50%;
-			margin-top: - $miniatura_tall/2;
-			margin-left: -50px;
-			z-index:10;
-			width: $dos_col_width_menos_frame;
-			height: $fullheight_menos_frame;
-			background: url(../images/video_icon.png) no-repeat;
-			&:hover{
-				background: url(../images/video_icon.png) no-repeat;
-				background-position: 0 -200px;
-			}
-		}
-	}
+
 
 }
 //Layout la5A
-li.pelicula.una-col, li.libro.una-col, li.documento.una-col{
+li.pelicula.una-col, li.documento.una-col{
 	@include una-col;
 	@include imagen-vertical;
 	@include texto-caption-una-col;
+}
+li.libro.una-col{
+	@include una-col;
+	@include imagen-vertical-libro;
+	@include texto-caption-una-col;
+
 }
 //Layout la5B
 li.presentacion.una-col,

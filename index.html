@@ -25,8 +25,7 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 		{% capture temp1 %}{{ contador_columna }}*{% endcapture %}
 	{% when "dos-col"  %}
 		{% capture temp1 %}{{ contador_columna }}**{% endcapture %}
-	{% endcase  %}
-	
+	{% endcase  %}	
 	{% assign contador_columna = temp1 %}
 	{% assign contador_fila = temp2 %}
 	{% assign an_integer1 = contador_columna.size %}
@@ -68,19 +67,23 @@ utilizamos el metodo .size para contar en una cadena de caracteres y capture par
 			<div class="texto">
 				<span class="titulo">{{ post.title }}</span>
 				{% if post.style == "una-col" or acortado == 1 %}
-					{% if post.category == "pelicula" or post.category == "libro" or post.category == "link" %}
-					<span class="subtitulo">{{ post.subtitle | truncate: 120 }}</span>
-					{% else  %}
+					{% case post.category  %}
+					{%  when "pelicula" or "libro" or "link" %}
 					<span class="subtitulo">{{ post.subtitle | truncate: 80 }}</span>
-					{% endif  %}
+					{%  when "proyecto" or "articulo" %}
+					<span class="subtitulo">{{ post.subtitle | truncate: 120 }}</span>
+					{%  when "texto" %}
+					<span class="subtitulo">{{ post.subtitle }}</span>
+					{% endcase  %}
 				{% else  %}
 					{% if post.category == "video" or post.category == "presentacion" or post.category == "foto" %}
 					<span class="subtitulo">{{ post.subtitle | truncate: 100 }}</span>
 					{% else  %}
 					<span class="subtitulo">{{ post.subtitle | truncate: 240 }}</span>
 					{% endif  %}
-				{% endif  %}
+				{% endif  %}	
 			</div>
+			<span class="icono {{ post.category }}"></span>
 			{% endif %}
 			{% if post.category == 'texto' %}
 			{% else %}
