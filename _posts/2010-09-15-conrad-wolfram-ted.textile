@@ -1,5 +1,5 @@
 ---
-style: dos-col
+style: una-col
 category: video
 tags: [educación, ted talks]
 title: Conrad Wolfram on TEDGlobal 2010

@@ -395,7 +395,14 @@ footer{
 		padding: $frame_width_fino;
 	}
 }
-
+@mixin recomendacion{
+	a{
+		background-color: rgb(248,248,248);
+		-moz-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
+		-webkit-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
+		box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
+	}
+}
 /*Estilos de imagenes*/
 //Aqui se definen todos los estilos de imagenes disponibles
 
@@ -692,6 +699,7 @@ footer{
 			@include una-col;
 			@include imagen-horizontal-small-video;
 			@include texto-una-col;
+			@include recomendacion;
 		}
 		li.proyecto.una-col {
 			@include imagen-una-col-proyecto;
@@ -721,6 +729,7 @@ footer{
 			@include una-col;
 			@include imagen-vertical-link;
 			@include texto-caption-una-col;
+			@include recomendacion;
 		}
 		//Layout la4B
 		li.foto.dos-col,
@@ -736,7 +745,13 @@ footer{
 			@include texto-caption-dos-col;
 		}
 		//Layout la5A
-		li.pelicula.una-col, li.documento.una-col{
+		li.pelicula.una-col{
+			@include una-col;
+			@include imagen-vertical;
+			@include texto-caption-una-col;
+			@include recomendacion;
+		}
+		li.documento.una-col{
 			@include una-col;
 			@include imagen-vertical;
 			@include texto-caption-una-col;
@@ -745,7 +760,7 @@ footer{
 			@include una-col;
 			@include imagen-vertical-libro;
 			@include texto-caption-una-col;
-
+			@include recomendacion;
 		}
 		//Layout la5B
 		li.presentacion.una-col,
