@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
+{% for image in page.background_image %}
+<div class="image-fullscreen" style="background-image:url(/images/blog/{{ image }})"></div>
+{% else %}
+{% endfor %}
+<article id="cuerpo" class="post">
+	<div class="leftColumn" style="color: {{ page.color }}">
+		<hgroup>
+			<h1 class="tituloPost">{{page.title}}</h1>
+		</hgroup>
+		<div class="bodyPost hyphenate text" lang="es">
+		{{ content }}
+		</div>
+	</div>
+</div>
