@@ -1,8 +1,8 @@
 3.1.12 (Brainy Betty)
-d286cf65a3271a93da3d619a1452603a86a91304
+19e0bbf2d068e7dc55c2c9c265b00cd4c2a1d840
 o:Sass::Tree::RootNode
 :@has_childrenT:
-@linei:@template"A2/* Welcome to Compass.
+@linei:@template"B2/* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
@@ -436,7 +436,7 @@ footer{
 				background-position: 0 -300px;
 			}
 		}
-	}
+	} 
 }
 @mixin imagen-horizontal-full{
 	.miniatura{
