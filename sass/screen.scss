@@ -377,19 +377,55 @@ footer{
 	}
 }
 nav{
-	display:none;
-	color: white;
+	//display:none;
+	color: black;
 	position: fixed;
+	top:0px;
 	width:100%;
 	height:100%;
-	a#izquierda{
+	a{
+		-moz-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+		box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		color:white;
+		display:table;
+		background: rgba(0,0,0,0.6);
 		position: absolute;
+		z-index:200;
+		span{
+			display:table-cell;
+			text-align: center;
+			vertical-align: middle;
+			font-weight: bold;
+		}
+		&:hover{
+			background: rgba(0,0,0,0.3);
+			transition: 2s;
+		}
+	}
+	a#izquierda{
+		margin-left:20px;
+		width:40px;
+		height:30px;
+		left:0px;
+		top:50%;
 	}
 	a#derecha{
-		
+		margin-right:20px;
+		width:40px;
+		height:30px;
+		right:0px;
+		top:50%;	
 	}
 	a#arriba{
-		
+		margin-top:20px;
+		width:30px;
+		height:40px;
+		right:50%;
+		top:60px
 	}
 }
 /*Estilos de anchos de columna*/
