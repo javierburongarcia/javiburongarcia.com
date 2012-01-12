@@ -1,9 +1,10 @@
 <nav>
-{% if page.previous %} 
-	<a id="izquierda" rel="prev" href="{{ page.next.url }}"><span>&larr;</span></a>
+{% if page.next %} 
+	<a id="izquierda" rel="next" href="{{ page.next.url }}"><span>&larr;</span></a>
 {% endif %}
 	<a id="arriba" rel="home" href="/"><span>&uarr;</span></a>
-{% if page.next %} 
-	<a id="derecha" rel="next" href="{{ page.previous.url }}"><span>&rarr;</span></a>
+	<a id="abajo" rel="home" href="/"><span>&darr;</span></a>
+{% if page.previous %} 
+	<a id="derecha" rel="prev" href="{{ page.previous.url }}"><span>&rarr;</span></a>
 {% endif %}
 </nav>
