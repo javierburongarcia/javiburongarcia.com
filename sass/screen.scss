@@ -17,11 +17,11 @@ $miniatura_tall: 190px;
 $fullheight: 300px;
 $fullheight_menos_frame: $fullheight - ($frame_width * 2) - ($borde_stroke * 2);
 $padding_overlay: 5px;
-
 $borde: $borde_stroke solid rgb(220,220,220);
 $borde2: $borde_stroke solid silver;
 $fondo_overlay: rgba(255,255,255,0.95);
 $fondo_overlay2: rgba(255,255,255,0.90);
+
 
 @mixin header-font {
 	display: block;

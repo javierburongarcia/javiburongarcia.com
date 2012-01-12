@@ -1,5 +1,5 @@
 3.1.12 (Brainy Betty)
-3c4d0460a523de82e9bd3b424382e641f98bb7ec
+6bae37ef84b74ec07548b3c4ccde4321b17ec57d
 o:Sass::Tree::RootNode
 :@has_childrenT:
 @linei:@template"¿@/* Welcome to Compass.
@@ -21,11 +21,11 @@ $miniatura_tall: 190px;
 $fullheight: 300px;
 $fullheight_menos_frame: $fullheight - ($frame_width * 2) - ($borde_stroke * 2);
 $padding_overlay: 5px;
-
 $borde: $borde_stroke solid rgb(220,220,220);
 $borde2: $borde_stroke solid silver;
 $fondo_overlay: rgba(255,255,255,0.95);
 $fondo_overlay2: rgba(255,255,255,0.90);
+
 
 @mixin header-font {
 	display: block;
@@ -821,17 +821,17 @@ times;o;;[ ;i;i;[ ;"2;@:@operand1o:Sass::Script::Variable	;"bor
 ;i;;;o;
 ;i;;;o;;@=;i;i;[ ;"2;@;o;	;"frame_width;i; "frame_width;@;@;o;	;"fullheight;i; "fullheight;@;@;@;	[ ;@o;;"padding_overlay;i;0;o;;[ ;i
 ;i;["px;"5px;@;	[ ;@o;;"
-borde;i;0;o:Sass::Script::List	:@separator:
-space;[o;	;"borde_stroke;i; "borde_stroke;@o:Sass::Script::String	;"
-solid;i:
+borde;i;0;o:Sass::Script::List	:@separator:
+space;[o;	;"borde_stroke;i; "borde_stroke;@o:Sass::Script::String	;"
+solid;i:
 @type:identifier;@o:Sass::Script::Funcall
-;"rgb;i:
-@args[o;;@=;iÜ;i;[ ;"220;@o;;@=;iÜ;i;[ ;"220;@o;;@=;iÜ;i;[ ;"220;@;@:@keywords{ ;i;@;	[ ;@o;;"borde2;i;0;o;!	;";#;[o;	;"borde_stroke;i; "borde_stroke;@o;$	;"
-solid;i;%;&;@o:Sass::Script::Color	;0;i:@attrs{	:
+;"rgb;i:
+@args[o;;@=;iÜ;i;[ ;"220;@o;;@=;iÜ;i;[ ;"220;@o;;@=;iÜ;i;[ ;"220;@;@:@keywords{ ;i;@;	[ ;@o;;"borde2;i;0;o;!	;";#;[o;	;"borde_stroke;i; "borde_stroke;@o;$	;"
+solid;i;%;&;@o:Sass::Script::Color	;0;i:@attrs{	:
 greeniÀ:	blueiÀ:rediÀ:
-alphai;@;i;@;	[ ;@o;;"fondo_overlay;i;0;o;'
-;"	rgba;i;([	o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;f0.94999999999999996 ff;i;[ ;"	0.95;@;@;){ ;	[ ;@o;;"fondo_overlay2;i;0;o;'
-;"	rgba;i;([	o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;f0.90000000000000002 ÌÍ;i;[ ;"0.9;@;@;){ ;	[ ;@o:Sass::Tree::MixinDefNode;T;"header-font;i;([ ;	[	o:Sass::Tree::PropNode;o;$;"
+alphai;@;i;@;	[ ;@o;;"fondo_overlay;i;0;o;'
+;"	rgba;i;([	o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;f0.94999999999999996 ff;i;[ ;"	0.95;@;@;){ ;	[ ;@o;;"fondo_overlay2;i;0;o;'
+;"	rgba;i;([	o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;iÿ;i;[ ;"255;@o;;@=;f0.90000000000000002 ÌÍ;i;[ ;"0.9;@;@;){ ;	[ ;@o:Sass::Tree::MixinDefNode;T;"header-font;i;([ ;	[	o:Sass::Tree::PropNode;o;$;"
 block;%;&;@;["display;i :@prop_syntax:new:
 @tabsi ;	[ ;@o;1;o;$;"
 white;%;&;@;["
