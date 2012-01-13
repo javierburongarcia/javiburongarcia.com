@@ -388,12 +388,12 @@ nav{
 		-moz-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
 		-webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
 		box-shadow: 0 0 4px rgba(255, 255, 255, 1);
-		-moz-border-radius: 8px;
-		-webkit-border-radius: 8px;
-		border-radius: 8px;
-		color:white;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		color:black;
 		display:table;
-		background: rgba(0,0,0,0.6);
+		background: rgba(255, 255, 255,0.6);
 		position: absolute;
 		z-index:200;
 		opacity:1;
@@ -410,30 +410,30 @@ nav{
 		-webkit-transition: opacity .5s linear;
 	}
 	a#izquierda{
-		margin-left:20px;
-		width:40px;
+		margin-left:15px;
+		width:30px;
 		height:30px;
 		left:0px;
 		top:50%;
 	}
 	a#derecha{
-		margin-right:20px;
-		width:40px;
+		margin-right:15px;
+		width:30px;
 		height:30px;
 		right:0px;
 		top:50%;	
 	}
 	a#arriba{
-		margin-top:20px;
+		margin-top:15px;
 		width:30px;
-		height:40px;
+		height:30px;
 		right:50%;
 		top:60px
 	}
 	a#abajo{
-		margin-bottom:20px;
+		margin-bottom:15px;
 		width:30px;
-		height:40px;
+		height:30px;
 		right:50%;
 		bottom:0px
 	}
