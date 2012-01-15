@@ -6,6 +6,8 @@
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
+@import "icon/*.png";
+@include all-icon-sprites;
 
 $frame_width_fino: 8px;
 $frame_width: 15px;
@@ -171,6 +173,10 @@ header{
 				display: table-cell;
 				vertical-align: middle;
 				.facebook a{
+					.icon-facebook{
+						height: 24;
+						width: 24;
+					}
 					background: url(../images/FacebookIcon.png) no-repeat;
 					background-position:center 12px;
 				}
