@@ -7,6 +7,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 @import "icon/*.png";
+@import "fancy-hover-mixin";
 @include all-icon-sprites;
 
 $frame_width_fino: 8px;
