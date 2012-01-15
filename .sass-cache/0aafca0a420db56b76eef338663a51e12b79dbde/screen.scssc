@@ -1,8 +1,8 @@
 3.1.12 (Brainy Betty)
-60237f6ec77e1d1ed3e14cfe9d3a42e8584b4eb5
+e2f9e61e7db3854cb7feea57205f168da5a70f5f
 o:Sass::Tree::RootNode
 :@has_childrenT:
-@linei:@template">D/* Welcome to Compass.
+@linei:@template"?D/* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
@@ -393,7 +393,7 @@ nav{
 		-webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
 		box-shadow: 0 0 4px rgba(255, 255, 255, 1);
 		-moz-border-radius: 8px;
-		-webkit-border-radius: 8px;
+		-webkit-border-radius: 12px;
 		border-radius: 8px;
 		color:black;
 		display:table;
@@ -1054,7 +1054,7 @@ width;iÄ;2;3;4i ;	[ ;@o;1;o;$;"	100%;%;&;@;["height;iÅ;2;3;4i ;
 ;4i ;	[o;1;o;$;"border-box;%;&;@;["box-sizing;iÉ;2;3;4i ;	[ ;@o;1;o;!	;";#;[	o;;@=;i ;iÑ;[ ;"0;@o;;@=;i ;iÑ;[ ;"0;@o;;[ ;i	;iÑ;["px;"4px;@o;'
 ;"	rgba;iÑ;([	o;;@=;iˇ;iÑ;[ ;"255;@o;;@=;iˇ;iÑ;[ ;"255;@o;;@=;iˇ;iÑ;[ ;"255;@o;;@=;i;iÑ;[ ;"1;@;@;){ ;iÑ;@;["-moz-box-shadow;iÑ;2;3;4i ;	[ ;@o;1;o;!	;";#;[	o;;@=;i ;iÖ;[ ;"0;@o;;@=;i ;iÖ;[ ;"0;@o;;[ ;i	;iÖ;["px;"4px;@o;'
 ;"	rgba;iÖ;([	o;;@=;iˇ;iÖ;[ ;"255;@o;;@=;iˇ;iÖ;[ ;"255;@o;;@=;iˇ;iÖ;[ ;"255;@o;;@=;i;iÖ;[ ;"1;@;@;){ ;iÖ;@;["-webkit-box-shadow;iÖ;2;3;4i ;	[ ;@o;1;o;!	;";#;[	o;;@=;i ;iÜ;[ ;"0;@o;;@=;i ;iÜ;[ ;"0;@o;;[ ;i	;iÜ;["px;"4px;@o;'
-;"	rgba;iÜ;([	o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;i;iÜ;[ ;"1;@;@;){ ;iÜ;@;["box-shadow;iÜ;2;3;4i ;	[ ;@o;1;o;$;"8px;%;&;@;["-moz-border-radius;iá;2;3;4i ;	[ ;@o;1;o;$;"8px;%;&;@;["-webkit-border-radius;ià;2;3;4i ;	[ ;@o;1;o;$;"8px;%;&;@;["border-radius;iâ;2;3;4i ;	[ ;@o;1;o;$;"
+;"	rgba;iÜ;([	o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;iˇ;iÜ;[ ;"255;@o;;@=;i;iÜ;[ ;"1;@;@;){ ;iÜ;@;["box-shadow;iÜ;2;3;4i ;	[ ;@o;1;o;$;"8px;%;&;@;["-moz-border-radius;iá;2;3;4i ;	[ ;@o;1;o;$;"	12px;%;&;@;["-webkit-border-radius;ià;2;3;4i ;	[ ;@o;1;o;$;"8px;%;&;@;["border-radius;iâ;2;3;4i ;	[ ;@o;1;o;$;"
 black;%;&;@;["
 color;iä;2;3;4i ;	[ ;@o;1;o;$;"
 table;%;&;@;["display;iã;2;3;4i ;	[ ;@o;1;o;'
