@@ -4,6 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
 
 $frame_width_fino: 8px;
 $frame_width: 15px;
@@ -24,21 +26,22 @@ $fondo_overlay2: rgba(255,255,255,0.90);
 
 
 @mixin header-font {
+	color: rgb(220,220,220);
 	display: block;
-	color: white;
 	font-size: 20px;
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 }
 @mixin header-tweet {
-	color: white;
+	color: rgb(220,220,220);
+	display: block;
 	font-size: 14px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
 @mixin header-button {
+	color: rgb(220,220,220);
 	display: block;
-	color: white;
-	font-size: 20px;
-	font-family: DroidSerif,Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
 @mixin header1-font {
 	display: block;
@@ -141,6 +144,12 @@ header{
 				z-index:  40;
 				a{
 					@include header-font;
+					@include transition(color .2s linear);
+					&:hover{
+						color: white;
+						@include transition(color .2s linear);
+						@include text-shadow( 0 0 10px rgba(255,255,255, 0.75));
+					};
 				}
 			}
 			section.tweet{
@@ -180,13 +189,13 @@ header{
 					height: 60px;
 					text-align: center;
 					vertical-align: middle;
-					color: rgba(255,255,255,0.75);
-					font-size: 11px;
-					font-family: DroidSans,Helvetica,Arial,sans-serif;
-					
+					@include transition(color .2s linear);
+					@include header-button;
 					&:hover{
-						color: rgba(255,255,255,1);
+						color: white;
 						background-position:center -36px;
+						@include transition(color .2s linear);
+						@include text-shadow( 0 0 10px rgba(255,255,255, 0.75));
 					};
 				}
 			}
@@ -329,12 +338,8 @@ footer{
 			width: 850px;
 			padding-top: 50px;
 			margin:auto;
-			-moz-column-count: 2;
-			-moz-column-gap: 20px;
-			-webkit-column-count: 2;
-			-webkit-column-gap: 20px;
-			column-count: 2;
-			column-gap: 20px;
+			@include column-count(2);
+			@include column-gap (20px);
 		}
 	}
 	&.libro{
@@ -354,9 +359,7 @@ footer{
 				margin-right: auto;
 				margin-left: auto;
 				display: table-cell;
-				-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
-				-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
-				box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+				@include box-shadow (0 0 8px rgba(0, 0, 0, 0.75));
 			}
 			figcaption{
 				text-align: center;
@@ -385,12 +388,8 @@ nav{
 	height:100%;
 	a{
 		box-sizing: border-box;
-		-moz-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
-		-webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 1);
-		box-shadow: 0 0 4px rgba(255, 255, 255, 1);
-		-moz-border-radius: 8px;
-		-webkit-border-radius: 9px;
-		border-radius: 8px;
+		@include box-shadow (0 0 4px rgba(255, 255, 255, 1));
+		@include border-radius(8px);
 		color:black;
 		display:table;
 		background: rgba(255, 255, 255,0.6);
@@ -406,8 +405,7 @@ nav{
 	a:hover{
 		opacity:1;
 		background: rgba(0,0,0,0.3);
-		transition: opacity .5s linear;
-		-webkit-transition: opacity .5s linear;
+		@include transition(opacity .5s linear);
 	}
 	a#izquierda{
 		margin-left:15px;
@@ -466,9 +464,7 @@ nav{
 @mixin recomendacion{
 	a{
 		background-color: rgb(248,248,248);
-		-moz-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
-		-webkit-box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
-		box-shadow:inset 0px 0px 3px rgba(0,0,0,0.25);
+		@include box-shadow(inset 0px 0px 3px rgba(0,0,0,0.25));
 	}
 }
 /*Estilos de imagenes*/
@@ -574,12 +570,8 @@ nav{
 		max-height: $miniatura_tall;
 		display: table;
 		img{
-			-moz-border-radius: 4px;
-			-webkit-border-radius: 4px;
-			border-radius: 4px;
-			-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
-			-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
-			box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+			@include border-radius (4px);
+			@include box-shadow (0 0 4px rgba(0, 0, 0, 0.75));
 			vertical-align: middle;
 			display: table-cell;
 			width: $una_col_width_menos_frame - 8px;
@@ -598,9 +590,7 @@ nav{
 			margin-right: auto;
 			margin-left: auto;
 			display: table-cell;
-			-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-			-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			@include box-shadow(0 0 5px rgba(0, 0, 0, 0.75));
 		}
 	}
 }
@@ -631,9 +621,7 @@ nav{
 			margin-right: auto;
 			margin-left: auto;
 			display: table-cell;
-			-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-			-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+			@include box-shadow(0 0 5px rgba(0, 0, 0, 0.75));
 		}
 	}
 }
