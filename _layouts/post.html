@@ -6,7 +6,6 @@ layout: default
 {% for image in page.background_image %}
 <div class="image-fullscreen" style="background-image:url(/images/blog/{{ image }})"></div>
 {% else %}
-     There is nothing in the collection.
 {% endfor %}
 <article id="cuerpo" class="post">
 	<div class="leftColumn" style="color: {{ page.color }}">
@@ -17,6 +16,11 @@ layout: default
 		<div class="bodyPost hyphenate text" lang="es">
 		{{ content }}
 		</div>
+	</div>
+	<div class="rightColumn">
+		{% if page.comments == "yes" %}
+		{% include _comments.html %}
+		{% endif %}
 	</div>
 </article>
 {% include _navigation.html %}

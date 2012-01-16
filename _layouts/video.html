@@ -3,10 +3,17 @@ layout: default
 ---
 
 <div class="colorbackground-fullscreen" style="background: black"></div>
+{% if page.background_image %}
 <div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }})"></div>
+{% else %}
+{% endif %}
 <section id="cuerpo" class="video">
+	<hgroup>
+		<h1 class="tituloPost">{{page.title}}</h1>
+		<h2 class="subtituloPost">{{page.subtitle}}</h2>
+	</hgroup>
 	{{ page.embed_link }}
-	<div class="bottomDescription">
+	<div class="bottomDescription hyphenate text">
 		{{ content }}
 	</div>
 </section>

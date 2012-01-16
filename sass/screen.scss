@@ -7,6 +7,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 @import "icon/*.png";
+@import "compass/utilities/links/";
 @include all-icon-sprites;
 
 $frame_width_fino: 8px;
@@ -25,6 +26,7 @@ $borde: $borde_stroke solid rgb(220,220,220);
 $borde2: $borde_stroke solid silver;
 $fondo_overlay: rgba(255,255,255,0.95);
 $fondo_overlay2: rgba(255,255,255,0.90);
+$hover_link_color: rgb(100,100,100);
 
 
 @mixin header-font {
@@ -74,23 +76,33 @@ $fondo_overlay2: rgba(255,255,255,0.90);
 }
 @mixin title-post-font {
 	display: block;
-	font-size: 20px;
+	font-size: 28px;
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
-	padding-bottom: 30px;
 }
 @mixin subtitle-post-font {
 	display: block;
 	opacity: 0.65;
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 24px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
-	padding-bottom: 40px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 @mixin body-post-font {
 	display: block;
 	font-size: 14px;
 	line-height: 20px;
 	font-family: Helvetica,Arial,sans-serif;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+@mixin body-header-post-font {
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: DroidSans,Helvetica,Arial,sans-serif;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 a {
 	color: black;
@@ -221,7 +233,7 @@ footer{
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 100px;
-	ul{
+	ul#grid{
 		width: 192px * 6;
 		li{
 			height: $fullheight;
@@ -330,10 +342,71 @@ footer{
 	.subtituloPost{
 		@include subtitle-post-font;
 	}
-	.bodyPost p{
-		@include body-post-font;
+	.bodyPost {
+		a{
+			text-decoration:underline;
+			&:hover{
+				color: $hover_link_color;
+			}
+			
+		}
+		h3, h2, h4{
+			@include body-header-post-font;
+		}
+		p:first-child{
+			padding-top: 0px;
+		}
+		p{
+			@include body-post-font;
+		}
+		figure{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		figcaption{
+			font-style:italic;
+			padding-top: 10px;
+		}
+		ul{
+			margin-bottom:30px;
+			list-style-type:circle;
+			li{
+				margin-bottom:5px;
+				a{
+					@include hover-link;
+				}
+			}
+		}
 	}
 	&.video{
+		h1.tituloPost{
+			font-size:20px;
+			color:white;
+			text-align:center;
+			padding-bottom:10px;
+		}
+		h2.subtituloPost{
+			font-size:14px;
+			color:white;
+			opacity:1;
+			text-align:center;
+			padding-top:0px;
+			padding-bottom:30px;
+		}
+		p:first-child{
+			text-indent:0px;
+		}
+		p{
+			text-indent:20px;
+		}
+		a{
+			color:white;
+			text-decoration:underline;
+			&:hover{
+				color: $hover_link_color;
+			}
+			
+		}
 		iframe, object{
 			margin-right: auto;
 			margin-left: auto;
@@ -378,8 +451,8 @@ footer{
 		.leftColumn{
 			min-height:700px;
 			box-sizing: border-box;
-			padding-right:30px;
-			width: 192px * 2.5;
+			padding-right:0px;
+			width: 500px;
 			float:left;
 			z-index: 100;
 		}
@@ -392,7 +465,9 @@ nav{
 	top:0px;
 	width:100%;
 	height:100%;
+	pointer-events: none;
 	a{
+		pointer-events: all;
 		box-sizing: border-box;
 		@include box-shadow (0 0 4px rgba(255, 255, 255, 1));
 		@include border-radius(8px);
@@ -743,7 +818,7 @@ nav{
 /*Layouts*/
 //Aqui se definen los layouts para todos los tipos de post, intentar que todo este hecho utilizando includes
 #cuerpo{ 
-	ul{
+	ul#grid{
 		//Layout la1
 		li.texto.una-col{
 			@include una-col;
