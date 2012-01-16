@@ -20,6 +20,6 @@ Cada proyecto en la exposición tiene impreso un código QR; utilizando el móvi
 
 La exposición se inauguró en octubre de 2011 en la "Escuela Superior de Arquitectura de San Sebastián":http://www.arkitektura.ehu.es/ e itinerará por diversas escuelas de arquitectura españolas durante el 2012.
 
-h2. Más información:
+h2. Más información
 * "Video presentación 'Arquía/Becas 2011'":http://vimeo.com/31342492
 * "Posts sobre el desarrollo de las 'like boxes' en el blog de Magda Sánchez":http://www.magdasanchez.es/category/arduino/

@@ -2,7 +2,7 @@
 style: una-col
 category: video
 title: Conrad Wolfram on TEDGlobal 2010
-subtitle: Teaching kids real math with computers Teaching kids real math with computers Teaching kids real math with computers Teaching kids real math with computers
+subtitle: Teaching kids real math with computers
 image: farm8.staticflickr.com/7012/6667942571_f5335eb5c9
 
 layout: video

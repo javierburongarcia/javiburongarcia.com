@@ -10,5 +10,3 @@ background_image:
 background_color:
 published: yes
 ---
-
-The next generation in rendering technology capable of simulating light exactly as it behaves in the real world.

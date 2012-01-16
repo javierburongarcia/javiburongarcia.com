@@ -9,5 +9,3 @@ image_caption: 2001 · 288 páginas por Capstone_
 layout: libro
 published: yes
 ---
-
-Una descripción de este libro

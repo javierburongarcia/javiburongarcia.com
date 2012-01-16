@@ -11,8 +11,9 @@ background_color: white
 published: yes
 ---
 
-Para nosotros representa una forma de entender el diseño desde un punto de vista más participativo y horizontal. No impone situaciones al espectador, sino que propone alternativas al usuario. Se sirve de la tecnología pero no la ensalza, simplemente la entiende como otra herramienta más. Desea construir diversidad y riqueza a partir de la suma de individualidades.
+Quisimos participar con un pez que representase una forma de entender el diseño desde un punto de vista más participativo y horizontal. Sin imponer situaciones al espectador, sino proponiendo alternativas al usuario. Sirviéndose de laa tecnología pero sin ensalzarla, simplemente entendiéndola como otra herramienta más. 
 
-Más información
-http://www.scalae.net/acuario/pez-do-it-yourself
-http://www.scalae.javierburon.net/
+El pez do-it-yourself construye diversidad y riqueza a partir de la suma de individualidades.
+
+h2. Enlaces Externos
+* "Acuario Scalae, Pez do-it-yourself":http://www.scalae.net/acuario/pez-do-it-yourself
