@@ -1,7 +1,7 @@
 ---
 style: dos-col
 category: proyecto
-tags: [diseño expositivo]
+tags: [diseño expositivo, arduino, arquitectura]
 title: Arquia Becas 2011
 subtitle: Diseño expositivo para la convocatoria Arquia/Becas 2011 de la fundación Caja de Arquitectos. Junto a Magda Sánchez
 image: farm8.staticflickr.com/7146/6679822097_2db0b9e741
@@ -10,14 +10,17 @@ layout: post
 background_image: exposicionArquiaBackground.jpg
 background_color: white
 published: yes
+embed_media: <iframe width="500" height="290" frameborder="0" src="http://files.slidemypics.com/app/js/iframe.html?bg_color=ffffff&amp;hash=9f21871950a2d871e570e4020a404743&amp;r=0.8865759160835296"></iframe>
 ---
 
-¿Es posible combinar la interacción instantánea, directa y azarosa de una exposición física con la enorme facilidad para propagar ideas del medio digital? La exposición arquia/becas 11 plantea una estrecha interconexión entre la exposición física y la web de manera que cualquier interacción en uno de los soportes se refleje en tiempo real en el otro.
+¿Es posible combinar la interacción instantánea, directa y azarosa de una exposición física con la enorme facilidad para propagar ideas del medio digital? En la exposición Arquia/Becas 2011 hemos planteado una estrecha interconexión entre el montaje físico y su versión web de manera que cualquier interacción en uno de los soportes se refleje en tiempo real en el otro.
 
-El soporte físico se construye mediante arcos de madera tensada unidos horizontalmente por una costilla estructural y de datos. Las propuestas seleccionadas se tensan ondulándose entre los arcos. El montaje permite múltiples configuraciones que permiten su instalación en espacios alargados, esquinas o zonas de paso.
+El montaje físico está construido mediante arcos de madera tensada unidos horizontalmente por una costilla estructural y de datos. Las propuestas seleccionadas están impresas en tela elástica tensada entre los arcos. Este montaje permite múltiples configuraciones que permiten su instalación en espacios alargados, esquinas o zonas de paso.
 
-Cada proyecto en la exposición tiene impreso un código QR; utilizando tu móvil puedes escanear el código, votar tu proyecto favorito y compartirlo en redes sociales. Las votaciones realizadas tanto en la propia exposición como en la web se actualizan en tiempo real junto con información estadística sobre cada proyecto.
+Cada proyecto en la exposición tiene impreso un código QR; utilizando el móvil se puede escanear el código, votar el proyecto favorito y compartirlo en las redes sociales. Las votaciones realizadas tanto en la propia exposición como en la web se actualizan en tiempo real junto con información estadística sobre cada proyecto. Para mostrar esta información dinámica desarrollamos una solución hardware propia basada en la plataforma "Arduino":http://www.arduino.cc/es/.
 
-Puedes descargar gratuitamente lectores de códigos QR (QR scanner) en la iTunes App Store, Android Market, BlackBerry App World y en el resto de tiendas de aplicaciones móviles.
+La exposición se inauguró en octubre de 2011 en la "Escuela Superior de Arquitectura de San Sebastián":http://www.arkitektura.ehu.es/ e itinerará por diversas escuelas de arquitectura españolas durante el 2012.
 
-Aquel proyecto que obtenga el mayor número de votos durante la itinerancia de la exposición recibirá el “Premio Del Público 2011”. Éste consistirá en un lote de 3 libros pertenecientes a las colecciones arquia/tesis, arquia/temas y la Cimbra, y un DVD de la colección arquia/documental, editados por la Fundación Caja de Arquitectos. Además se sortearán ante notario, 5 lotes similares entre todos aquellos que hayan participado en las votaciones.
+h2. Más información:
+* "Video presentación 'Arquía/Becas 2011'":http://vimeo.com/31342492
+* "Posts sobre el desarrollo de las 'like boxes' en el blog de Magda Sánchez":http://www.magdasanchez.es/category/arduino/

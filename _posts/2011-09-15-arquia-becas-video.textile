@@ -1,14 +1,22 @@
 ---
 style: dos-col
 category: video
-tags: [economía]
-title: Arquía/Becas 2011 video
-subtitle: on Vimeo 2:27
+tags: [visual scribing, stop-motion, video, diseño expositivo]
+title: Arquía/Becas 2011 presentation video
+subtitle: This is an stop-motion animation I made about the Arquia/Becas 2011 itinerant exhibition.
 image: farm8.staticflickr.com/7158/6667849787_21be59b88b
+language: en
 
 layout: video
-background_image:
 background_color: black
 published: yes
-embed_link: <iframe src="http://player.vimeo.com/video/31342492?title=0&amp;byline=0&amp;portrait=0" width="850" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+embed_link: <iframe src="http://player.vimeo.com/video/31342492?title=0&amp;byline=0&amp;portrait=0" width="650" height="370" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 ---
+
+The exhibition itself was designed and built by Magdalena Sánchez and myself and commissioned by Fundación Caja de Arquitectos, Spain.
+
+This technique is often called visual scribing in which a spoken track describes ideas and concepts while the graphics are being drawn. I finally didn't add the audio track as the video was supposed to be played in noisy environments. Music track is called 'Pearl' and it is composed by "Jahzzar":http://betterwithmusic.com/.
+
+The video is shot using my trusty four megapixels camera "Canon Powershot S45":http://www.dpreview.com/reviews/canons45/ I bought it while I was doing my final thesis and it still working great. It has a fantastic feature that you can't find anymore in consumer cameras, you can hook it directly to the computer and control it remotely.
+
+The software has an interval shooting option so you can automatically shoot a picture every five seconds (that's a hardware limitation due the USB 1.0 connection) while you keep drawing without interruption.
