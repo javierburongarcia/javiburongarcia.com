@@ -1,11 +1,13 @@
 javierburon.net personal website
 
+***
 To do:
+***
 
-–Projects should be more different from the other content. think about that
-–General views for each type of data: I want to see all the links, all the projects, all the videos and so on…
-—Add type of data icons in each frame: proyecto, link, video, –––libro–––, pelicula, foto, presentacion, articulo
-—Add more past content
++ Projects should be more different from the other content. think about that
++ General views for each type of data: I want to see all the links, all the projects, all the videos and so on…
++ Add type of data icons in each frame: proyecto, link, video, –––libro–––, pelicula, foto, presentacion, articulo
++ Add more past content
 	-Write descriptions for uploaded material
 	–GIS talk and presentation
 	–Laboratorio nuevas profesiones presentation
@@ -19,4 +21,6 @@ To do:
 –Add google analytics javascript
 –Work on a transition between main page and detail page. fade maybe?
 —Work on a navigation system in the detail page. back and forward. maybe left to right slide? 
-–Think in multilingual issue: how to solve it? Write in english and spanish indistinctly 
+–Think in multilingual issue: how to solve it? Write in english and spanish indistinctly
+
+–Reload dinamically http://css-tricks.com/dynamic-page-replacing-content/
