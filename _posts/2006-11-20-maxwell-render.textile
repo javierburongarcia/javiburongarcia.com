@@ -7,6 +7,7 @@ image: farm8.staticflickr.com/7020/6667622367_4b71feef6b
 
 layout: post
 background_image:
-background_color:
+background_color: white
+color: black
 published: yes
 ---

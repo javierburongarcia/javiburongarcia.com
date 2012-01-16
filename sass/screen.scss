@@ -480,52 +480,47 @@ nav{
 	a{
 		pointer-events: all;
 		box-sizing: border-box;
-		@include box-shadow (0 0 4px rgba(255, 255, 255, 1));
-		@include border-radius(8px);
-		color:black;
-		display:table;
-		background: rgba(255, 255, 255,0.6);
+		@include border-radius(3px);
+		max-width: 150px;
+		min-width: 90px;
+		font-size: 40px;
+		margin:0px;
 		position: absolute;
+		top:0px;
+		font-family: 'Lucida Grande';
+		background-color: transparent;
+		height:100%;
 		z-index:200;
-		opacity:1;
+		opacity:0.5;
+		display:block;
+		@include transition(all .25s linear);
 		span{
-			display:table-cell;
-			text-align: center;
-			vertical-align: middle;
+			display:block;
+			position: absolute;
+			text-align:center;
+			margin-top:50%;
+			width:90px;
+			height:30px;
 		}
 	}
 	a:hover{
 		opacity:1;
-		background: rgba(0,0,0,0.3);
-		@include transition(opacity .5s linear);
+		background-color: rgba(0,0,0, 0.06);
+		@include transition(all .25s linear);
 	}
 	a#izquierda{
-		margin-left:15px;
-		width:30px;
-		height:30px;
+		margin-left:5px;
 		left:0px;
-		top:50%;
+		span{
+			margin-left:-5px;
+		}
 	}
 	a#derecha{
-		margin-right:15px;
-		width:30px;
-		height:30px;
+		margin-right:5px;
 		right:0px;
-		top:50%;	
-	}
-	a#arriba{
-		margin-top:15px;
-		width:30px;
-		height:30px;
-		right:50%;
-		top:60px
-	}
-	a#abajo{
-		margin-bottom:15px;
-		width:30px;
-		height:30px;
-		right:50%;
-		bottom:0px
+		span{
+			margin-right:-5px;
+		}
 	}
 }
 /*Estilos de anchos de columna*/

@@ -8,6 +8,7 @@ image: farm8.staticflickr.com/7146/6679822097_2db0b9e741
 layout: post
 background_image: exposicionArquiaBackground.jpg
 background_color: white
+color: black
 published: yes
 embed_media: <iframe width="500" height="290" frameborder="0" src="http://files.slidemypics.com/app/js/iframe.html?bg_color=ffffff&amp;hash=9f21871950a2d871e570e4020a404743&amp;r=0.8865759160835296"></iframe>
 ---

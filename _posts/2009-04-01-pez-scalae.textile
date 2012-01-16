@@ -8,6 +8,7 @@ image: farm8.staticflickr.com/7147/6679816925_fd01ed3a4f
 layout: post
 background_image: pezScalaeBackground.jpg
 background_color: white
+color: black
 published: yes
 ---
 

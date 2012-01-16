@@ -8,6 +8,7 @@ language: en
 
 layout: video
 background_color: black
+color: white
 published: yes
 embed_link: <iframe src="http://player.vimeo.com/video/31342492?title=0&amp;byline=0&amp;portrait=0" width="650" height="370" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 ---

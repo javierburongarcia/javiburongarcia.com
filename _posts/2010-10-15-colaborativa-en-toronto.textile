@@ -7,6 +7,8 @@ image: farm8.staticflickr.com/7005/6667404723_cfc825afe8
 
 layout: video
 published: yes
+background_color: black
+color: white
 embed_link: <iframe width="850" height="480" src="http://www.youtube.com/embed/yeQspJ3fMIw?hd=1" frameborder="0" allowfullscreen></iframe>
 ---
 

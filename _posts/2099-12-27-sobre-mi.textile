@@ -9,6 +9,7 @@ permalink: /bio/
 
 background_image:
 background_color: white
+color: black
 published: yes
 ---
 

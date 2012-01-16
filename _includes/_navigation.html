@@ -1,12 +1,12 @@
 <nav>
 {% if page.next %} 
-	<a id="izquierda" rel="next" href="{{ page.next.url }}"><span>&larr;</span></a>
+	<a id="izquierda" rel="next" href="{{ page.next.url }}" style="color: {{ page.color }}" ><span>‹</span></a>
 {% endif %}
 {% comment %}
-	<a id="arriba" rel="home" href="/"><span>&uarr;</span></a>
-	<a id="abajo" rel="home" href="/"><span>&darr;</span></a>
+	<a id="arriba" rel="home" href="/"><span>&larr;›</span></a>
+	<a id="abajo" rel="home" href="/"><span>&larr;</span></a>
 {% endcomment %}
 {% if page.previous %} 
-	<a id="derecha" rel="prev" href="{{ page.previous.url }}"><span>&rarr;</span></a>
+	<a id="derecha" rel="prev" href="{{ page.previous.url }}" style="color: {{ page.color }}"><span>›</span></a>
 {% endif %}
 </nav>
