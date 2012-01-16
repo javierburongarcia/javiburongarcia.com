@@ -184,9 +184,26 @@ header{
 				width: 18%;
 				display: table-cell;
 				vertical-align: middle;
+<<<<<<< HEAD
 				.button a{
 					padding-top: 11px;
 					color: white;
+=======
+				.facebook a{
+					.icon-facebook{
+						height: 24;
+						width: 24;
+					}
+					background: url(../images/FacebookIcon.png) no-repeat;
+					background-position:center 12px;
+				}
+				.twitter a{
+					background: url(../images/TwitterIcon.png) no-repeat;
+					background-position:center 12px;
+				}
+				a{
+					box-sizing: border-box;
+>>>>>>> parent of 082e3cb... Basic styles finished
 					float:right;
 					width:70px;
 					box-sizing: border-box;
