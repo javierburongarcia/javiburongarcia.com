@@ -18,7 +18,7 @@ layout: default
 		</div>
 	</div>
 	<div class="rightColumn">
-		{% if page.comments %}
+		{% if page.comments == "yes" %}
 		{% include _comments.html %}
 		{% endif %}
 	</div>

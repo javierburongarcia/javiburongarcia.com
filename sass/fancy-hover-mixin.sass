@@ -1,0 +1,26 @@
+@mixin fancy-hover($sprite_dir, $off_state, $hover_state, $speed: 0.3s)
+  $sprites: sprite-map("#{$sprite_dir}/*.png")
+  $width: image-width(sprite_file($sprites, $off_state))
+  $height: image-height(sprite_file($sprites, $off_state))
+  +hide-text
+  width: $width
+  height: $height
+  background: sprite($sprites, $off_state) no-repeat
+  display: block
+  position: relative
+  span
+    width: $width
+    height: $height
+    background: sprite($sprites, $hover_state) no-repeat
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    +transition(opacity, $speed, ease-in-out)
+    .no-opacity &
+      visibility: hidden
+  &:hover span
+    opacity: 1
+    .no-opacity &
+      visibility: visible

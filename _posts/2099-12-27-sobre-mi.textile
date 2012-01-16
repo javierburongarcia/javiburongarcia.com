@@ -1,6 +1,5 @@
 ---
 style: una-col
-layout: bio
 category: texto
 tags: [biografía]
 title: Sobre mí
@@ -8,6 +7,7 @@ subtitle: en menos de 140 caracteres… Interested in cities, cofounder at @cola
 image: 0
 permalink: /bio/
 
+layout: bio
 background_image:
 background_color: white
 published: yes
