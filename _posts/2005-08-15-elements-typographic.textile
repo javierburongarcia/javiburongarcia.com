@@ -10,5 +10,3 @@ layout: libro
 background_color: white
 published: yes
 ---
-
-Falta descripción del libro Falta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libroFalta descripción del libro
