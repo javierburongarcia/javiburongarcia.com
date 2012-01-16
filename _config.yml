@@ -1,2 +1,2 @@
 auto: true
-permalink: /:year/:month/:categories/:title/
+permalink: /:year/:month/:categories/:title.html
