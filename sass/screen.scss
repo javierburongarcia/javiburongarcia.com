@@ -173,33 +173,37 @@ header{
 				width: 18%;
 				display: table-cell;
 				vertical-align: middle;
-				.facebook a{
-					background: url(../images/FacebookIcon.png) no-repeat;
-					background-position:center 12px;
-				}
-				.twitter a{
-					background: url(../images/TwitterIcon.png) no-repeat;
-					background-position:center 12px;
-				}
-				a{
-					box-sizing: border-box;
+				.button a{
+					padding-top: 11px;
+					color: white;
 					float:right;
 					width:70px;
-					padding-top: 35px;
-					padding-left: 10px;
-					padding-right: 10px;
-					display: table-cell;
+					box-sizing: border-box;
 					height: 60px;
 					text-align: center;
-					vertical-align: middle;
-					@include transition(color .2s linear);
 					@include header-button;
+					@include transition(color .2s linear);
+					.icon-facebook, .icon-twitter{
+						height: 24px;
+						width: 24px;
+						margin:auto;
+						display: block;
+						position: relative;
+					}
 					&:hover{
 						color: white;
-						background-position:center -36px;
 						@include transition(color .2s linear);
 						@include text-shadow( 0 0 10px rgba(255,255,255, 0.75));
 					};
+					&:hover .icon-facebook {
+						$icons: sprite-map("icon/*.png");
+						background-position: sprite-position($icons, facebook_hover);
+						
+					}
+					&:hover .icon-twitter{
+						$icons: sprite-map("icon/*.png");
+						background-position: sprite-position($icons, twitter_hover);
+					}
 				}
 			}
 		}

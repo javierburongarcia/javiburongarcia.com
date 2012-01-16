@@ -201,6 +201,7 @@ header #cabecera #botones section.socialButtons {
   display: table-cell;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 /* line 176, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons .facebook a {
   background: url(../images/FacebookIcon.png) no-repeat;
@@ -214,36 +215,62 @@ header #cabecera #botones section.socialButtons .twitter a {
 /* line 184, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons a {
   box-sizing: border-box;
+=======
+/* line 175, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .button a {
+  padding-top: 11px;
+  color: white;
+>>>>>>> Development
   float: right;
   width: 70px;
-  padding-top: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: table-cell;
+  box-sizing: border-box;
   height: 60px;
   text-align: center;
-  vertical-align: middle;
-  -moz-transition: color 0.2s linear;
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
   color: #dcdcdc;
   display: block;
   font-size: 11px;
   font-family: DroidSans,Helvetica,Arial,sans-serif;
+  -moz-transition: color 0.2s linear;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
+/* line 185, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .button a .icon-facebook, header #cabecera #botones section.socialButtons .button a .icon-twitter {
+  height: 24px;
+  width: 24px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+<<<<<<< HEAD
 /* line 197, ../sass/screen.scss */
 header #cabecera #botones section.socialButtons a:hover {
+=======
+/* line 192, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .button a:hover {
+>>>>>>> Development
   color: white;
-  background-position: center -36px;
   -moz-transition: color 0.2s linear;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
 }
+/* line 197, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .button a:hover .icon-facebook {
+  background-position: 0 -24px;
+}
+/* line 202, ../sass/screen.scss */
+header #cabecera #botones section.socialButtons .button a:hover .icon-twitter {
+  background-position: 0 -72px;
+}
 
+<<<<<<< HEAD
 /* line 208, ../sass/screen.scss */
+=======
+/* line 211, ../sass/screen.scss */
+>>>>>>> Development
 footer {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -255,34 +282,58 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 216, ../sass/screen.scss */
+=======
+/* line 219, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo {
   width: 1152px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 100px;
 }
+<<<<<<< HEAD
 /* line 221, ../sass/screen.scss */
 #cuerpo ul {
   width: 1152px;
 }
 /* line 223, ../sass/screen.scss */
+=======
+/* line 224, ../sass/screen.scss */
+#cuerpo ul {
+  width: 1152px;
+}
+/* line 226, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li {
   height: 300px;
   float: left;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 227, ../sass/screen.scss */
+=======
+/* line 230, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.una-col:last-child a {
   width: 193px;
   border-right: 1px solid #dcdcdc;
 }
+<<<<<<< HEAD
 /* line 231, ../sass/screen.scss */
+=======
+/* line 234, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.dos-col:last-child a {
   width: 385px;
   border-right: 1px solid #dcdcdc;
 }
+<<<<<<< HEAD
 /* line 235, ../sass/screen.scss */
+=======
+/* line 238, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a {
   box-sizing: border-box;
   position: relative;
@@ -293,6 +344,7 @@ footer {
   border-left: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
 }
+<<<<<<< HEAD
 /* line 244, ../sass/screen.scss */
 #cuerpo ul li a.cierrefila {
   border-right: 1px solid #dcdcdc;
@@ -302,22 +354,45 @@ footer {
   border-top: 1px solid #dcdcdc;
 }
 /* line 250, ../sass/screen.scss */
+=======
+/* line 247, ../sass/screen.scss */
+#cuerpo ul li a.cierrefila {
+  border-right: 1px solid #dcdcdc;
+}
+/* line 250, ../sass/screen.scss */
+#cuerpo ul li a.fila1 {
+  border-top: 1px solid #dcdcdc;
+}
+/* line 253, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a .miniatura {
   box-sizing: border-box;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 254, ../sass/screen.scss */
 #cuerpo ul li a .texto {
   box-sizing: border-box;
 }
 /* line 256, ../sass/screen.scss */
+=======
+/* line 257, ../sass/screen.scss */
+#cuerpo ul li a .texto {
+  box-sizing: border-box;
+}
+/* line 259, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a .texto .subtitulo {
   display: block;
   color: #888;
   font-size: 12px;
   font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
+<<<<<<< HEAD
 /* line 260, ../sass/screen.scss */
+=======
+/* line 263, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a .fecha {
   box-sizing: border-box;
   display: block;
@@ -329,7 +404,11 @@ footer {
   right: 30px;
   bottom: 6px;
 }
+<<<<<<< HEAD
 /* line 268, ../sass/screen.scss */
+=======
+/* line 271, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a .icono {
   position: absolute;
   width: 20px;
@@ -338,6 +417,7 @@ footer {
   bottom: 8px;
   background: url(../images/iconos.png) no-repeat;
 }
+<<<<<<< HEAD
 /* line 275, ../sass/screen.scss */
 #cuerpo ul li a .icono.proyecto {
   background-position: 0 0px;
@@ -363,12 +443,43 @@ footer {
   background-position: 0 -100px;
 }
 /* line 293, ../sass/screen.scss */
+=======
+/* line 278, ../sass/screen.scss */
+#cuerpo ul li a .icono.proyecto {
+  background-position: 0 0px;
+}
+/* line 281, ../sass/screen.scss */
+#cuerpo ul li a .icono.libro {
+  background-position: 0 -20px;
+}
+/* line 284, ../sass/screen.scss */
+#cuerpo ul li a .icono.foto {
+  background-position: 0 -40px;
+}
+/* line 287, ../sass/screen.scss */
+#cuerpo ul li a .icono.video {
+  background-position: 0 -60px;
+}
+/* line 290, ../sass/screen.scss */
+#cuerpo ul li a .icono.texto, #cuerpo ul li a .icono.articulo {
+  background-position: 0 -80px;
+}
+/* line 293, ../sass/screen.scss */
+#cuerpo ul li a .icono.pelicula {
+  background-position: 0 -100px;
+}
+/* line 296, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li a .icono.link {
   background-position: 0 -120px;
 }
 
 /*Estilos de vistas individuales*/
+<<<<<<< HEAD
 /* line 302, ../sass/screen.scss */
+=======
+/* line 305, ../sass/screen.scss */
+>>>>>>> Development
 .colorbackground-fullscreen {
   position: fixed;
   left: 0px;
@@ -379,7 +490,11 @@ footer {
   z-index: -300;
 }
 
+<<<<<<< HEAD
 /* line 311, ../sass/screen.scss */
+=======
+/* line 314, ../sass/screen.scss */
+>>>>>>> Development
 .image-fullscreen {
   background: 50% 50% no-repeat;
   position: fixed;
@@ -391,18 +506,30 @@ footer {
   z-index: -200;
 }
 
+<<<<<<< HEAD
 /* line 322, ../sass/screen.scss */
 #cuerpo {
   padding-top: 120px;
 }
 /* line 324, ../sass/screen.scss */
+=======
+/* line 325, ../sass/screen.scss */
+#cuerpo {
+  padding-top: 120px;
+}
+/* line 327, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo .tituloPost {
   display: block;
   font-size: 20px;
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 30px;
 }
+<<<<<<< HEAD
 /* line 327, ../sass/screen.scss */
+=======
+/* line 330, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo .subtituloPost {
   display: block;
   opacity: 0.65;
@@ -410,7 +537,11 @@ footer {
   font-family: DroidSans,Helvetica,Arial,sans-serif;
   padding-bottom: 40px;
 }
+<<<<<<< HEAD
 /* line 330, ../sass/screen.scss */
+=======
+/* line 333, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo .bodyPost p {
   display: block;
   font-size: 14px;
@@ -418,13 +549,21 @@ footer {
   font-family: Helvetica,Arial,sans-serif;
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
 /* line 334, ../sass/screen.scss */
+=======
+/* line 337, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.video iframe, #cuerpo.video object {
   margin-right: auto;
   margin-left: auto;
   display: table-cell;
 }
+<<<<<<< HEAD
 /* line 339, ../sass/screen.scss */
+=======
+/* line 342, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.video .bottomDescription {
   color: white;
   width: 850px;
@@ -439,7 +578,11 @@ footer {
   -o-column-gap: 20px;
   column-gap: 20px;
 }
+<<<<<<< HEAD
 /* line 349, ../sass/screen.scss */
+=======
+/* line 352, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.libro .leftColumn {
   box-sizing: border-box;
   padding-right: 30px;
@@ -447,14 +590,22 @@ footer {
   float: left;
   z-index: 100;
 }
+<<<<<<< HEAD
 /* line 356, ../sass/screen.scss */
+=======
+/* line 359, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.libro .cover {
   padding-top: 30px;
   display: table;
   width: 576px;
   float: right;
 }
+<<<<<<< HEAD
 /* line 361, ../sass/screen.scss */
+=======
+/* line 364, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.libro .cover img {
   margin-right: auto;
   margin-left: auto;
@@ -464,7 +615,11 @@ footer {
   -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 }
+<<<<<<< HEAD
 /* line 367, ../sass/screen.scss */
+=======
+/* line 370, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.libro .cover figcaption {
   text-align: center;
   padding-top: 10px;
@@ -473,7 +628,11 @@ footer {
   font-size: 10px;
   font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
+<<<<<<< HEAD
 /* line 375, ../sass/screen.scss */
+=======
+/* line 378, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo.post .leftColumn {
   min-height: 700px;
   box-sizing: border-box;
@@ -483,7 +642,11 @@ footer {
   z-index: 100;
 }
 
+<<<<<<< HEAD
 /* line 385, ../sass/screen.scss */
+=======
+/* line 388, ../sass/screen.scss */
+>>>>>>> Development
 nav {
   color: black;
   position: fixed;
@@ -491,7 +654,11 @@ nav {
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
 /* line 392, ../sass/screen.scss */
+=======
+/* line 395, ../sass/screen.scss */
+>>>>>>> Development
 nav a {
   box-sizing: border-box;
   -moz-box-shadow: 0 0 4px white;
@@ -511,13 +678,21 @@ nav a {
   z-index: 200;
   opacity: 1;
 }
+<<<<<<< HEAD
 /* line 402, ../sass/screen.scss */
+=======
+/* line 405, ../sass/screen.scss */
+>>>>>>> Development
 nav a span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 /* line 408, ../sass/screen.scss */
+=======
+/* line 411, ../sass/screen.scss */
+>>>>>>> Development
 nav a:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.3);
@@ -526,7 +701,11 @@ nav a:hover {
   -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
 }
+<<<<<<< HEAD
 /* line 413, ../sass/screen.scss */
+=======
+/* line 416, ../sass/screen.scss */
+>>>>>>> Development
 nav a#izquierda {
   margin-left: 15px;
   width: 30px;
@@ -534,7 +713,11 @@ nav a#izquierda {
   left: 0px;
   top: 50%;
 }
+<<<<<<< HEAD
 /* line 420, ../sass/screen.scss */
+=======
+/* line 423, ../sass/screen.scss */
+>>>>>>> Development
 nav a#derecha {
   margin-right: 15px;
   width: 30px;
@@ -542,7 +725,11 @@ nav a#derecha {
   right: 0px;
   top: 50%;
 }
+<<<<<<< HEAD
 /* line 427, ../sass/screen.scss */
+=======
+/* line 430, ../sass/screen.scss */
+>>>>>>> Development
 nav a#arriba {
   margin-top: 15px;
   width: 30px;
@@ -550,7 +737,11 @@ nav a#arriba {
   right: 50%;
   top: 60px;
 }
+<<<<<<< HEAD
 /* line 434, ../sass/screen.scss */
+=======
+/* line 437, ../sass/screen.scss */
+>>>>>>> Development
 nav a#abajo {
   margin-bottom: 15px;
   width: 30px;
@@ -563,6 +754,7 @@ nav a#abajo {
 /*Estilos de imagenes*/
 /*Estilos de texto*/
 /*Layouts*/
+<<<<<<< HEAD
 /* line 745, ../sass/screen.scss */
 #cuerpo ul li.texto.una-col {
   width: 192px;
@@ -572,6 +764,17 @@ nav a#abajo {
   width: 192px;
 }
 /* line 655, ../sass/screen.scss */
+=======
+/* line 748, ../sass/screen.scss */
+#cuerpo ul li.texto.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.texto.una-col a {
+  width: 192px;
+}
+/* line 658, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.texto.una-col .texto .titulo {
   display: block;
   color: black;
@@ -579,6 +782,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 /* line 750, ../sass/screen.scss */
 #cuerpo ul li.articulo.una-col {
   width: 192px;
@@ -588,11 +792,23 @@ nav a#abajo {
   width: 192px;
 }
 /* line 477, ../sass/screen.scss */
+=======
+/* line 753, ../sass/screen.scss */
+#cuerpo ul li.articulo.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.articulo.una-col a {
+  width: 192px;
+}
+/* line 480, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   height: 94px;
 }
+<<<<<<< HEAD
 /* line 481, ../sass/screen.scss */
 #cuerpo ul li.articulo.una-col .miniatura img {
   width: 160px;
@@ -602,6 +818,17 @@ nav a#abajo {
   padding-top: 10px;
 }
 /* line 663, ../sass/screen.scss */
+=======
+/* line 484, ../sass/screen.scss */
+#cuerpo ul li.articulo.una-col .miniatura img {
+  width: 160px;
+}
+/* line 664, ../sass/screen.scss */
+#cuerpo ul li.articulo.una-col .texto {
+  padding-top: 10px;
+}
+/* line 666, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.una-col .texto .titulo {
   display: block;
   color: black;
@@ -610,6 +837,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 755, ../sass/screen.scss */
 #cuerpo ul li.video.una-col {
   width: 192px;
@@ -619,16 +847,35 @@ nav a#abajo {
   width: 192px;
 }
 /* line 487, ../sass/screen.scss */
+=======
+/* line 758, ../sass/screen.scss */
+#cuerpo ul li.video.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.video.una-col a {
+  width: 192px;
+}
+/* line 490, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   height: 94px;
 }
+<<<<<<< HEAD
 /* line 491, ../sass/screen.scss */
 #cuerpo ul li.video.una-col .miniatura img {
   width: 160px;
 }
 /* line 494, ../sass/screen.scss */
+=======
+/* line 494, ../sass/screen.scss */
+#cuerpo ul li.video.una-col .miniatura img {
+  width: 160px;
+}
+/* line 497, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.una-col .miniatura .icono_miniatura {
   position: absolute;
   z-index: 10;
@@ -638,17 +885,29 @@ nav a#abajo {
   background-position-x: 59px;
   background-position-y: 22px;
 }
+<<<<<<< HEAD
 /* line 502, ../sass/screen.scss */
+=======
+/* line 505, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.una-col .miniatura .icono_miniatura:hover {
   background: url(../images/video_icon_small.png) no-repeat;
   background-position-x: 59px;
   background-position-y: -128px;
 }
+<<<<<<< HEAD
 /* line 661, ../sass/screen.scss */
 #cuerpo ul li.video.una-col .texto {
   padding-top: 10px;
 }
 /* line 663, ../sass/screen.scss */
+=======
+/* line 664, ../sass/screen.scss */
+#cuerpo ul li.video.una-col .texto {
+  padding-top: 10px;
+}
+/* line 666, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.una-col .texto .titulo {
   display: block;
   color: black;
@@ -657,7 +916,11 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 468, ../sass/screen.scss */
+=======
+/* line 471, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.una-col a {
   background-color: #f8f8f8;
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -665,20 +928,36 @@ nav a#abajo {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
 /* line 761, ../sass/screen.scss */
 #cuerpo ul li.proyecto.una-col {
   width: 192px;
 }
 /* line 632, ../sass/screen.scss */
+=======
+/* line 764, ../sass/screen.scss */
+#cuerpo ul li.proyecto.una-col {
+  width: 192px;
+}
+/* line 635, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.una-col .miniatura {
   width: 174px;
   height: 282px;
 }
+<<<<<<< HEAD
 /* line 635, ../sass/screen.scss */
 #cuerpo ul li.proyecto.una-col .miniatura img {
   height: 282px;
 }
 /* line 669, ../sass/screen.scss */
+=======
+/* line 638, ../sass/screen.scss */
+#cuerpo ul li.proyecto.una-col .miniatura img {
+  height: 282px;
+}
+/* line 672, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.una-col .texto {
   position: absolute;
   bottom: 0px;
@@ -690,7 +969,11 @@ nav a#abajo {
   height: 206px;
   width: 192px;
 }
+<<<<<<< HEAD
 /* line 679, ../sass/screen.scss */
+=======
+/* line 682, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.una-col .texto .titulo {
   display: block;
   color: black;
@@ -699,6 +982,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 445, ../sass/screen.scss */
 #cuerpo ul li.proyecto.una-col a {
   width: 192px;
@@ -708,18 +992,37 @@ nav a#abajo {
   padding: 8px;
 }
 /* line 769, ../sass/screen.scss */
+=======
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.proyecto.una-col a {
+  width: 192px;
+}
+/* line 454, ../sass/screen.scss */
+#cuerpo ul li.proyecto.una-col a {
+  padding: 8px;
+}
+/* line 772, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col,
 #cuerpo ul li.link.dos-col,
 #cuerpo ul li.pelicula.dos-col, #cuerpo ul li.documento.dos-col {
   width: 384px;
 }
+<<<<<<< HEAD
 /* line 457, ../sass/screen.scss */
+=======
+/* line 460, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col a,
 #cuerpo ul li.link.dos-col a,
 #cuerpo ul li.pelicula.dos-col a, #cuerpo ul li.documento.dos-col a {
   width: 384px;
 }
+<<<<<<< HEAD
 /* line 607, ../sass/screen.scss */
+=======
+/* line 610, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col .miniatura,
 #cuerpo ul li.link.dos-col .miniatura,
 #cuerpo ul li.pelicula.dos-col .miniatura, #cuerpo ul li.documento.dos-col .miniatura {
@@ -727,13 +1030,21 @@ nav a#abajo {
   width: 177px;
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 611, ../sass/screen.scss */
+=======
+/* line 614, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col .miniatura img,
 #cuerpo ul li.link.dos-col .miniatura img,
 #cuerpo ul li.pelicula.dos-col .miniatura img, #cuerpo ul li.documento.dos-col .miniatura img {
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 685, ../sass/screen.scss */
+=======
+/* line 688, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col .texto,
 #cuerpo ul li.link.dos-col .texto,
 #cuerpo ul li.pelicula.dos-col .texto, #cuerpo ul li.documento.dos-col .texto {
@@ -745,7 +1056,11 @@ nav a#abajo {
   bottom: 0px;
   left: 192px;
 }
+<<<<<<< HEAD
 /* line 693, ../sass/screen.scss */
+=======
+/* line 696, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.articulo.dos-col .texto .titulo,
 #cuerpo ul li.link.dos-col .texto .titulo,
 #cuerpo ul li.pelicula.dos-col .texto .titulo, #cuerpo ul li.documento.dos-col .texto .titulo {
@@ -755,6 +1070,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 /* line 774, ../sass/screen.scss */
 #cuerpo ul li.libro.dos-col {
   width: 384px;
@@ -764,12 +1080,27 @@ nav a#abajo {
   width: 384px;
 }
 /* line 617, ../sass/screen.scss */
+=======
+/* line 777, ../sass/screen.scss */
+#cuerpo ul li.libro.dos-col {
+  width: 384px;
+}
+/* line 460, ../sass/screen.scss */
+#cuerpo ul li.libro.dos-col a {
+  width: 384px;
+}
+/* line 620, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.dos-col .miniatura {
   margin-right: 15px;
   width: 177px;
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 621, ../sass/screen.scss */
+=======
+/* line 624, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.dos-col .miniatura img {
   margin-top: 5px;
   height: 260px;
@@ -781,7 +1112,11 @@ nav a#abajo {
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
+<<<<<<< HEAD
 /* line 685, ../sass/screen.scss */
+=======
+/* line 688, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.dos-col .texto {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
@@ -791,7 +1126,11 @@ nav a#abajo {
   bottom: 0px;
   left: 192px;
 }
+<<<<<<< HEAD
 /* line 693, ../sass/screen.scss */
+=======
+/* line 696, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -799,6 +1138,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 /* line 779, ../sass/screen.scss */
 #cuerpo ul li.proyecto.dos-col {
   width: 384px;
@@ -812,15 +1152,38 @@ nav a#abajo {
   padding: 8px;
 }
 /* line 641, ../sass/screen.scss */
+=======
+/* line 782, ../sass/screen.scss */
+#cuerpo ul li.proyecto.dos-col {
+  width: 384px;
+}
+/* line 460, ../sass/screen.scss */
+#cuerpo ul li.proyecto.dos-col a {
+  width: 384px;
+}
+/* line 466, ../sass/screen.scss */
+#cuerpo ul li.proyecto.dos-col a {
+  padding: 8px;
+}
+/* line 644, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.dos-col .miniatura {
   width: 366px;
   height: 282px;
 }
+<<<<<<< HEAD
 /* line 644, ../sass/screen.scss */
 #cuerpo ul li.proyecto.dos-col .miniatura img {
   height: 282px;
 }
 /* line 685, ../sass/screen.scss */
+=======
+/* line 647, ../sass/screen.scss */
+#cuerpo ul li.proyecto.dos-col .miniatura img {
+  height: 282px;
+}
+/* line 688, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.dos-col .texto {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
@@ -830,7 +1193,11 @@ nav a#abajo {
   bottom: 0px;
   left: 192px;
 }
+<<<<<<< HEAD
 /* line 693, ../sass/screen.scss */
+=======
+/* line 696, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.proyecto.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -838,6 +1205,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 /* line 785, ../sass/screen.scss */
 #cuerpo ul li.link.una-col {
   width: 192px;
@@ -847,13 +1215,28 @@ nav a#abajo {
   width: 192px;
 }
 /* line 570, ../sass/screen.scss */
+=======
+/* line 788, ../sass/screen.scss */
+#cuerpo ul li.link.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.link.una-col a {
+  width: 192px;
+}
+/* line 573, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.link.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   max-height: 190px;
   display: table;
 }
+<<<<<<< HEAD
 /* line 575, ../sass/screen.scss */
+=======
+/* line 578, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.link.una-col .miniatura img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -870,11 +1253,19 @@ nav a#abajo {
   width: 152px;
   margin: 4px;
 }
+<<<<<<< HEAD
 /* line 700, ../sass/screen.scss */
 #cuerpo ul li.link.una-col .texto {
   padding-top: 10px;
 }
 /* line 702, ../sass/screen.scss */
+=======
+/* line 703, ../sass/screen.scss */
+#cuerpo ul li.link.una-col .texto {
+  padding-top: 10px;
+}
+/* line 705, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.link.una-col .texto .titulo {
   display: block;
   color: black;
@@ -883,7 +1274,11 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 468, ../sass/screen.scss */
+=======
+/* line 471, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.link.una-col a {
   background-color: #f8f8f8;
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -891,29 +1286,49 @@ nav a#abajo {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
 /* line 793, ../sass/screen.scss */
+=======
+/* line 796, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col,
 #cuerpo ul li.presentacion.dos-col {
   width: 384px;
 }
+<<<<<<< HEAD
 /* line 457, ../sass/screen.scss */
+=======
+/* line 460, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col a,
 #cuerpo ul li.presentacion.dos-col a {
   width: 384px;
 }
+<<<<<<< HEAD
 /* line 547, ../sass/screen.scss */
+=======
+/* line 550, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col .miniatura,
 #cuerpo ul li.presentacion.dos-col .miniatura {
   margin-bottom: 10px;
   width: 352px;
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 551, ../sass/screen.scss */
+=======
+/* line 554, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col .miniatura img,
 #cuerpo ul li.presentacion.dos-col .miniatura img {
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 716, ../sass/screen.scss */
+=======
+/* line 719, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col .texto,
 #cuerpo ul li.presentacion.dos-col .texto {
   text-align: right;
@@ -926,7 +1341,11 @@ nav a#abajo {
   bottom: 13px;
   padding: 5px;
 }
+<<<<<<< HEAD
 /* line 726, ../sass/screen.scss */
+=======
+/* line 729, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col .texto .titulo,
 #cuerpo ul li.presentacion.dos-col .texto .titulo {
   display: block;
@@ -936,11 +1355,16 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 735, ../sass/screen.scss */
+=======
+/* line 738, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.foto.dos-col .texto,
 #cuerpo ul li.presentacion.dos-col .texto {
   width: 352px;
 }
+<<<<<<< HEAD
 /* line 799, ../sass/screen.scss */
 #cuerpo ul li.video.dos-col {
   width: 384px;
@@ -950,16 +1374,35 @@ nav a#abajo {
   width: 384px;
 }
 /* line 522, ../sass/screen.scss */
+=======
+/* line 802, ../sass/screen.scss */
+#cuerpo ul li.video.dos-col {
+  width: 384px;
+}
+/* line 460, ../sass/screen.scss */
+#cuerpo ul li.video.dos-col a {
+  width: 384px;
+}
+/* line 525, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.dos-col .miniatura {
   margin-bottom: 10px;
   width: 352px;
   height: 190px;
 }
+<<<<<<< HEAD
 /* line 526, ../sass/screen.scss */
 #cuerpo ul li.video.dos-col .miniatura img {
   width: 352px;
 }
 /* line 529, ../sass/screen.scss */
+=======
+/* line 529, ../sass/screen.scss */
+#cuerpo ul li.video.dos-col .miniatura img {
+  width: 352px;
+}
+/* line 532, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.dos-col .miniatura .icono_miniatura {
   position: absolute;
   left: 50%;
@@ -971,16 +1414,28 @@ nav a#abajo {
   height: 268px;
   background: url(../images/video_icon.png) no-repeat;
 }
+<<<<<<< HEAD
 /* line 539, ../sass/screen.scss */
+=======
+/* line 542, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.dos-col .miniatura .icono_miniatura:hover {
   background: url(../images/video_icon.png) no-repeat;
   background-position: 0 -300px;
 }
+<<<<<<< HEAD
 /* line 708, ../sass/screen.scss */
 #cuerpo ul li.video.dos-col .texto {
   padding-top: 10px;
 }
 /* line 710, ../sass/screen.scss */
+=======
+/* line 711, ../sass/screen.scss */
+#cuerpo ul li.video.dos-col .texto {
+  padding-top: 10px;
+}
+/* line 713, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.video.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -989,6 +1444,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 805, ../sass/screen.scss */
 #cuerpo ul li.pelicula.una-col {
   width: 192px;
@@ -998,23 +1454,46 @@ nav a#abajo {
   width: 192px;
 }
 /* line 557, ../sass/screen.scss */
+=======
+/* line 808, ../sass/screen.scss */
+#cuerpo ul li.pelicula.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.pelicula.una-col a {
+  width: 192px;
+}
+/* line 560, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.pelicula.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   height: 190px;
   display: table;
 }
+<<<<<<< HEAD
 /* line 562, ../sass/screen.scss */
+=======
+/* line 565, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.pelicula.una-col .miniatura img {
   vertical-align: middle;
   display: table-cell;
   width: 160px;
 }
+<<<<<<< HEAD
 /* line 700, ../sass/screen.scss */
 #cuerpo ul li.pelicula.una-col .texto {
   padding-top: 10px;
 }
 /* line 702, ../sass/screen.scss */
+=======
+/* line 703, ../sass/screen.scss */
+#cuerpo ul li.pelicula.una-col .texto {
+  padding-top: 10px;
+}
+/* line 705, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.pelicula.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1023,7 +1502,11 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 468, ../sass/screen.scss */
+=======
+/* line 471, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.pelicula.una-col a {
   background-color: #f8f8f8;
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -1031,6 +1514,7 @@ nav a#abajo {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
 /* line 811, ../sass/screen.scss */
 #cuerpo ul li.documento.una-col {
   width: 192px;
@@ -1040,23 +1524,46 @@ nav a#abajo {
   width: 192px;
 }
 /* line 557, ../sass/screen.scss */
+=======
+/* line 814, ../sass/screen.scss */
+#cuerpo ul li.documento.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.documento.una-col a {
+  width: 192px;
+}
+/* line 560, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.documento.una-col .miniatura {
   margin-bottom: 10px;
   width: 160px;
   height: 190px;
   display: table;
 }
+<<<<<<< HEAD
 /* line 562, ../sass/screen.scss */
+=======
+/* line 565, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.documento.una-col .miniatura img {
   vertical-align: middle;
   display: table-cell;
   width: 160px;
 }
+<<<<<<< HEAD
 /* line 700, ../sass/screen.scss */
 #cuerpo ul li.documento.una-col .texto {
   padding-top: 10px;
 }
 /* line 702, ../sass/screen.scss */
+=======
+/* line 703, ../sass/screen.scss */
+#cuerpo ul li.documento.una-col .texto {
+  padding-top: 10px;
+}
+/* line 705, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.documento.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1065,6 +1572,7 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 816, ../sass/screen.scss */
 #cuerpo ul li.libro.una-col {
   width: 192px;
@@ -1074,13 +1582,28 @@ nav a#abajo {
   width: 192px;
 }
 /* line 586, ../sass/screen.scss */
+=======
+/* line 819, ../sass/screen.scss */
+#cuerpo ul li.libro.una-col {
+  width: 192px;
+}
+/* line 448, ../sass/screen.scss */
+#cuerpo ul li.libro.una-col a {
+  width: 192px;
+}
+/* line 589, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.una-col .miniatura {
   float: left;
   margin-bottom: 10px;
   width: 160px;
   height: 190px;
 }
+<<<<<<< HEAD
 /* line 591, ../sass/screen.scss */
+=======
+/* line 594, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.una-col .miniatura img {
   height: 185px;
   margin-right: auto;
@@ -1091,11 +1614,19 @@ nav a#abajo {
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
+<<<<<<< HEAD
 /* line 700, ../sass/screen.scss */
 #cuerpo ul li.libro.una-col .texto {
   padding-top: 10px;
 }
 /* line 702, ../sass/screen.scss */
+=======
+/* line 703, ../sass/screen.scss */
+#cuerpo ul li.libro.una-col .texto {
+  padding-top: 10px;
+}
+/* line 705, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1104,7 +1635,11 @@ nav a#abajo {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
+<<<<<<< HEAD
 /* line 468, ../sass/screen.scss */
+=======
+/* line 471, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.libro.una-col a {
   background-color: #f8f8f8;
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -1112,23 +1647,39 @@ nav a#abajo {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
 /* line 824, ../sass/screen.scss */
+=======
+/* line 827, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.presentacion.una-col,
 #cuerpo ul li.foto.una-col {
   width: 192px;
 }
+<<<<<<< HEAD
 /* line 445, ../sass/screen.scss */
+=======
+/* line 448, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.presentacion.una-col a,
 #cuerpo ul li.foto.una-col a {
   width: 192px;
 }
+<<<<<<< HEAD
 /* line 601, ../sass/screen.scss */
+=======
+/* line 604, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.presentacion.una-col .miniatura,
 #cuerpo ul li.foto.una-col .miniatura {
   width: 160px;
   height: 270px;
 }
+<<<<<<< HEAD
 /* line 716, ../sass/screen.scss */
+=======
+/* line 719, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.presentacion.una-col .texto,
 #cuerpo ul li.foto.una-col .texto {
   text-align: right;
@@ -1141,7 +1692,11 @@ nav a#abajo {
   bottom: 13px;
   padding: 5px;
 }
+<<<<<<< HEAD
 /* line 726, ../sass/screen.scss */
+=======
+/* line 729, ../sass/screen.scss */
+>>>>>>> Development
 #cuerpo ul li.presentacion.una-col .texto .titulo,
 #cuerpo ul li.foto.una-col .texto .titulo {
   display: block;
