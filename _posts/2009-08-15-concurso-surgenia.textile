@@ -1,7 +1,6 @@
 ---
 style: dos-col
 category: proyecto
-tags: [documental]
 title: Plataforma para Micro-Intervenciones Artísticas
 subtitle: Propuesta para el concurso de Paisaje Vertical Urbano convocado por Surgenia. Junto a Magda Sánchez
 image: farm8.staticflickr.com/7143/6661893243_e808c427b5_m

@@ -1,7 +1,6 @@
 ---
 style: una-col
 category: link
-tags: [computer graphics, rendering, simulation]
 title: Maxwell Render
 subtitle: The next generation in rendering technology capable of simulating light exactly as it behaves in the real world.
 image: farm8.staticflickr.com/7020/6667622367_4b71feef6b

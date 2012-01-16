@@ -1,14 +1,11 @@
 ---
 style: dos-col
 category: video
-tags: [documental]
 title: Colaborativa en Toronto
 subtitle: Resumen en video de nuestro viaje a Toronto para investigar sobre espacios colectivos de trabajo
 image: farm8.staticflickr.com/7005/6667404723_cfc825afe8
 
 layout: video
-background_image:
-background_color:
 published: yes
 embed_link: <iframe width="850" height="480" src="http://www.youtube.com/embed/yeQspJ3fMIw?hd=1" frameborder="0" allowfullscreen></iframe>
 ---

@@ -1,9 +1,7 @@
 ---
 style: dos-col
 category: foto
-tags: [documental]
 title: Iceland
-subtitle: 
 image: farm8.staticflickr.com/7155/6667525727_82f694726c
 overlay: 0
 

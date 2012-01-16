@@ -1,13 +1,12 @@
 ---
 style: dos-col
 category: proyecto
-tags: [diseño expositivo, arquitectura, arte, bienal de Venecia]
 title: The lives of Spaces
 subtitle: Ireland's participation at the 11th International Architecture Exhibition
 image: farm8.staticflickr.com/7145/6679646415_f43ac638bb_b
 
 layout: post
-background_image: [biennaleBackground.jpg]
+background_image: biennaleBackground.jpg
 background_color: black
 color: white
 published: yes

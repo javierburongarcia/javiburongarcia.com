@@ -1,7 +1,6 @@
 ---
 style: dos-col
 category: proyecto
-tags: [publicación, arquitectura, arte, tecnología]
 title: Archfarm
 subtitle: fascículos aperiódicos de arquitectura
 image: farm8.staticflickr.com/7156/6672244315_a08906f26b

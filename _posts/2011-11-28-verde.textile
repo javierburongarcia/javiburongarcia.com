@@ -1,7 +1,6 @@
 ---
 style: una-col
 category: foto
-tags: [texturas]
 title: Verde
 subtitle:
 image: farm8.staticflickr.com/7162/6668070923_7128051a3b

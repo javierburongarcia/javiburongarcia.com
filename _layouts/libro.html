@@ -3,7 +3,10 @@ layout: default
 ---
 
 <div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }}) 50% 50% no-repeat"></div>
+{% if page.background_image %}
+<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }})"></div>
+{% else %}
+{% endif %}
 <article id="cuerpo" class="libro">
 	<div class="leftColumn">
 		<hgroup>

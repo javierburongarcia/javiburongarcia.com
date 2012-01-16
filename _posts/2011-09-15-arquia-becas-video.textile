@@ -1,7 +1,6 @@
 ---
 style: dos-col
 category: video
-tags: [visual scribing, stop-motion, video, diseño expositivo]
 title: Arquía/Becas 2011 presentation video
 subtitle: This is an stop-motion animation I made about the Arquia/Becas 2011 itinerant exhibition.
 image: farm8.staticflickr.com/7158/6667849787_21be59b88b
