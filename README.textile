@@ -1,24 +1,24 @@
 h1. javierburon.net personal website
 
-To do:
+h2. To do soon
 
-* Projects should be more different from the other content. think about that
+* -Projects should be more different from the other content. think about that- added "recommended" style to non personal content
+* -Add type of data icons in each frame: proyecto, link, video, libro, pelicula, foto, presentacion, articulo-
+* -text styles depending on the background color-
+* -Link to my domain javierburon.net-
+* Work on a more developed detail page:
+** browsable background carrousel
+** think on how to embed media content: video, issuu, presentation etc
+* Add google analytics javascript
+* Work on a transition between main page and detail page. fade maybe?
+* Work on a navigation system in the detail page. back and forward. maybe left to right slide? 
+* Reload dinamically http://css-tricks.com/dynamic-page-replacing-content/
+
+h2. To do later
+
 * General views for each type of data: I want to see all the links, all the projects, all the videos and so on…
-* Add type of data icons in each frame: proyecto, link, video, –––libro–––, pelicula, foto, presentacion, articulo
-* Add more past content
-	-Write descriptions for uploaded material
-	–GIS talk and presentation
-	–Laboratorio nuevas profesiones presentation
-	
-—Work on a more developed detail page
-	—text styles depending on the background color
-	—browsable background carrousel 
-	—think on how to embed media content: video, issuu, presentation etc
-	
-–Link to my domain javierburon.net
-–Add google analytics javascript
-–Work on a transition between main page and detail page. fade maybe?
-—Work on a navigation system in the detail page. back and forward. maybe left to right slide? 
-–Think in multilingual issue: how to solve it? Write in english and spanish indistinctly
-
-–Reload dinamically http://css-tricks.com/dynamic-page-replacing-content/
+* Think in multilingual issue: how to solve it? Write in english and spanish indistinctly
+* Add more past content:
+** Write descriptions for uploaded material
+** GIS talk and presentation
+** Laboratorio nuevas profesiones presentation
