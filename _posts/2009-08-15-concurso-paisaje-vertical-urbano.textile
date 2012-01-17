@@ -7,7 +7,8 @@ image: farm8.staticflickr.com/7143/6661893243_e808c427b5_m
 
 layout: post
 background_image: 
- - src: /images/blog/fachadasSurgeniaBackground.jpg
+ - src: /images/blog/fachadasSurgeniaBackground1.jpg
+ - src: /images/blog/fachadasSurgeniaBackground2.jpg
 background_color: white
 color: black
 published: yes

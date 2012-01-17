@@ -7,7 +7,9 @@ image: farm8.staticflickr.com/7145/6679646415_f43ac638bb
 
 layout: post
 background_image: 
- - src: /images/blog/biennaleBackground.jpg
+ - src: /images/blog/biennaleBackground1.jpg
+ - src: /images/blog/biennaleBackground2.jpg
+ - src: /images/blog/biennaleBackground3.jpg
 background_color: black
 color: white
 published: yes
