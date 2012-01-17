@@ -6,7 +6,8 @@ subtitle: Ireland's participation at the 11th International Architecture Exhibit
 image: farm8.staticflickr.com/7145/6679646415_f43ac638bb
 
 layout: post
-background_image: biennaleBackground.jpg
+background_image: 
+ - src: /images/blog/biennaleBackground.jpg
 background_color: black
 color: white
 published: yes

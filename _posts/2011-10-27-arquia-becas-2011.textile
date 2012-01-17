@@ -6,7 +6,8 @@ subtitle: Diseño expositivo para la convocatoria Arquia/Becas 2011 de la fundac
 image: farm8.staticflickr.com/7146/6679822097_2db0b9e741
 
 layout: post
-background_image: exposicionArquiaBackground.jpg
+background_image: 
+ - src: /images/blog/exposicionArquiaBackground.jpg
 background_color: white
 color: black
 published: yes

@@ -6,7 +6,8 @@ image: farm8.staticflickr.com/7155/6667525727_82f694726c
 overlay: 0
 
 layout: foto
-background_image: icelandBackground.jpg
+background_image: 
+ - src: /images/blog/icelandBackground.jpg
 background_color: black
 color: white
 published: yes

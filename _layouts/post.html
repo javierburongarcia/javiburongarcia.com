@@ -2,11 +2,7 @@
 layout: individual
 ---
 
-<div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-{% if page.background_image %}
-<div class="image-fullscreen" style="background-image:url(/images/blog/{{ page.background_image }})"></div>
-{% else %}
-{% endif %}
+{% include _cycle.html %}
 <article id="cuerpo" class="post">
 	<div class="leftColumn" style="color: {{ page.color }}">
 		<hgroup>
