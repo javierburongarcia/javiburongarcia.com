@@ -12,7 +12,7 @@ color: black
 published: yes
 ---
 
-El concurso buscaba soluciones para ocultar una antena de comunicaciones situada en la azotea de la Torre de Valencia, obra emblemática del arquitecto Javier Carvajal realizada a finales de los años 60 que cuenta con una privilegiada posición en el skylline madrileño.
+El concurso buscaba soluciones para ocultar una antena de comunicaciones situada en la azotea de la "Torre de Valencia":http://es.wikipedia.org/wiki/Torre_de_Valencia, obra emblemática del arquitecto Javier Carvajal realizada a finales de los años 60 que cuenta con una privilegiada posición en el skylline madrileño.
 
 Propusimos una intervención sencilla que en lugar de tratar de ocultar el mástil añadiendo elementos externos se sirve de las propias antenas parábolicas para definir el carácter de la actuación. Optamos por una envolvente parcial que dibuja una triple hélice concéntrica. Así cada tramo de la hélice está formado por antenas operativas y elementos reflectores parabólicos del mismo tamaño que las antenas.
 

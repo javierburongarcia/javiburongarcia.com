@@ -9,5 +9,5 @@ image_caption: 1992 · 352 páginas por Hartley and Marks Publishers
 layout: libro
 background_color: white
 color: black
-published: yes
+published: no
 ---

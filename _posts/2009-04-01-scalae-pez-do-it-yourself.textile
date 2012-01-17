@@ -12,7 +12,7 @@ color: black
 published: yes
 ---
 
-Quisimos participar con un pez que representase una forma de entender el diseño desde un punto de vista más participativo y horizontal. Sin imponer situaciones al espectador, sino proponiendo alternativas al usuario. Sirviéndose de laa tecnología pero sin ensalzarla, simplemente entendiéndola como otra herramienta más. 
+Quisimos participar con un pez que representase una forma de entender el diseño desde un punto de vista más participativo y horizontal. Sin imponer situaciones al espectador, sino proponiendo alternativas al usuario. Sirviéndose de la tecnología pero sin ensalzarla, simplemente entendiéndola como otra herramienta más. 
 
 El pez do-it-yourself construye diversidad y riqueza a partir de la suma de individualidades.
 

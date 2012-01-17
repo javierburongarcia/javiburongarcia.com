@@ -9,5 +9,5 @@ image_caption: 2001 · 288 páginas por Capstone_
 background_color: white
 color: black
 layout: libro
-published: yes
+published: no
 ---

@@ -2,7 +2,7 @@
 style: dos-col
 category: proyecto
 title: Archfarm
-subtitle: fascículos aperiódicos de arquitectura
+subtitle: Fascículos aperiódicos de arquitectura. Junto a Javier Abarca
 image: farm8.staticflickr.com/7156/6672244315_a08906f26b
 
 layout: post
@@ -11,3 +11,12 @@ background_color: rgb(242,242,242)
 color: black
 published: yes
 ---
+
+Archfarm es una publicación centrada en el análisis y difusión de iniciativas y colectivos que no tienen cabida en otros canales de comunicación. Un lugar para el pensamiento y la crítica, los discursos teóricos y las últimas propuestas en arquitectura y temas tangentes. Archfarm se publica tanto en inglés y castellano, y ha sido presentada con éxito en numerosos medios nacionales e internacionales.
+
+Archfarm se publica como colección de fascículos en formato pdf que pueden ser descargados de manera independiente. Se distribuyen gratuitamente bajo licencia creative commons. Su composición de página permite tanto la lectura en pantalla como su impresión y encuadernación, todo ello sin concesiones en cuanto integridad, usabilidad y valores formales. Sugerimos imprimir Archfarm en la cara limpia del papel usado.
+
+ISSN 1885-6527
+
+h2. Enlaces externos
+* "Archfarm magazine":http://www.archfarm.org/

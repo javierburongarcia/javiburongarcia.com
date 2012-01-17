@@ -10,6 +10,7 @@
 @import "compass/utilities/links/";
 @include all-icon-sprites;
 
+$color_gris_font: rgb(220,220,220);
 $frame_width_fino: 8px;
 $frame_width: 15px;
 $borde_stroke: 1px;
@@ -61,19 +62,19 @@ $hover_link_color: rgb(100,100,100);
 }
 
 @mixin header-font {
-	color: rgb(220,220,220);
+	color: $color_gris_font;
 	display: block;
 	font-size: 20px;
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 }
 @mixin header-tweet {
-	color: rgb(220,220,220);
+	color: $color_gris_font;
 	display: block;
 	font-size: 14px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
 @mixin header-button {
-	color: rgb(220,220,220);
+	color: $color_gris_font;
 	display: block;
 	font-size: 11px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
@@ -82,6 +83,7 @@ $hover_link_color: rgb(100,100,100);
 	display: block;
 	color: black;
 	font-size: 20px;
+	line-height: 25px;
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 	padding-bottom: 10px;
 }
@@ -108,6 +110,7 @@ $hover_link_color: rgb(100,100,100);
 @mixin title-post-font {
 	display: block;
 	font-size: 28px;
+	line-height: 36px;
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 }
 @mixin subtitle-post-font {
@@ -126,6 +129,9 @@ $hover_link_color: rgb(100,100,100);
 	font-family: Helvetica,Arial,sans-serif;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	strong{
+		font-weight: bold;
+	}
 }
 @mixin body-header-post-font {
 	display: block;
@@ -186,7 +192,7 @@ header{
 				width: 200px;
 				display: table-cell;
 				vertical-align: middle;
-				z-index:  40;
+				z-index:  400;
 				a{
 					@include header-font;
 					@include transition(color .2s linear);
@@ -442,6 +448,7 @@ footer{
 			margin-right: auto;
 			margin-left: auto;
 			display: table-cell;
+			z-index: 200;
 		}
 		.bottomDescription{
 			color:white;
