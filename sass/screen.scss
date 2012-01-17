@@ -222,7 +222,7 @@ header{
 					color: white;
 					float:right;
 					width:70px;
-					box-sizing: border-box;
+					@include box-sizing(border-box);
 					height: 60px;
 					text-align: center;
 					@include header-button;
@@ -282,7 +282,7 @@ footer{
 			}
 			a{
 				text-decoration: none;
-				box-sizing: border-box;
+				@include box-sizing(border-box);
 				position: relative;
 				overflow: hidden;
 				float: left;
@@ -297,17 +297,17 @@ footer{
 					border-top: $borde;
 				}
 				.miniatura{
-					box-sizing: border-box;
+					@include box-sizing(border-box);
 					overflow: hidden;
 				}
 				.texto{
-					box-sizing: border-box;
+					@include box-sizing(border-box);
 					.subtitulo{
 						@include body-font;
 					}
 				}
 				.fecha{
-					box-sizing: border-box;
+					@include box-sizing(border-box);
 					@include small-font;
 					text-align: right;
 					position: absolute;
@@ -465,7 +465,7 @@ footer{
 	}
 	&.libro{
 		.leftColumn{
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			padding-right:30px;
 			width: 192px * 3;
 			float:left;
@@ -492,7 +492,7 @@ footer{
 	&.post{
 		.leftColumn{
 			min-height:700px;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			padding-right:0px;
 			width: 500px;
 			float:left;
@@ -504,7 +504,7 @@ footer{
 			position:fixed;
 			min-height:700px;
 			max-height:1000px;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			width: 550px;
 			z-index: 100;
 			opacity: 0.5;
@@ -522,7 +522,7 @@ nav{
 	a{
 		text-decoration:none;
 		pointer-events: all;
-		box-sizing: border-box;
+		@include box-sizing(border-box);
 		@include border-radius(3px);
 		max-width: 150px;
 		min-width: 90px;
@@ -537,11 +537,11 @@ nav{
 		opacity:0.5;
 		display:block;
 		@include transition(all .25s linear);
-		span{
+		span {
 			display:block;
 			position: absolute;
 			text-align:center;
-			margin-top:50%;
+			top: 50%;
 			width:90px;
 			height:30px;
 		}

@@ -1,42 +1,39 @@
-{% comment %}
 {% for image in page.background_image %}
 	{% assign numero_imagenes = forloop.length %}
 {% endfor %}
-	{% if numero_imagenes > 1 %}
-		<script language="JavaScript" type="text/javascript">
-		 $(document).ready(function(){
-			 var imgArr = new Array( // relative paths of images
-				{% for image in page.background_image %}
-				{% if forloop.last %}
-				'{{ image.src }}'
-				{% else %}
-				'{{ image.src }}',
-				{% endif %}
-				{% endfor %}
-			 );
-			 var preloadArr = new Array();
-			 var i;
-			 /* preload images */
-			 for(i=0; i < imgArr.length; i++){
-			 	preloadArr[i] = new Image();
-			 	preloadArr[i].src = imgArr[i];
-			 }
-			changeImg();
-			var currImg = 1;
-			var intID = setInterval(changeImg, 9000);
-			 /* image rotator */
-			 function changeImg(){
-				$('#masthead').animate({opacity: 0}, 1000, function(){
-					$(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
-				}).animate({opacity: 1}, 1000);
-			 }
-		 });
-		</script>
-	{% else %}
-	{% endif %}
+{% if numero_imagenes > 1 %}
+	<script language="JavaScript" type="text/javascript">
+	 $(document).ready(function(){
+		 var imgArr = new Array( // relative paths of images
+			{% for image in page.background_image %}
+			{% if forloop.last %}
+			'{{ image.src }}'
+			{% else %}
+			'{{ image.src }}',
+			{% endif %}
+			{% endfor %}
+		 );
+		 var preloadArr = new Array();
+		 var i;
+		 /* preload images */
+		 for(i=0; i < imgArr.length; i++){
+		 	preloadArr[i] = new Image();
+		 	preloadArr[i].src = imgArr[i];
+		 }
+		changeImg();
+		var currImg = 0;
+		var intID = setInterval(changeImg, 9000);
+		 /* image rotator */
+		 function changeImg(){
+			$('#masthead').animate({opacity: 0}, 1000, function(){
+				$(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+			}).animate({opacity: 1}, 1000);
+		 }
+	 });
+	</script>
 <div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-<div class="image-fullscreen" id="masthead" style="background-image:url({{ page.background_image[0].src }});"></div>
-{% endcomment %}
+<div class="image-fullscreen" id="masthead"></div>
+{% else %}
 <script language="JavaScript" type="text/javascript">
  $(document).ready(function(){
 	 var imgArr = new Array( // relative paths of images
@@ -57,8 +54,6 @@
 	 }
 	changeImg();
 	var currImg = 1;
-	var intID = setInterval(changeImg, 9000);
-	 /* image rotator */
 	 function changeImg(){
 		$('#masthead').animate({opacity: 0}, 1000, function(){
 			$(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
@@ -66,4 +61,7 @@
 	 }
  });
 </script>
+<div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
 <div class="image-fullscreen" id="masthead"></div>
+{% endif %}
+
