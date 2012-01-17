@@ -7,7 +7,7 @@ image: farm8.staticflickr.com/7146/6679822959_96160eb9fb
 
 layout: post
 background_image: 
- - src: /images/blog/torredeValenciaBackground.jpg
+ - src: /images/blog/torredevalenciaBackground.jpg
 background_color: rgb(167,172,183)
 color: black
 published: yes
