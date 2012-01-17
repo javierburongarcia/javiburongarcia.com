@@ -1,0 +1,13 @@
+---
+style: una-col
+category: libro
+title: The nature of economies
+subtitle: por Jane Jacobs
+image: farm8.staticflickr.com/7147/6667699163_5330d567cc
+image_caption: 2003 · 208 páginas por Vintage Books
+
+layout: libro
+background_color: white
+color: black
+published: no
+---

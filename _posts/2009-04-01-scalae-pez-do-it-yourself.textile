@@ -6,13 +6,14 @@ subtitle: El acuario Scalae es una colección de dibujos de peces hechos por arq
 image: farm8.staticflickr.com/7147/6679816925_fd01ed3a4f
 
 layout: post
-background_image: pezScalaeBackground.jpg
+background_image: 
+ - src: /images/blog/pezScalaeBackground.jpg
 background_color: white
 color: black
 published: yes
 ---
 
-Quisimos participar con un pez que representase una forma de entender el diseño desde un punto de vista más participativo y horizontal. Sin imponer situaciones al espectador, sino proponiendo alternativas al usuario. Sirviéndose de laa tecnología pero sin ensalzarla, simplemente entendiéndola como otra herramienta más. 
+Quisimos participar con un pez que representase una forma de entender el diseño desde un punto de vista más participativo y horizontal. Sin imponer situaciones al espectador, sino proponiendo alternativas al usuario. Sirviéndose de la tecnología pero sin ensalzarla, simplemente entendiéndola como otra herramienta más. 
 
 El pez do-it-yourself construye diversidad y riqueza a partir de la suma de individualidades.
 
