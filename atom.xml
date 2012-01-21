@@ -3,29 +3,29 @@ layout: nil
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
-  <title>Página personal de Javier Burón García</title>
-  <link href="http://javierburon.net/"/>
-  <link type="application/atom+xml" rel="self" href="http://javierburon.net/atom.xml"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://javierburon.net/</id>
-  <author>
-    <name>Javier Burón García</name>
-    <email>javierburon@colaborativa.eu</email>
-  </author>
-
-  {% for post in site.posts %}
-  <entry>
-    <id>http://javierburon.net{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://javierburon.net{{ post.url }}"/>
-    <title>{{ post.title }}</title>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <author>
-      <name>Javier Burón García</name>
-      <uri>http://javierburon.net/</uri>
-    </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
-  </entry>
-  {% endfor %}
- 
+	<title>Página personal de Javier Burón García</title>
+	<link href="http://javierburon.net/"/>
+	<link type="application/atom+xml" rel="self" href="http://javierburon.net/atom.xml"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://javierburon.net/</id>
+	<author>
+		<name>Javier Burón García</name>
+		<email>javierburon@colaborativa.eu</email>
+	</author>
+	{% for post in site.posts %}
+	{% if forloop.first %}
+	{% else %}
+	<entry>
+	<id>http://javierburon.net{{ post.id }}</id>
+		<link type="text/html" rel="alternate" href="http://javierburon.net{{ post.url }}"/>
+		<title>{{ post.title }}</title>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<author>
+			<name>Javier Burón García</name>
+			<uri>http://javierburon.net/</uri>
+		</author>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>
+	{% endif %}
+	{% endfor %}
 </feed>
