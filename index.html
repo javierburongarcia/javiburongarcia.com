@@ -59,7 +59,15 @@ title: Página personal de Javier Burón García
 				{% if post.category == 'texto' %}
 				{% else %}
 				<div class="miniatura">
-					<div class="icono_miniatura"></div>
+					{% if post.category == 'video' and post.style == "dos-col" and acortado == 0 %}
+					<div class="icon-videoplayer"></div>
+					{% endif %}
+					{% if post.category == 'video' and post.style == "una-col" and acortado == 1 %}
+					<div class="icon-videoplayer-small"></div>
+					{% endif %}
+					{% if post.category == 'video' and post.style == "una-col" and acortado == 0 %}
+					<div class="icon-videoplayer-small"></div>
+					{% endif %}
 					<img src="http://{{ post.image }}.jpg">
 				</div>
 				{% endif %}
@@ -84,7 +92,7 @@ title: Página personal de Javier Burón García
 						{% endif  %}
 					{% endif  %}	
 				</div>
-				<span class="icono {{ post.category }}"></span>
+				<span class="icono icon-{{ post.category }}"></span>
 				{% endif %}
 				{% if post.category == 'texto' or post.category == 'foto' %}
 				{% else %}

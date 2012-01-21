@@ -15,19 +15,3 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.subtitle }}" />
 <meta property="og:image" content="http://{{ page.image }}.jpg" />
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-	{% if page.language == 'en' %}
-	pageLanguage: 'en',
-	{% else %}
-	pageLanguage: 'es',
-	{% endif %}
-    multilanguagePage: false,
-    gaTrack: true,
-    gaId: 'UA-28442119-1',
-    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-  }, 'google_translate_element');
-}
-</script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

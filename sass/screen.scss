@@ -8,6 +8,7 @@
 @import "compass/css3";
 @import "icon/*.png";
 @import "compass/utilities/links/";
+@import "fonts/fontfaces";
 @include all-icon-sprites;
 
 $color_gris_font: rgb(220,220,220);
@@ -29,38 +30,6 @@ $fondo_overlay: rgba(255,255,255,0.95);
 $fondo_overlay2: rgba(255,255,255,0.90);
 $hover_link_color: rgb(100,100,100);
 
-@font-face {
-    font-family: 'DroidSans';
-    src: url('fonts/DroidSans-webfont.eot');
-    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/DroidSans-webfont.woff') format('woff'),
-         url('fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DroidSerif';
-    src: url('fonts/DroidSerif-Regular-webfont.eot');
-    src: url('fonts/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/DroidSerif-Regular-webfont.woff') format('woff'),
-         url('fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
-         url('fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DroidSerif';
-    src: url('fonts/DroidSerif-Italic-webfont.eot');
-    src: url('fonts/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/DroidSerif-Italic-webfont.woff') format('woff'),
-         url('fonts/DroidSerif-Italic-webfont.ttf') format('truetype'),
-         url('fonts/DroidSerif-Italic-webfont.svg#DroidSerifItalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
 @mixin header-font {
 	color: $color_gris_font;
 	display: block;
@@ -79,7 +48,7 @@ $hover_link_color: rgb(100,100,100);
 	font-size: 11px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
-@mixin header1-font {
+@mixin mainpage-title1-font {
 	display: block;
 	color: black;
 	font-size: 20px;
@@ -87,7 +56,7 @@ $hover_link_color: rgb(100,100,100);
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 	padding-bottom: 10px;
 }
-@mixin header2-font {
+@mixin mainpage-title2-font {
 	display: block;
 	color: black;
 	font-size: 14px;
@@ -95,13 +64,13 @@ $hover_link_color: rgb(100,100,100);
 	font-family: DroidSerif,Helvetica,Arial,sans-serif;
 	padding-bottom: 5px;
 }
-@mixin body-font {
+@mixin mainpage-body-font {
 	display: block;
 	color: #888;
 	font-size: 12px;
 	font-family: DroidSans,Helvetica,Arial,sans-serif;
 }
-@mixin small-font {
+@mixin mainpage-small-font {
 	display: block;
 	color: #888;
 	font-size: 10px;
@@ -173,7 +142,6 @@ header{
 	position: fixed;
 	background-color: black;
 	z-index: 400;
-	padding-top: 10px;
 	#cabecera{
 		width: 192px * 6;
 		color:white;
@@ -258,7 +226,7 @@ footer{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	clear: both;
-	@include small-font;
+	@include mainpage-small-font;
 	text-align: center;
 }
 // Estilos en vista principal
@@ -304,12 +272,12 @@ footer{
 				.texto{
 					@include box-sizing(border-box);
 					.subtitulo{
-						@include body-font;
+						@include mainpage-body-font;
 					}
 				}
 				.fecha{
 					@include box-sizing(border-box);
-					@include small-font;
+					@include mainpage-small-font;
 					text-align: right;
 					position: absolute;
 					right: $frame_width + 15px;
@@ -321,28 +289,6 @@ footer{
 					height: 20px;
 					right: 8px;
 					bottom: 8px;
-					background: url(../images/iconos.png) no-repeat;
-					&.proyecto{
-						background-position: 0 0px;
-					}
-					&.libro{
-						background-position: 0 -20px;
-					}
-					&.foto{
-						background-position: 0 -40px;
-					}
-					&.video{
-						background-position: 0 -60px;
-					}
-					&.texto, &.articulo {
-						background-position: 0 -80px;
-					}
-					&.pelicula{
-						background-position: 0 -100px;
-					}
-					&.link{
-						background-position: 0 -120px;
-					}
 				}
 			}
 		}
@@ -486,7 +432,7 @@ footer{
 			figcaption{
 				text-align: center;
 				padding-top: 10px;
-				@include small-font;
+				@include mainpage-small-font;
 			}
 		}
 	}
@@ -612,6 +558,11 @@ nav{
 	}
 }
 @mixin imagen-horizontal-small-video{
+	&:hover .icon-videoplayer-small {
+		$icons: sprite-map("icon/*.png");
+		background-position: sprite-position($icons, videoplayer-small_hover);
+		
+	}
 	.miniatura{
 		margin-bottom: 10px;
 		width: $una_col_width_menos_frame;
@@ -619,19 +570,14 @@ nav{
 		img{
 			width: $una_col_width_menos_frame;
 		}
-		.icono_miniatura{
+		.icon-videoplayer-small{
 			position:absolute;
 			z-index:10;
-			width: $una_col_width_menos_frame;
-			height: $miniatura_short;
-			background: url(../images/video_icon_small.png) no-repeat;
-			background-position-x: $una_col_width/2 - 37px;
-			background-position-y: $miniatura_short/2 - 25px;
-			&:hover{
-				background: url(../images/video_icon_small.png) no-repeat;
-					background-position-x: $una_col_width/2 - 37px;
-					background-position-y: $miniatura_short/2 - 25px - 150px;
-			}
+			width: 50px;
+			height: 50px;
+			left:50%;
+			top: $miniatura_short/2 + $frame_width - 25px;
+			margin-left: -25px;
 		}
 	}
 }
@@ -647,6 +593,11 @@ nav{
 }
 
 @mixin imagen-horizontal-video{
+	&:hover .icon-videoplayer {
+		$icons: sprite-map("icon/*.png");
+		background-position: sprite-position($icons, videoplayer_hover);
+		
+	}
 	.miniatura {
 		margin-bottom: 10px;
 		width: $dos_col_width_menos_frame;
@@ -654,20 +605,15 @@ nav{
 		img{
 			width: $dos_col_width_menos_frame;
 		}
-		.icono_miniatura{
+		.icon-videoplayer{
 			position:absolute;
 			left:50%;
 			top:50%;
 			margin-top: - $miniatura_tall/2 + $frame_width/2;
 			margin-left: -50px;
 			z-index:10;
-			width: $dos_col_width_menos_frame;
-			height: $fullheight_menos_frame;
-			background: url(../images/video_icon.png) no-repeat;
-			&:hover{
-				background: url(../images/video_icon.png) no-repeat;
-				background-position: 0 -300px;
-			}
+			width: 100px;
+			height: 100px;
 		}
 	} 
 }
@@ -781,7 +727,7 @@ nav{
 @mixin texto-una-col-sinfoto{
 	.texto{
 		.titulo{
-			@include header1-font;
+			@include mainpage-title1-font;
 		}
 	}
 }
@@ -789,7 +735,7 @@ nav{
 	.texto{
 		padding-top: 10px;
 		.titulo{
-			@include header2-font;
+			@include mainpage-title2-font;
 		}
 	}
 }
@@ -805,7 +751,7 @@ nav{
 		height: $fullheight - $miniatura_short;
 		width:$una_col_width;
 		.titulo{
-			@include header2-font;
+			@include mainpage-title2-font;
 		}
 	}
 }
@@ -819,7 +765,7 @@ nav{
 		bottom:0px;
 		left: $una_col_width;
 		.titulo{
-			@include header1-font;
+			@include mainpage-title1-font;
 		}
 	}
 }
@@ -828,7 +774,7 @@ nav{
 	.texto{
 		padding-top: 10px;
 		.titulo{
-			@include header2-font;
+			@include mainpage-title2-font;
 		}
 	}
 }
@@ -836,7 +782,7 @@ nav{
 	.texto{
 		padding-top: 10px;
 		.titulo{
-			@include header2-font;
+			@include mainpage-title2-font;
 		}
 	}
 }
@@ -852,7 +798,7 @@ nav{
 		bottom: $frame_width - 2*$borde_stroke;
 		padding: $padding_overlay;
 		.titulo{
-			@include header2-font;
+			@include mainpage-title2-font;
 		}
 		.subtitulo{
 		}
