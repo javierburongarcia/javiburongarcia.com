@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>javierburon.net</title>
@@ -27,7 +27,6 @@ layout: nil
 			<link>http://javierburon.net{{ post.url }}</link>
 			<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 			<author>javierburon@colaborativa.eu (Javier Burón García)</author>
-			<enclosure url="http://{{ post.image }}.jpg" type="image/jpeg" />
 			<guid>http://javierburon.net{{ post.id }}</guid>
 			<description>{{ post.content | xml_escape }}</description>
 			<media:thumbnail url="http://{{ post.image }}_s.jpg"/>
