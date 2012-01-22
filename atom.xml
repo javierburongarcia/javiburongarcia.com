@@ -4,6 +4,7 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Página personal de Javier Burón García</title>
+	<icon>http://farm8.staticflickr.com/7004/6744345435_3b61d78b4e_s.jpg</icon>
 	<link href="http://javierburon.net/"/>
 	<link type="application/atom+xml" rel="self" href="http://javierburon.net/atom.xml"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>

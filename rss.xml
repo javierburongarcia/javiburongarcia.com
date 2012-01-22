@@ -2,10 +2,19 @@
 layout: nil
 ---
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>javierburon.net</title>
 		<link>http://javierburon.net/</link>
+		<image>
+			<url>http://farm8.staticflickr.com/7004/6744345435_3b61d78b4e_s.jpg</url>
+			<title>javierburon.net</title>
+			<link>http://javierburon.net/</link>
+			<width>75</width>
+			<height>75</height>
+			<description>Página personal de Javier Burón García</description>
+		</image>
+		<a href="http://www.flickr.com/photos/49838422@N03/6744345435/" title="screeshot by Javier Burón, on Flickr"><img src="http://farm8.staticflickr.com/7004/6744345435_3b61d78b4e_s.jpg" width="75" height="75" alt="screeshot"></a>
 		<atom:link href="http://javierburon.net/rss.xml" rel="self" type="application/rss+xml" />
 		<description>Página personal de Javier Burón García</description>
 		<language>es</language>
@@ -19,8 +28,11 @@ layout: nil
 			<link>http://javierburon.net{{ post.url }}</link>
 			<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 			<author>javierburon@colaborativa.eu (Javier Burón García)</author>
+			<enclosure url="http://{{ post.image }}.jpg" type="image/jpeg" />
 			<guid>http://javierburon.net{{ post.id }}</guid>
 			<description>{{ post.content | xml_escape }}</description>
+			<media:thumbnail url="http://{{ post.image }}_s.jpg"/>
+			<media:content url="http://{{ post.image }}.jpg"/>
 		</item>
 		{% endif %}
 		{% endfor %}
