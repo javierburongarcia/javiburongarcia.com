@@ -7,7 +7,7 @@ overlay: 0
 
 layout: foto
 background_image: 
- - src: /images/blog/icelandBackground.jpg
+ - src: images/blog/icelandBackground.jpg
 background_color: black
 color: white
 published: yes

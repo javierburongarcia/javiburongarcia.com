@@ -2,11 +2,7 @@
 layout: individual
 ---
 
-<div class="colorbackground-fullscreen" style="background: {{ page.background_color }}"></div>
-{% if page.background_image %}
-<div class="image-fullscreen" style="background-image:url({{ page.background_image }})"></div>
-{% else %}
-{% endif %}
+{% include _cycle.html %}
 <articulo id="cuerpo" class="foto">
 </articulo>
 {% include _navigation.html %}
