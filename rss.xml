@@ -14,7 +14,6 @@ layout: nil
 			<height>75</height>
 			<description>Página personal de Javier Burón García</description>
 		</image>
-		<a href="http://www.flickr.com/photos/49838422@N03/6744345435/" title="screeshot by Javier Burón, on Flickr"><img src="http://farm8.staticflickr.com/7004/6744345435_3b61d78b4e_s.jpg" width="75" height="75" alt="screeshot"></a>
 		<atom:link href="http://javierburon.net/rss.xml" rel="self" type="application/rss+xml" />
 		<description>Página personal de Javier Burón García</description>
 		<language>es</language>
