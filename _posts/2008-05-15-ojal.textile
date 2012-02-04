@@ -1,0 +1,14 @@
+---
+style: una-col
+category: foto
+title: Ojal
+subtitle: 
+image: farm8.staticflickr.com/7034/6818606839_6b1fb9d457
+overlay: 0
+
+layout: foto
+background_image: 
+ - src: /images/blog/ojalBackground.jpg
+background_color: rgb(0,0,0)
+published: yes
+---

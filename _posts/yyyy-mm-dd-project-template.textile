@@ -1,0 +1,15 @@
+---
+style: dos-col
+category: proyecto
+title: 
+subtitle: 
+image: 
+
+layout: post
+background_image: 
+ - src: 
+background_color: 
+color: 
+published: no
+---
+
