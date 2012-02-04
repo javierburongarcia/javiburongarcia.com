@@ -675,6 +675,9 @@ nav{
 	.miniatura{
 		width: $una_col_width_menos_frame;
 		height: $fullheight_menos_frame + ($borde_stroke * 2);
+		img{
+			height: $fullheight_menos_frame + ($borde_stroke * 2);
+		}
 	}
 }
 @mixin imagen-vertical-full{

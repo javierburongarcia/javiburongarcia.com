@@ -756,7 +756,7 @@ nav a#derecha span {
 /*Estilos de imagenes*/
 /*Estilos de texto*/
 /*Layouts*/
-/* line 819, ../sass/screen.scss */
+/* line 822, ../sass/screen.scss */
 #cuerpo ul#grid li.texto.una-col {
   width: 192px;
 }
@@ -764,7 +764,7 @@ nav a#derecha span {
 #cuerpo ul#grid li.texto.una-col a {
   width: 192px;
 }
-/* line 729, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 #cuerpo ul#grid li.texto.una-col .texto .titulo {
   display: block;
   color: black;
@@ -773,7 +773,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
-/* line 824, ../sass/screen.scss */
+/* line 827, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.una-col {
   width: 192px;
 }
@@ -791,11 +791,11 @@ nav a#derecha span {
 #cuerpo ul#grid li.articulo.una-col .miniatura img {
   width: 160px;
 }
-/* line 735, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.una-col .texto {
   padding-top: 10px;
 }
-/* line 737, ../sass/screen.scss */
+/* line 740, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.una-col .texto .titulo {
   display: block;
   color: black;
@@ -804,7 +804,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 829, ../sass/screen.scss */
+/* line 832, ../sass/screen.scss */
 #cuerpo ul#grid li.video.una-col {
   width: 192px;
 }
@@ -836,11 +836,11 @@ nav a#derecha span {
   top: 37px;
   margin-left: -25px;
 }
-/* line 735, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 #cuerpo ul#grid li.video.una-col .texto {
   padding-top: 10px;
 }
-/* line 737, ../sass/screen.scss */
+/* line 740, ../sass/screen.scss */
 #cuerpo ul#grid li.video.una-col .texto .titulo {
   display: block;
   color: black;
@@ -857,20 +857,20 @@ nav a#derecha span {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 835, ../sass/screen.scss */
+/* line 838, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.una-col {
   width: 192px;
 }
-/* line 706, ../sass/screen.scss */
+/* line 709, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.una-col .miniatura {
   width: 174px;
   height: 282px;
 }
-/* line 709, ../sass/screen.scss */
+/* line 712, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.una-col .miniatura img {
   height: 282px;
 }
-/* line 743, ../sass/screen.scss */
+/* line 746, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.una-col .texto {
   position: absolute;
   bottom: 0px;
@@ -882,7 +882,7 @@ nav a#derecha span {
   height: 206px;
   width: 192px;
 }
-/* line 753, ../sass/screen.scss */
+/* line 756, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.una-col .texto .titulo {
   display: block;
   color: black;
@@ -899,7 +899,7 @@ nav a#derecha span {
 #cuerpo ul#grid li.proyecto.una-col a {
   padding: 8px;
 }
-/* line 843, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.dos-col,
 #cuerpo ul#grid li.link.dos-col,
 #cuerpo ul#grid li.pelicula.dos-col, #cuerpo ul#grid li.documento.dos-col {
@@ -911,7 +911,7 @@ nav a#derecha span {
 #cuerpo ul#grid li.pelicula.dos-col a, #cuerpo ul#grid li.documento.dos-col a {
   width: 384px;
 }
-/* line 681, ../sass/screen.scss */
+/* line 684, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.dos-col .miniatura,
 #cuerpo ul#grid li.link.dos-col .miniatura,
 #cuerpo ul#grid li.pelicula.dos-col .miniatura, #cuerpo ul#grid li.documento.dos-col .miniatura {
@@ -919,13 +919,13 @@ nav a#derecha span {
   width: 177px;
   height: 270px;
 }
-/* line 685, ../sass/screen.scss */
+/* line 688, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.dos-col .miniatura img,
 #cuerpo ul#grid li.link.dos-col .miniatura img,
 #cuerpo ul#grid li.pelicula.dos-col .miniatura img, #cuerpo ul#grid li.documento.dos-col .miniatura img {
   height: 270px;
 }
-/* line 759, ../sass/screen.scss */
+/* line 762, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.dos-col .texto,
 #cuerpo ul#grid li.link.dos-col .texto,
 #cuerpo ul#grid li.pelicula.dos-col .texto, #cuerpo ul#grid li.documento.dos-col .texto {
@@ -937,7 +937,7 @@ nav a#derecha span {
   bottom: 0px;
   left: 192px;
 }
-/* line 767, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 #cuerpo ul#grid li.articulo.dos-col .texto .titulo,
 #cuerpo ul#grid li.link.dos-col .texto .titulo,
 #cuerpo ul#grid li.pelicula.dos-col .texto .titulo, #cuerpo ul#grid li.documento.dos-col .texto .titulo {
@@ -948,7 +948,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
-/* line 848, ../sass/screen.scss */
+/* line 851, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.dos-col {
   width: 384px;
 }
@@ -956,13 +956,13 @@ nav a#derecha span {
 #cuerpo ul#grid li.libro.dos-col a {
   width: 384px;
 }
-/* line 691, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.dos-col .miniatura {
   margin-right: 15px;
   width: 177px;
   height: 270px;
 }
-/* line 695, ../sass/screen.scss */
+/* line 698, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.dos-col .miniatura img {
   margin-top: 5px;
   height: 260px;
@@ -974,7 +974,7 @@ nav a#derecha span {
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
-/* line 759, ../sass/screen.scss */
+/* line 762, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.dos-col .texto {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
@@ -984,7 +984,7 @@ nav a#derecha span {
   bottom: 0px;
   left: 192px;
 }
-/* line 767, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -993,7 +993,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
-/* line 853, ../sass/screen.scss */
+/* line 856, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.dos-col {
   width: 384px;
 }
@@ -1005,16 +1005,16 @@ nav a#derecha span {
 #cuerpo ul#grid li.proyecto.dos-col a {
   padding: 8px;
 }
-/* line 715, ../sass/screen.scss */
+/* line 718, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.dos-col .miniatura {
   width: 366px;
   height: 282px;
 }
-/* line 718, ../sass/screen.scss */
+/* line 721, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.dos-col .miniatura img {
   height: 282px;
 }
-/* line 759, ../sass/screen.scss */
+/* line 762, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.dos-col .texto {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
@@ -1024,7 +1024,7 @@ nav a#derecha span {
   bottom: 0px;
   left: 192px;
 }
-/* line 767, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 #cuerpo ul#grid li.proyecto.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -1033,7 +1033,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 10px;
 }
-/* line 859, ../sass/screen.scss */
+/* line 862, ../sass/screen.scss */
 #cuerpo ul#grid li.link.una-col {
   width: 192px;
 }
@@ -1065,11 +1065,11 @@ nav a#derecha span {
   width: 152px;
   margin: 4px;
 }
-/* line 774, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #cuerpo ul#grid li.link.una-col .texto {
   padding-top: 10px;
 }
-/* line 776, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 #cuerpo ul#grid li.link.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1086,7 +1086,7 @@ nav a#derecha span {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 867, ../sass/screen.scss */
+/* line 870, ../sass/screen.scss */
 #cuerpo ul#grid li.foto.dos-col,
 #cuerpo ul#grid li.presentacion.dos-col {
   width: 384px;
@@ -1108,7 +1108,7 @@ nav a#derecha span {
 #cuerpo ul#grid li.presentacion.dos-col .miniatura img {
   height: 270px;
 }
-/* line 790, ../sass/screen.scss */
+/* line 793, ../sass/screen.scss */
 #cuerpo ul#grid li.foto.dos-col .texto,
 #cuerpo ul#grid li.presentacion.dos-col .texto {
   text-align: right;
@@ -1121,7 +1121,7 @@ nav a#derecha span {
   bottom: 13px;
   padding: 5px;
 }
-/* line 800, ../sass/screen.scss */
+/* line 803, ../sass/screen.scss */
 #cuerpo ul#grid li.foto.dos-col .texto .titulo,
 #cuerpo ul#grid li.presentacion.dos-col .texto .titulo {
   display: block;
@@ -1131,12 +1131,12 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 809, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 #cuerpo ul#grid li.foto.dos-col .texto,
 #cuerpo ul#grid li.presentacion.dos-col .texto {
   width: 352px;
 }
-/* line 873, ../sass/screen.scss */
+/* line 876, ../sass/screen.scss */
 #cuerpo ul#grid li.video.dos-col {
   width: 384px;
 }
@@ -1169,11 +1169,11 @@ nav a#derecha span {
   width: 100px;
   height: 100px;
 }
-/* line 782, ../sass/screen.scss */
+/* line 785, ../sass/screen.scss */
 #cuerpo ul#grid li.video.dos-col .texto {
   padding-top: 10px;
 }
-/* line 784, ../sass/screen.scss */
+/* line 787, ../sass/screen.scss */
 #cuerpo ul#grid li.video.dos-col .texto .titulo {
   display: block;
   color: black;
@@ -1182,7 +1182,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 879, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 #cuerpo ul#grid li.pelicula.una-col {
   width: 192px;
 }
@@ -1203,11 +1203,11 @@ nav a#derecha span {
   display: table-cell;
   width: 160px;
 }
-/* line 774, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #cuerpo ul#grid li.pelicula.una-col .texto {
   padding-top: 10px;
 }
-/* line 776, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 #cuerpo ul#grid li.pelicula.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1224,7 +1224,7 @@ nav a#derecha span {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 885, ../sass/screen.scss */
+/* line 888, ../sass/screen.scss */
 #cuerpo ul#grid li.documento.una-col {
   width: 192px;
 }
@@ -1245,11 +1245,11 @@ nav a#derecha span {
   display: table-cell;
   width: 160px;
 }
-/* line 774, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #cuerpo ul#grid li.documento.una-col .texto {
   padding-top: 10px;
 }
-/* line 776, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 #cuerpo ul#grid li.documento.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1258,7 +1258,7 @@ nav a#derecha span {
   font-family: DroidSerif,Helvetica,Arial,sans-serif;
   padding-bottom: 5px;
 }
-/* line 890, ../sass/screen.scss */
+/* line 893, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.una-col {
   width: 192px;
 }
@@ -1284,11 +1284,11 @@ nav a#derecha span {
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
-/* line 774, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.una-col .texto {
   padding-top: 10px;
 }
-/* line 776, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 #cuerpo ul#grid li.libro.una-col .texto .titulo {
   display: block;
   color: black;
@@ -1305,7 +1305,7 @@ nav a#derecha span {
   -o-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 898, ../sass/screen.scss */
+/* line 901, ../sass/screen.scss */
 #cuerpo ul#grid li.presentacion.una-col,
 #cuerpo ul#grid li.foto.una-col {
   width: 192px;
@@ -1321,7 +1321,12 @@ nav a#derecha span {
   width: 160px;
   height: 270px;
 }
-/* line 790, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
+#cuerpo ul#grid li.presentacion.una-col .miniatura img,
+#cuerpo ul#grid li.foto.una-col .miniatura img {
+  height: 270px;
+}
+/* line 793, ../sass/screen.scss */
 #cuerpo ul#grid li.presentacion.una-col .texto,
 #cuerpo ul#grid li.foto.una-col .texto {
   text-align: right;
@@ -1334,7 +1339,7 @@ nav a#derecha span {
   bottom: 13px;
   padding: 5px;
 }
-/* line 800, ../sass/screen.scss */
+/* line 803, ../sass/screen.scss */
 #cuerpo ul#grid li.presentacion.una-col .texto .titulo,
 #cuerpo ul#grid li.foto.una-col .texto .titulo {
   display: block;
