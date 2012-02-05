@@ -9,5 +9,17 @@ image_caption: 1992 · 352 páginas por Hartley and Marks Publishers
 layout: libro
 background_color: white
 color: black
-published: no
+published: yes
 ---
+
+Robert Brighurst es uno de los autores que más me ha fascinado desde que mi amigo Javier Abarca me lo recomendó hace casi diez años. Este  canadiense nacido en Los Ángeles en 1946 ha consagrado toda su carrera al ejercicio y estudio del lenguaje escrito desde una perspectiva inusual dedicando el mismo interés tanto al significado de las palabras como a su forma.
+
+Reconocido poeta y ensayista desarrolló una sensibilidad hacia la tipografía a través del estudio de la transmisión oral del lenguaje y su evolución a la forma escrita. Tras varios libros sobre diseño e historia de la palabra impresa escribió uno de los manuales de tipografía más exquisitos y útiles de la actualidad y que recomiendo encarecidamente a todo aquel que desee descubrir el arte de la tipografía.
+
+El libro es preciso, exhaustivo, con una prosa que engancha y sin excesivos tecnicismos que dificulten la lectura. La edición ni que decir tiene que es ejemplar, todo un ejercicio de maestría de la que continúo aprendiendo cada vez que abro sus páginas.
+
+Una gran parte del libro está dedicada a la ortotipografía y desgrana minuciosamente las convenciones de uso de infinidad de elementos tipográficos o glifos. Por ello resulta de tremenda utilidad para todo el que desee aprender a utilizar un teclado con cierta destreza sin la necesidad de acudir a los detalladísimos y en ocasiones amenazadores tratados de "José Martínez de Sousa":http://martinezdesousa.net/
+
+También cabe destacar el capítulo en el que Bringhurst recopila cuidadosamente una colección de fuentes que todo diseñador debería conocer. Descripciones detalladas y concisas que no sólo explican su origen histórico y características sino que seleccionan las versiones digitales más fieles al original. Este es uno de los capítulos que se ha convertido en una referencia constante cuando trabajo con tipos.
+
+En resumen, "The Elements of Typographic Style" es el mejor manual de referencia sobre tipografía que he tenido la oportunidad de leer. Os recomiendo además que os adentréis en la obra de Bringhurst, llena de interesantes reflexiones sobre el lenguaje y la inseparable relación entre medio y mensaje.
