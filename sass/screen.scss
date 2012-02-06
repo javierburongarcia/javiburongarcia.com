@@ -11,6 +11,8 @@
 @import "fonts/fontfaces";
 @include all-icon-sprites;
 
+$color_gris_font2: rgb(75,75,75);
+$color_gris_font3: rgb(150,150,150);
 $color_gris_font: rgb(220,220,220);
 $frame_width_fino: 8px;
 $frame_width: 15px;
@@ -228,6 +230,13 @@ footer{
 	clear: both;
 	@include mainpage-small-font;
 	text-align: center;
+	p{
+		color:$color_gris_font3;
+		a{
+			@include hover-link;
+			@include link-colors($color_gris_font2, $color_gris_font2, $color_gris_font2, $color_gris_font2, $color_gris_font2);
+		}
+	}
 }
 // Estilos en vista principal
 #cuerpo {
