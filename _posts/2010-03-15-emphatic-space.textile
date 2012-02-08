@@ -3,19 +3,33 @@ style: dos-col
 category: proyecto
 title: Empathic Space
 subtitle: Performance part of 2010 ev+a. Biennial of Visual Art, Limerick City, together with Eleanor Moloney
-image: 
+image: farm8.staticflickr.com/7019/6841048139_43edd5b7ec
 
 layout: post
 background_image: 
- - src: 
-background_color: 
-color: 
-published: no
+ - src: /images/blog/empathicBackground1.jpg
+   caption: "Credit: EV+A" 
+ - src: /images/blog/empathicBackground2.jpg
+   caption: "Credit: Rafal Andrelczyk"
+background_color: rgb(255,255,255)
+color: rgb(0,0,0)
+published: yes
 ---
 
 The Social Welfare Office receded to the back of peoples’ minds and hearts during the lavish years of the Celtic Tiger. It has always represented a lack of money, opportunity, and independence. However, because of the global economic downturn, it is a building that is back in vogue. It has become the great equaliser in society. The long term unemployed, qualified professionals, single mums and fresh-faced graduates must all participate in the same process.
+
 Because it is a place where people are processed, there is an erosion of the individual in this space. From the moment the queue forms outside the door, to getting your ticket, to waiting in line, you become a number. The same form is used by all to describe a situation that is unique to them.
 Queuing likes this order, because it makes people feel the system is equitable and fair. But waiting is different, because people don’t want to feel they’re being processed as part of a faceless system which ignores their individuality.
-A number of music performances are scheduled at peak hours providing a "empathic space" for the social welfare users who at the moment can be counted in their hundreds at peak hours. 
+
+A number of music performances are scheduled at peak hours providing a "empathic space" for the social welfare users who at the moment can be counted in their hundreds at peak hours.
+
 These performances propose a surreal experience which will create a time lapse of enjoyment and relaxation for those people waiting in queues for hours. They allow an opportunity for the public to appreciate a public space that they might be fortunate enough, not to have had to engage with, until now.
 
+_text by Eleanor Moloney_
+
+h2. Performances
+
+— _16th March 2010._ Caravel Quartet: Roisin McMullin, Violin 1. Tamasine Anna Plowman, violin 2. Livia Nagy, cello & Tobie Slippert, viola
+— _30th March 2010._ Livia Nagy, cello
+— _6th April 2010._ Golden String Duo: Livia Nagy, cello & Peter Sebestyen, cello
+— _21th April 2010._ Peter Walls, voice

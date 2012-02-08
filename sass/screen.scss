@@ -317,7 +317,7 @@ footer{
 	background: 50% 50% no-repeat;
 	position:fixed;
 	left:0px;
-	top:0px;
+	top:60px;
 	right:0px;
 	bottom:0px;
 	height:1000px;
@@ -355,6 +355,9 @@ footer{
 		}
 		p{
 			@include body-post-font;
+		}
+		em{
+			font-style:italic;
 		}
 		figure{
 			padding-top: 20px;
@@ -396,6 +399,7 @@ footer{
 		p{
 			text-indent:20px;
 		}
+
 		a{
 			color:white;
 			text-decoration:underline;
