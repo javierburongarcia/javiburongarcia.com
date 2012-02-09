@@ -5,6 +5,7 @@
 			<section class="tweet">
 				<p id="ultimo_tweet"></p>
 			</section>
+			{% if page.layout == "default" %}
 			<section class="socialButtons">
 				<div class="twitter button">
 					<a href="http://twitter.com/share?url={{ site.url }}&amp;via=javiburon">
@@ -17,6 +18,20 @@
 					</a>
 				</div>
 			</section>
+			{% else %}
+			<section class="socialButtons">
+				<div class="twitter button">
+					<a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&amp;via=javiburon">
+						<span class="icon-twitter"><span class="icon-twitter-hover"></span></span>Tweet
+					</a>
+				</div>
+				<div class="facebook button">
+					<a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&t={{ page.title }}">
+						<span class="icon-facebook"><span></span></span>Like
+					</a>
+				</div>
+			</section>
+			{% endif %}
 		</div>
 	</div>
 </header>

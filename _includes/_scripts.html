@@ -11,6 +11,33 @@
 <link rel='alternate' type='application/rss+xml' title='RSS' href='/rss.xml' />
 <script src='/javascript/jquery.js' type='text/javascript'></script>
 <script src='/javascript/site.js' type='text/javascript'></script>
+
+{% if page.layout == "default" %}
+
+<meta name="Description" content="{{ site.posts[0].subtitle }}">
+
+<meta itemprop="name" content="Página personal de Javier Burón García">
+<meta itemprop="description" content="{{ site.posts[0].subtitle }}">
+<meta itemprop="author" content="Javier Burón García">
+<meta itemprop="image" content="{{ site.url }}/images/screenshot.png" />
+<meta itemprop="url" content="{{ site.url }}" />
+
 <meta property="og:title" content="Página personal de Javier Burón García" />
 <meta property="og:description" content="{{ site.posts[0].subtitle }}" />
 <meta property="og:image" content="{{ site.url }}/images/screenshot.png" />
+{% else %}
+<script src='/javascript/Hyphenator.js' type='text/javascript'></script>
+
+<meta name="Description" content="{{ page.subtitle }}">
+
+<meta itemprop="name" content="{{ page.title }}">
+<meta itemprop="description" content="{{ page.subtitle }}">
+<meta itemprop="author" content="Javier Burón García">
+<meta itemprop="image" content="http://{{ page.image }}.jpg" />
+<meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
+
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.subtitle }}" />
+<meta property="og:image" content="http://{{ page.image }}.jpg" />
+
+{% endif %}
