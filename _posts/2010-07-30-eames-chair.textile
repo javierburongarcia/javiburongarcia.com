@@ -1,0 +1,31 @@
+---
+style: dos-col
+category: proyecto
+title: Eames fiberglass shell chair
+subtitle: Estudio en 3D de la silla de resina de poliéster reforzada con fibra de vidrio de Ray y Charles Eames
+image: farm8.staticflickr.com/7206/6973688705_9c7c173d88
+
+layout: post
+background_image: 
+ - src: /images/blog/eamesBackground1.jpg
+ - src: /images/blog/eamesBackground2.jpg
+ - src: /images/blog/eamesBackground3.jpg
+ - src: /images/blog/eamesBackground4.jpg
+background_color: rgb(131, 144, 163)
+color: black
+published: yes
+---
+
+En verano de 2010 y como preparativo de mi asignatura "Advance modelling and rendering course" realicé este estudio en detalle de uno de los iconos del diseño industrial del siglo XX, la DSR de "Ray y Charles Eames":http://en.wikipedia.org/wiki/Charles_and_Ray_Eames.
+
+El diseño inicial con reposabrazos proviene de un concurso internacional de diseño de mobiliario de bajo coste organizado por el Museum of Modern Art (MoMA) de 1948 en colaboración con varios fabricantes. Originalmente la silla era en metal estampado y no se lanzó comercialmente hasta año 1951 por la "Herman Miller Furniture Company":http://www.hermanmiller.com/products/seating/side-chairs/eames-molded-plastic-chairs.html en la variante que hoy conocemos de resina de poliéster reforzada con fibra de vidrio.
+
+La silla gozó de una popularidad enorme y los Eames introdujeron multitud de variantes: sin reposabrazos, tapizadas, o con patas de mecedora. Quizás la variante más popular es aquella sin reposabrazos y con la base _torre eiffel_, una estilizada columna de tubo cromado de acero de sección mínima que parece suspender el asiento en el aire. 
+
+En las últimas décadas Herman Miller sustituyó la resina de poliéster reforzada con fibra de vidrio por un plástico moldeado más barato y respetuoso con el medio ambiente. En esta transición se perdió uno de los aspectos más interesantes del diseño original: la equilibrada combinación de nuevos materiales, técnicas de fabricación, acabados artesanales y un tacto orgánico.
+
+h2. Referencias
+
+* "How to build an Eames shell chair":http://www.youtube.com/watch?v=PIlTtXrgA0c
+* "Modernica sigue fabricando la versión original":http://modernica.net/fiberglass-shell-chairs/
+
